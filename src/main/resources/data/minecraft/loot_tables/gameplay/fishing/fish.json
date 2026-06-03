@@ -1,0 +1,35 @@
+﻿{
+    "type":  "minecraft:fishing",
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "minecraft:loot_table",
+                                          "name":  "anglers_odyssey:gameplay/fishing/common",
+                                          "weight":  100
+                                      },
+                                      {
+                                          "type":  "minecraft:loot_table",
+                                          "name":  "anglers_odyssey:gameplay/fishing/uncommon",
+                                          "weight":  35
+                                      },
+                                      {
+                                          "type":  "minecraft:loot_table",
+                                          "name":  "anglers_odyssey:gameplay/fishing/rare",
+                                          "weight":  12
+                                      },
+                                      {
+                                          "type":  "minecraft:loot_table",
+                                          "name":  "anglers_odyssey:gameplay/fishing/epic",
+                                          "weight":  4
+                                      },
+                                      {
+                                          "type":  "minecraft:loot_table",
+                                          "name":  "anglers_odyssey:gameplay/fishing/legendary",
+                                          "weight":  1
+                                      }
+                                  ]
+                  }
+              ]
+}
