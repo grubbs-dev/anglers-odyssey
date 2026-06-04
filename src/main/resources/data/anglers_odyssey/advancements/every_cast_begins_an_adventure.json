@@ -1,0 +1,28 @@
+{
+    "criteria":  {
+                     "caught_any_custom_fish":  {
+                                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                                    "conditions":  {
+                                                                       "item":  {
+                                                                                    "tag":  "minecraft:fishes"
+                                                                                }
+                                                                   }
+                                                }
+                 },
+    "parent":  "anglers_odyssey:root",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch your first Angler\u0027s Odyssey fish."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:bluegill"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Every Cast Begins an Adventure"
+                              },
+                    "frame":  "task"
+                }
+}
