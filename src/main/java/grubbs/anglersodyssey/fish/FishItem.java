@@ -1,17 +1,28 @@
 package grubbs.anglersodyssey.fish;
 
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.Registries;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.sound.SoundCategory;
 import java.util.List;
 
 public class FishItem extends Item {
 
     public static final String SHINY_NBT_KEY = "anglers_odyssey_shiny";
+    public static final String WEIGHT_NBT_KEY = "anglers_odyssey_weight";
+    public static final String LENGTH_NBT_KEY = "anglers_odyssey_length";
+    public static final String RECORD_CHECKED_NBT_KEY = "anglers_odyssey_record_checked";
 
     private final FishData fishData;
 
@@ -25,7 +36,6 @@ public class FishItem extends Item {
         Text name = Text.translatable(this.getTranslationKey(stack))
                 .formatted(fishData.rarity().getColor());
 
-        // Legendary decoration
         if (fishData.rarity() == FishRarity.LEGENDARY) {
             name = Text.literal("≋ ")
                     .formatted(Formatting.GOLD)
@@ -33,9 +43,9 @@ public class FishItem extends Item {
                     .append(Text.literal(" ≋").formatted(Formatting.GOLD));
         }
 
-        // Shiny decoration
         if (isShiny(stack)) {
             name = Text.literal("✦ ")
+                    .formatted(Formatting.AQUA)
                     .append(name)
                     .append(Text.literal(" ✦").formatted(Formatting.AQUA));
         }
@@ -45,7 +55,6 @@ public class FishItem extends Item {
 
     @Override
     public boolean hasGlint(ItemStack stack) {
-        // Only Legendary fish get enchantment glint
         return fishData.rarity() == FishRarity.LEGENDARY;
     }
 
@@ -62,6 +71,25 @@ public class FishItem extends Item {
                         .formatted(Formatting.DARK_AQUA)
         );
 
+        if (hasMeasurements(stack)) {
+            tooltip.add(
+                    Text.literal("Weight: " + getWeight(stack) + " lbs")
+                            .formatted(Formatting.GRAY)
+            );
+
+            tooltip.add(
+                    Text.literal("Length: " + getLength(stack) + " in")
+                            .formatted(Formatting.GRAY)
+            );
+
+            if (isTrophy(stack)) {
+                tooltip.add(
+                        Text.literal("★ Trophy Catch ★")
+                                .formatted(Formatting.GOLD, Formatting.BOLD)
+                );
+            }
+        }
+
         if (isShiny(stack)) {
             tooltip.add(
                     Text.literal("✦ Shiny Variant ✦")
@@ -77,9 +105,118 @@ public class FishItem extends Item {
         super.appendTooltip(stack, world, tooltip, context);
     }
 
+    @Override
+public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+    if (world.isClient()) return;
+    if (!(world instanceof ServerWorld serverWorld)) return;
+    if (!(entity instanceof PlayerEntity player)) return;
+
+    if (!hasMeasurements(stack)) {
+        applyRandomMeasurements(stack, world.getRandom());
+    }
+
+    NbtCompound nbt = stack.getOrCreateNbt();
+
+    if (nbt.getBoolean(RECORD_CHECKED_NBT_KEY)) {
+        return;
+    }
+
+    Identifier fishId = Registries.ITEM.getId(this);
+
+    boolean newRecord = FishRecordsState.get(serverWorld)
+            .updateRecord(player.getUuid(), fishId, getWeight(stack), getLength(stack));
+
+    nbt.putBoolean(RECORD_CHECKED_NBT_KEY, true);
+
+        if (newRecord) {
+            player.sendMessage(
+                    Text.literal("New record catch: ")
+                            .formatted(Formatting.GOLD)
+                            .append(getName(stack))
+                            .append(Text.literal(" — " + getWeight(stack) + " lbs, " + getLength(stack) + " in")
+                                    .formatted(Formatting.YELLOW)),
+                    true
+            );
+
+            player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.35F, 1.4F);
+        }
+
+        if (isTrophy(stack)) {
+            player.sendMessage(
+                    Text.literal("Trophy catch: ")
+                            .formatted(Formatting.GOLD, Formatting.BOLD)
+                            .append(getName(stack))
+                            .append(Text.literal(" — " + getWeight(stack) + " lbs, " + getLength(stack) + " in")
+                                    .formatted(Formatting.YELLOW)),
+                    false
+            );
+
+            player.playSound(SoundEvents.BLOCK_NOTE_BLOCK_BELL.value(), SoundCategory.PLAYERS, 0.25F, 1.8F);
+        }
+}
+
     public static boolean isShiny(ItemStack stack) {
         return stack.hasNbt()
                 && stack.getNbt() != null
                 && stack.getNbt().getBoolean(SHINY_NBT_KEY);
+    }
+
+    public static boolean hasMeasurements(ItemStack stack) {
+        return stack.hasNbt()
+                && stack.getNbt() != null
+                && stack.getNbt().contains(WEIGHT_NBT_KEY)
+                && stack.getNbt().contains(LENGTH_NBT_KEY);
+    }
+
+    public static double getWeight(ItemStack stack) {
+        if (!stack.hasNbt() || stack.getNbt() == null) {
+            return 0.0D;
+        }
+
+        return stack.getNbt().getDouble(WEIGHT_NBT_KEY);
+    }
+
+    public static int getLength(ItemStack stack) {
+        if (!stack.hasNbt() || stack.getNbt() == null) {
+            return 0;
+        }
+
+        return stack.getNbt().getInt(LENGTH_NBT_KEY);
+    }
+    public boolean isTrophy(ItemStack stack) {
+    if (!hasMeasurements(stack)) {
+        return false;
+    }
+
+    SizeRange range = getSizeRangeForRarity(fishData.rarity());
+    double trophyThreshold = range.maxWeight * 0.95D;
+
+    return getWeight(stack) >= trophyThreshold;
+}
+
+    private void applyRandomMeasurements(ItemStack stack, Random random) {
+        SizeRange range = getSizeRangeForRarity(fishData.rarity());
+
+        double weight = range.minWeight + random.nextDouble() * (range.maxWeight - range.minWeight);
+        weight = Math.round(weight * 10.0D) / 10.0D;
+
+        int length = range.minLength + random.nextInt(range.maxLength - range.minLength + 1);
+
+        NbtCompound nbt = stack.getOrCreateNbt();
+        nbt.putDouble(WEIGHT_NBT_KEY, weight);
+        nbt.putInt(LENGTH_NBT_KEY, length);
+    }
+
+    private static SizeRange getSizeRangeForRarity(FishRarity rarity) {
+        return switch (rarity) {
+            case COMMON -> new SizeRange(0.2D, 5.0D, 4, 18);
+            case UNCOMMON -> new SizeRange(1.0D, 15.0D, 8, 32);
+            case RARE -> new SizeRange(5.0D, 50.0D, 16, 60);
+            case EPIC -> new SizeRange(20.0D, 200.0D, 30, 120);
+            case LEGENDARY -> new SizeRange(75.0D, 1000.0D, 60, 300);
+        };
+    }
+
+    private record SizeRange(double minWeight, double maxWeight, int minLength, int maxLength) {
     }
 }
