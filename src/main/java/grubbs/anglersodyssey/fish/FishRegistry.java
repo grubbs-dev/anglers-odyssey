@@ -18,19 +18,34 @@ public class FishRegistry {
     public static final Map<String, Item> FISH_ITEMS = new LinkedHashMap<>();
     public static final Map<String, FishData> FISH_DATA = new LinkedHashMap<>();
 
+    public static Item COOKED_FISH;
+
     private static final FoodComponent RAW_FISH_FOOD = new FoodComponent.Builder()
             .hunger(2)
             .saturationModifier(0.1f)
             .build();
 
+    private static final FoodComponent COOKED_FISH_FOOD = new FoodComponent.Builder()
+            .hunger(5)
+            .saturationModifier(0.6f)
+            .build();
+
     public static void register() {
         AnglersOdyssey.LOGGER.info("Registering Angler's Odyssey fish items.");
+
+        COOKED_FISH = Registry.register(
+                Registries.ITEM,
+                new Identifier(AnglersOdyssey.MOD_ID, "cooked_fish"),
+                new Item(new FabricItemSettings().food(COOKED_FISH_FOOD))
+        );
 
         for (FishData fish : FishDatabase.FISH) {
             registerFish(fish);
         }
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(COOKED_FISH);
+
             for (Item fish : FISH_ITEMS.values()) {
                 entries.add(fish);
             }
@@ -39,8 +54,8 @@ public class FishRegistry {
         AnglersOdyssey.LOGGER.info("Registered {} Angler's Odyssey fish.", FISH_ITEMS.size());
     }
 
-       private static void registerFish(FishData fish) {
-            Item item = Registry.register(
+    private static void registerFish(FishData fish) {
+        Item item = Registry.register(
                 Registries.ITEM,
                 new Identifier(AnglersOdyssey.MOD_ID, fish.id()),
                 new FishItem(new FabricItemSettings().food(RAW_FISH_FOOD), fish)
