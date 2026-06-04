@@ -2,7 +2,8 @@ package grubbs.anglersodyssey.fish;
 
 public record FishData(
         String id,
-        String name,
-        FishRarity rarity
+        String displayName,
+        FishRarity rarity,
+        String biome
 ) {
 }

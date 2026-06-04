@@ -39,11 +39,11 @@ public class FishRegistry {
         AnglersOdyssey.LOGGER.info("Registered {} Angler's Odyssey fish.", FISH_ITEMS.size());
     }
 
-    private static void registerFish(FishData fish) {
-        Item item = Registry.register(
+       private static void registerFish(FishData fish) {
+            Item item = Registry.register(
                 Registries.ITEM,
                 new Identifier(AnglersOdyssey.MOD_ID, fish.id()),
-                new Item(new FabricItemSettings().food(RAW_FISH_FOOD))
+                new FishItem(new FabricItemSettings().food(RAW_FISH_FOOD), fish)
         );
 
         FISH_ITEMS.put(fish.id(), item);
