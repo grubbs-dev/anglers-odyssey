@@ -1,64 +1,28 @@
-{
+﻿{
     "criteria":  {
                      "snakehead":  {
-                                       "trigger":  "minecraft:fishing_rod_hooked",
-                                       "conditions":  {
-                                                          "item":  {
-                                                                       "items":  [
-                                                                                     "anglers_odyssey:snakehead"
-                                                                                 ]
-                                                                   }
-                                                      }
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:snakehead" ] } ] }
                                    },
                      "snook":  {
-                                   "trigger":  "minecraft:fishing_rod_hooked",
-                                   "conditions":  {
-                                                      "item":  {
-                                                                   "items":  [
-                                                                                 "anglers_odyssey:snook"
-                                                                             ]
-                                                               }
-                                                  }
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:snook" ] } ] }
                                },
                      "mangrove_snapper":  {
-                                              "trigger":  "minecraft:fishing_rod_hooked",
-                                              "conditions":  {
-                                                                 "item":  {
-                                                                              "items":  [
-                                                                                            "anglers_odyssey:mangrove_snapper"
-                                                                                        ]
-                                                                          }
-                                                             }
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:mangrove_snapper" ] } ] }
                                           },
                      "giant_snakehead":  {
-                                             "trigger":  "minecraft:fishing_rod_hooked",
-                                             "conditions":  {
-                                                                "item":  {
-                                                                             "items":  [
-                                                                                           "anglers_odyssey:giant_snakehead"
-                                                                                       ]
-                                                                         }
-                                                            }
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_snakehead" ] } ] }
                                          },
                      "sawfish":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:sawfish"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sawfish" ] } ] }
                                  },
                      "tarpon":  {
-                                    "trigger":  "minecraft:fishing_rod_hooked",
-                                    "conditions":  {
-                                                       "item":  {
-                                                                    "items":  [
-                                                                                  "anglers_odyssey:tarpon"
-                                                                              ]
-                                                                }
-                                                   }
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:tarpon" ] } ] }
                                 }
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
@@ -98,3 +62,6 @@
                          ]
                      ]
 }
+
+
+

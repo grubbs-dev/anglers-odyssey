@@ -151,5 +151,8 @@
   "item.anglers_odyssey.albino_alligator_gar": "Albino Alligator Gar",
   "item.anglers_odyssey.golden_koi_emperor": "Golden Koi Emperor",
 
-  "item.anglers_odyssey.cooked_fish": "Cooked Fish"
+  "item.anglers_odyssey.cooked_fish": "Cooked Fish",
+
+  "item.anglers_odyssey.anglers_journal": "Angler's Journal",
+  "tooltip.anglers_odyssey.journal": "Records discovered species and trophy catches"
 }

@@ -1,304 +1,124 @@
-{
+﻿{
     "criteria":  {
                      "rock_bass":  {
-                                       "trigger":  "minecraft:fishing_rod_hooked",
-                                       "conditions":  {
-                                                          "item":  {
-                                                                       "items":  [
-                                                                                     "anglers_odyssey:rock_bass"
-                                                                                 ]
-                                                                   }
-                                                      }
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:rock_bass" ] } ] }
                                    },
                      "bluegill":  {
-                                      "trigger":  "minecraft:fishing_rod_hooked",
-                                      "conditions":  {
-                                                         "item":  {
-                                                                      "items":  [
-                                                                                    "anglers_odyssey:bluegill"
-                                                                                ]
-                                                                  }
-                                                     }
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:bluegill" ] } ] }
                                   },
                      "pumpkinseed":  {
-                                         "trigger":  "minecraft:fishing_rod_hooked",
-                                         "conditions":  {
-                                                            "item":  {
-                                                                         "items":  [
-                                                                                       "anglers_odyssey:pumpkinseed"
-                                                                                   ]
-                                                                     }
-                                                        }
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:pumpkinseed" ] } ] }
                                      },
                      "koi":  {
-                                 "trigger":  "minecraft:fishing_rod_hooked",
-                                 "conditions":  {
-                                                    "item":  {
-                                                                 "items":  [
-                                                                               "anglers_odyssey:koi"
-                                                                           ]
-                                                             }
-                                                }
+                                 "trigger":  "minecraft:inventory_changed",
+                                 "conditions": { "items": [ { "items": [ "anglers_odyssey:koi" ] } ] }
                              },
                      "smelt":  {
-                                   "trigger":  "minecraft:fishing_rod_hooked",
-                                   "conditions":  {
-                                                      "item":  {
-                                                                   "items":  [
-                                                                                 "anglers_odyssey:smelt"
-                                                                             ]
-                                                               }
-                                                  }
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:smelt" ] } ] }
                                },
                      "green_sunfish":  {
-                                           "trigger":  "minecraft:fishing_rod_hooked",
-                                           "conditions":  {
-                                                              "item":  {
-                                                                           "items":  [
-                                                                                         "anglers_odyssey:green_sunfish"
-                                                                                     ]
-                                                                       }
-                                                          }
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:green_sunfish" ] } ] }
                                        },
                      "sardine":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:sardine"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sardine" ] } ] }
                                  },
                      "golden_shiner":  {
-                                           "trigger":  "minecraft:fishing_rod_hooked",
-                                           "conditions":  {
-                                                              "item":  {
-                                                                           "items":  [
-                                                                                         "anglers_odyssey:golden_shiner"
-                                                                                     ]
-                                                                       }
-                                                          }
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_shiner" ] } ] }
                                        },
                      "smallmouth_bass":  {
-                                             "trigger":  "minecraft:fishing_rod_hooked",
-                                             "conditions":  {
-                                                                "item":  {
-                                                                             "items":  [
-                                                                                           "anglers_odyssey:smallmouth_bass"
-                                                                                       ]
-                                                                         }
-                                                            }
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:smallmouth_bass" ] } ] }
                                          },
                      "tilapia":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:tilapia"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:tilapia" ] } ] }
                                  },
                      "mosquitofish":  {
-                                          "trigger":  "minecraft:fishing_rod_hooked",
-                                          "conditions":  {
-                                                             "item":  {
-                                                                          "items":  [
-                                                                                        "anglers_odyssey:mosquitofish"
-                                                                                    ]
-                                                                      }
-                                                         }
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:mosquitofish" ] } ] }
                                       },
                      "grass_carp":  {
-                                        "trigger":  "minecraft:fishing_rod_hooked",
-                                        "conditions":  {
-                                                           "item":  {
-                                                                        "items":  [
-                                                                                      "anglers_odyssey:grass_carp"
-                                                                                  ]
-                                                                    }
-                                                       }
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:grass_carp" ] } ] }
                                     },
                      "warmouth":  {
-                                      "trigger":  "minecraft:fishing_rod_hooked",
-                                      "conditions":  {
-                                                         "item":  {
-                                                                      "items":  [
-                                                                                    "anglers_odyssey:warmouth"
-                                                                                ]
-                                                                  }
-                                                     }
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:warmouth" ] } ] }
                                   },
                      "white_perch":  {
-                                         "trigger":  "minecraft:fishing_rod_hooked",
-                                         "conditions":  {
-                                                            "item":  {
-                                                                         "items":  [
-                                                                                       "anglers_odyssey:white_perch"
-                                                                                   ]
-                                                                     }
-                                                        }
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:white_perch" ] } ] }
                                      },
                      "black_crappie":  {
-                                           "trigger":  "minecraft:fishing_rod_hooked",
-                                           "conditions":  {
-                                                              "item":  {
-                                                                           "items":  [
-                                                                                         "anglers_odyssey:black_crappie"
-                                                                                     ]
-                                                                       }
-                                                          }
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:black_crappie" ] } ] }
                                        },
                      "bullhead_catfish":  {
-                                              "trigger":  "minecraft:fishing_rod_hooked",
-                                              "conditions":  {
-                                                                 "item":  {
-                                                                              "items":  [
-                                                                                            "anglers_odyssey:bullhead_catfish"
-                                                                                        ]
-                                                                          }
-                                                             }
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:bullhead_catfish" ] } ] }
                                           },
                      "white_crappie":  {
-                                           "trigger":  "minecraft:fishing_rod_hooked",
-                                           "conditions":  {
-                                                              "item":  {
-                                                                           "items":  [
-                                                                                         "anglers_odyssey:white_crappie"
-                                                                                     ]
-                                                                       }
-                                                          }
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:white_crappie" ] } ] }
                                        },
                      "creek_chub":  {
-                                        "trigger":  "minecraft:fishing_rod_hooked",
-                                        "conditions":  {
-                                                           "item":  {
-                                                                        "items":  [
-                                                                                      "anglers_odyssey:creek_chub"
-                                                                                  ]
-                                                                    }
-                                                       }
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:creek_chub" ] } ] }
                                     },
                      "mackerel":  {
-                                      "trigger":  "minecraft:fishing_rod_hooked",
-                                      "conditions":  {
-                                                         "item":  {
-                                                                      "items":  [
-                                                                                    "anglers_odyssey:mackerel"
-                                                                                ]
-                                                                  }
-                                                     }
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:mackerel" ] } ] }
                                   },
                      "white_bass":  {
-                                        "trigger":  "minecraft:fishing_rod_hooked",
-                                        "conditions":  {
-                                                           "item":  {
-                                                                        "items":  [
-                                                                                      "anglers_odyssey:white_bass"
-                                                                                  ]
-                                                                    }
-                                                       }
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:white_bass" ] } ] }
                                     },
                      "herring":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:herring"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:herring" ] } ] }
                                  },
                      "redear_sunfish":  {
-                                            "trigger":  "minecraft:fishing_rod_hooked",
-                                            "conditions":  {
-                                                               "item":  {
-                                                                            "items":  [
-                                                                                          "anglers_odyssey:redear_sunfish"
-                                                                                      ]
-                                                                        }
-                                                           }
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:redear_sunfish" ] } ] }
                                         },
                      "fathead_minnow":  {
-                                            "trigger":  "minecraft:fishing_rod_hooked",
-                                            "conditions":  {
-                                                               "item":  {
-                                                                            "items":  [
-                                                                                          "anglers_odyssey:fathead_minnow"
-                                                                                      ]
-                                                                        }
-                                                           }
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:fathead_minnow" ] } ] }
                                         },
                      "largemouth_bass":  {
-                                             "trigger":  "minecraft:fishing_rod_hooked",
-                                             "conditions":  {
-                                                                "item":  {
-                                                                             "items":  [
-                                                                                           "anglers_odyssey:largemouth_bass"
-                                                                                       ]
-                                                                         }
-                                                            }
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:largemouth_bass" ] } ] }
                                          },
                      "emerald_shiner":  {
-                                            "trigger":  "minecraft:fishing_rod_hooked",
-                                            "conditions":  {
-                                                               "item":  {
-                                                                            "items":  [
-                                                                                          "anglers_odyssey:emerald_shiner"
-                                                                                      ]
-                                                                        }
-                                                           }
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:emerald_shiner" ] } ] }
                                         },
                      "channel_catfish":  {
-                                             "trigger":  "minecraft:fishing_rod_hooked",
-                                             "conditions":  {
-                                                                "item":  {
-                                                                             "items":  [
-                                                                                           "anglers_odyssey:channel_catfish"
-                                                                                       ]
-                                                                         }
-                                                            }
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:channel_catfish" ] } ] }
                                          },
                      "yellow_perch":  {
-                                          "trigger":  "minecraft:fishing_rod_hooked",
-                                          "conditions":  {
-                                                             "item":  {
-                                                                          "items":  [
-                                                                                        "anglers_odyssey:yellow_perch"
-                                                                                    ]
-                                                                      }
-                                                         }
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:yellow_perch" ] } ] }
                                       },
                      "anchovy":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:anchovy"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:anchovy" ] } ] }
                                  },
                      "whiting":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:whiting"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:whiting" ] } ] }
                                  },
                      "common_carp":  {
-                                         "trigger":  "minecraft:fishing_rod_hooked",
-                                         "conditions":  {
-                                                            "item":  {
-                                                                         "items":  [
-                                                                                       "anglers_odyssey:common_carp"
-                                                                                   ]
-                                                                     }
-                                                        }
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:common_carp" ] } ] }
                                      }
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
@@ -410,3 +230,6 @@
                          ]
                      ]
 }
+
+
+

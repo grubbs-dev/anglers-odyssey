@@ -1,5 +1,7 @@
 package grubbs.anglersodyssey.fish;
 
+import grubbs.anglersodyssey.advancement.AnglersAdvancementHelper;
+import grubbs.anglersodyssey.journal.FishJournalState;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -7,14 +9,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.sound.SoundCategory;
+
 import java.util.List;
 
 public class FishItem extends Item {
@@ -60,7 +64,6 @@ public class FishItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-
         tooltip.add(
                 Text.literal(fishData.rarity().getDisplayName())
                         .formatted(fishData.rarity().getColor())
@@ -106,27 +109,52 @@ public class FishItem extends Item {
     }
 
     @Override
-public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-    if (world.isClient()) return;
-    if (!(world instanceof ServerWorld serverWorld)) return;
-    if (!(entity instanceof PlayerEntity player)) return;
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+        if (world.isClient()) return;
+        if (!(world instanceof ServerWorld serverWorld)) return;
+        if (!(entity instanceof PlayerEntity player)) return;
 
-    if (!hasMeasurements(stack)) {
-        applyRandomMeasurements(stack, world.getRandom());
-    }
+        if (!hasMeasurements(stack)) {
+            applyRandomMeasurements(stack, world.getRandom());
+        }
 
-    NbtCompound nbt = stack.getOrCreateNbt();
+        NbtCompound nbt = stack.getOrCreateNbt();
 
-    if (nbt.getBoolean(RECORD_CHECKED_NBT_KEY)) {
-        return;
-    }
+        if (nbt.getBoolean(RECORD_CHECKED_NBT_KEY)) {
+            return;
+        }
 
-    Identifier fishId = Registries.ITEM.getId(this);
+        Identifier fishId = Registries.ITEM.getId(this);
+        boolean shiny = isShiny(stack);
 
-    boolean newRecord = FishRecordsState.get(serverWorld)
-            .updateRecord(player.getUuid(), fishId, getWeight(stack), getLength(stack));
+        FishJournalState journal = FishJournalState.get(serverWorld);
 
-    nbt.putBoolean(RECORD_CHECKED_NBT_KEY, true);
+        boolean newSpecies = journal.registerCatch(player.getUuid(), fishId, shiny);
+
+        if (newSpecies) {
+            int discovered = journal.getDiscoveredCount(player.getUuid());
+            int total = FishDatabase.FISH.length;
+
+            player.sendMessage(
+                    Text.literal("New species discovered: ")
+                            .formatted(Formatting.AQUA)
+                            .append(getName(stack))
+                            .append(Text.literal(" — " + discovered + " / " + total)
+                                    .formatted(Formatting.GREEN)),
+                    false
+            );
+
+            player.playSound(SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundCategory.PLAYERS, 0.25F, 1.6F);
+        }
+
+        if (shiny && player instanceof ServerPlayerEntity serverPlayer) {
+            AnglersAdvancementHelper.grant(serverPlayer, "first_shiny");
+        }
+
+        boolean newRecord = FishRecordsState.get(serverWorld)
+                .updateRecord(player.getUuid(), fishId, getWeight(stack), getLength(stack));
+
+        nbt.putBoolean(RECORD_CHECKED_NBT_KEY, true);
 
         if (newRecord) {
             player.sendMessage(
@@ -142,6 +170,28 @@ public void inventoryTick(ItemStack stack, World world, Entity entity, int slot,
         }
 
         if (isTrophy(stack)) {
+            int trophies = journal.incrementTrophyCatches(player.getUuid());
+
+            if (player instanceof ServerPlayerEntity serverPlayer) {
+                AnglersAdvancementHelper.grant(serverPlayer, "trophy_1");
+
+                if (trophies >= 5) {
+                    AnglersAdvancementHelper.grant(serverPlayer, "trophy_5");
+                }
+
+                if (trophies >= 10) {
+                    AnglersAdvancementHelper.grant(serverPlayer, "trophy_10");
+                }
+
+                if (trophies >= 50) {
+                    AnglersAdvancementHelper.grant(serverPlayer, "trophy_50");
+                }
+
+                if (trophies >= 100) {
+                    AnglersAdvancementHelper.grant(serverPlayer, "trophy_100");
+                }
+            }
+
             player.sendMessage(
                     Text.literal("Trophy catch: ")
                             .formatted(Formatting.GOLD, Formatting.BOLD)
@@ -153,7 +203,7 @@ public void inventoryTick(ItemStack stack, World world, Entity entity, int slot,
 
             player.playSound(SoundEvents.BLOCK_NOTE_BLOCK_BELL.value(), SoundCategory.PLAYERS, 0.25F, 1.8F);
         }
-}
+    }
 
     public static boolean isShiny(ItemStack stack) {
         return stack.hasNbt()
@@ -183,16 +233,17 @@ public void inventoryTick(ItemStack stack, World world, Entity entity, int slot,
 
         return stack.getNbt().getInt(LENGTH_NBT_KEY);
     }
+
     public boolean isTrophy(ItemStack stack) {
-    if (!hasMeasurements(stack)) {
-        return false;
+        if (!hasMeasurements(stack)) {
+            return false;
+        }
+
+        SizeRange range = getSizeRangeForRarity(fishData.rarity());
+        double trophyThreshold = range.maxWeight * 0.95D;
+
+        return getWeight(stack) >= trophyThreshold;
     }
-
-    SizeRange range = getSizeRangeForRarity(fishData.rarity());
-    double trophyThreshold = range.maxWeight * 0.95D;
-
-    return getWeight(stack) >= trophyThreshold;
-}
 
     private void applyRandomMeasurements(ItemStack stack, Random random) {
         SizeRange range = getSizeRangeForRarity(fishData.rarity());

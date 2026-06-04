@@ -1,0 +1,25 @@
+﻿{
+  "parent": "anglers_odyssey:trophy_5",
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "anglers_odyssey:rainbow_trout"
+    },
+    "title": {
+      "text": "Ten Trophy Catches"
+    },
+    "description": {
+      "text": "Catch 10 trophy fish."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 2,
+    "y": 4
+  }
+}

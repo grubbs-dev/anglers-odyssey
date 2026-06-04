@@ -1,44 +1,20 @@
-{
+﻿{
     "criteria":  {
                      "bluefin_tuna":  {
-                                          "trigger":  "minecraft:fishing_rod_hooked",
-                                          "conditions":  {
-                                                             "item":  {
-                                                                          "items":  [
-                                                                                        "anglers_odyssey:bluefin_tuna"
-                                                                                    ]
-                                                                      }
-                                                         }
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:bluefin_tuna" ] } ] }
                                       },
                      "lake_trout":  {
-                                        "trigger":  "minecraft:fishing_rod_hooked",
-                                        "conditions":  {
-                                                           "item":  {
-                                                                        "items":  [
-                                                                                      "anglers_odyssey:lake_trout"
-                                                                                  ]
-                                                                    }
-                                                       }
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:lake_trout" ] } ] }
                                     },
                      "albacore_tuna":  {
-                                           "trigger":  "minecraft:fishing_rod_hooked",
-                                           "conditions":  {
-                                                              "item":  {
-                                                                           "items":  [
-                                                                                         "anglers_odyssey:albacore_tuna"
-                                                                                     ]
-                                                                       }
-                                                          }
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:albacore_tuna" ] } ] }
                                        },
                      "halibut":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:halibut"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:halibut" ] } ] }
                                  }
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
@@ -72,3 +48,6 @@
                          ]
                      ]
 }
+
+
+

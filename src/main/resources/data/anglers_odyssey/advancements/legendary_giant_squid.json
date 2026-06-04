@@ -1,14 +1,8 @@
-{
+﻿{
     "criteria":  {
                      "caught":  {
-                                    "trigger":  "minecraft:fishing_rod_hooked",
-                                    "conditions":  {
-                                                       "item":  {
-                                                                    "items":  [
-                                                                                  "anglers_odyssey:giant_squid"
-                                                                              ]
-                                                                }
-                                                   }
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_squid" ] } ] }
                                 }
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
@@ -28,3 +22,6 @@
                     "frame":  "challenge"
                 }
 }
+
+
+

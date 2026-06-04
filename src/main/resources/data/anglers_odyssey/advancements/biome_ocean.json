@@ -1,44 +1,20 @@
-{
+﻿{
     "criteria":  {
                      "anchovy":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:anchovy"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:anchovy" ] } ] }
                                  },
                      "bonito":  {
-                                    "trigger":  "minecraft:fishing_rod_hooked",
-                                    "conditions":  {
-                                                       "item":  {
-                                                                    "items":  [
-                                                                                  "anglers_odyssey:bonito"
-                                                                              ]
-                                                                }
-                                                   }
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:bonito" ] } ] }
                                 },
                      "mackerel":  {
-                                      "trigger":  "minecraft:fishing_rod_hooked",
-                                      "conditions":  {
-                                                         "item":  {
-                                                                      "items":  [
-                                                                                    "anglers_odyssey:mackerel"
-                                                                                ]
-                                                                  }
-                                                     }
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:mackerel" ] } ] }
                                   },
                      "sardine":  {
-                                     "trigger":  "minecraft:fishing_rod_hooked",
-                                     "conditions":  {
-                                                        "item":  {
-                                                                     "items":  [
-                                                                                   "anglers_odyssey:sardine"
-                                                                               ]
-                                                                 }
-                                                    }
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sardine" ] } ] }
                                  }
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
@@ -72,3 +48,6 @@
                          ]
                      ]
 }
+
+
+

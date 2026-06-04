@@ -1,4 +1,4 @@
-{
+﻿{
     "criteria":  {
                      "cooked_fish":  {
                                          "trigger":  "minecraft:inventory_changed",
@@ -30,3 +30,6 @@
                     "frame":  "task"
                 }
 }
+
+
+

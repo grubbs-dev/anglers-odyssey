@@ -1,4 +1,4 @@
-{
+﻿{
     "criteria":  {
                      "tick":  {
                                   "trigger":  "minecraft:tick"
@@ -23,3 +23,6 @@
                     "show_toast":  false
                 }
 }
+
+
+

@@ -1,44 +1,20 @@
-{
+﻿{
     "criteria":  {
                      "arctic_char":  {
-                                         "trigger":  "minecraft:fishing_rod_hooked",
-                                         "conditions":  {
-                                                            "item":  {
-                                                                         "items":  [
-                                                                                       "anglers_odyssey:arctic_char"
-                                                                                   ]
-                                                                     }
-                                                        }
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:arctic_char" ] } ] }
                                      },
                      "wolf_fish":  {
-                                       "trigger":  "minecraft:fishing_rod_hooked",
-                                       "conditions":  {
-                                                          "item":  {
-                                                                       "items":  [
-                                                                                     "anglers_odyssey:wolf_fish"
-                                                                                 ]
-                                                                   }
-                                                      }
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:wolf_fish" ] } ] }
                                    },
                      "greenland_shark":  {
-                                             "trigger":  "minecraft:fishing_rod_hooked",
-                                             "conditions":  {
-                                                                "item":  {
-                                                                             "items":  [
-                                                                                           "anglers_odyssey:greenland_shark"
-                                                                                       ]
-                                                                         }
-                                                            }
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:greenland_shark" ] } ] }
                                          },
                      "dolly_varden":  {
-                                          "trigger":  "minecraft:fishing_rod_hooked",
-                                          "conditions":  {
-                                                             "item":  {
-                                                                          "items":  [
-                                                                                        "anglers_odyssey:dolly_varden"
-                                                                                    ]
-                                                                      }
-                                                         }
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:dolly_varden" ] } ] }
                                       }
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
@@ -72,3 +48,6 @@
                          ]
                      ]
 }
+
+
+

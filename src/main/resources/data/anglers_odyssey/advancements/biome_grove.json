@@ -1,14 +1,8 @@
-{
+﻿{
     "criteria":  {
                      "cutthroat_trout":  {
-                                             "trigger":  "minecraft:fishing_rod_hooked",
-                                             "conditions":  {
-                                                                "item":  {
-                                                                             "items":  [
-                                                                                           "anglers_odyssey:cutthroat_trout"
-                                                                                       ]
-                                                                         }
-                                                            }
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:cutthroat_trout" ] } ] }
                                          }
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
@@ -33,3 +27,6 @@
                          ]
                      ]
 }
+
+
+
