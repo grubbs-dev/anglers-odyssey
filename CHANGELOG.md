@@ -7,6 +7,7 @@
 - Migrated custom networking, saved data, advancement lookup, item components, creative tabs, fishing behavior, and the journal UI to the 26.x APIs.
 - Added 26.x biome registry coverage for every stable target, including Dappled Forest in 26.3.
 - Build, registry, dedicated-server, and client-bootstrap gates pass for all five targets; manual fishing/journal validation remains required before publication.
+- Added a runtime validation report documenting dedicated-server and client bootstrap evidence for every 26.x target.
 
 ## 1.2.x — Minecraft 1.21.0 through 1.21.11
 
