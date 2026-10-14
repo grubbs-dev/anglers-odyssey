@@ -607,14 +607,14 @@
                  },
     "parent":  "anglers_odyssey:living_legend",
     "display":  {
-      "x": 1,
-      "y": 5,
+      "y": 7,
+      "x": 0,
                     "description":  {
                                         "text":  "Catch every fish species in Angler\u0027s Odyssey."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:golden_koi_emperor"
+                                 "item":  "anglers_odyssey:golden_koi_emperor"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

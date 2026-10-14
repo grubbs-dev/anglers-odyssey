@@ -123,14 +123,14 @@
                  },
     "parent":  "anglers_odyssey:master_angler",
     "display":  {
+      "y": 5,
       "x": 0,
-      "y": 4,
                     "description":  {
                                         "text":  "Catch every Epic fish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:sailfish"
+                                 "item":  "anglers_odyssey:sailfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

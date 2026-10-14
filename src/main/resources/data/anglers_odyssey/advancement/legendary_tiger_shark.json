@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
+      "y": 9,
       "x": 2,
-      "y": 6,
                     "description":  {
                                         "text":  "Catch a Tiger Shark."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:tiger_shark"
+                                 "item":  "anglers_odyssey:tiger_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

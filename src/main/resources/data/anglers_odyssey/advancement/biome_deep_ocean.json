@@ -103,14 +103,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": -4,
       "y": 2,
+      "x": 0,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Deep Ocean."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:great_white_shark"
+                                 "item":  "anglers_odyssey:great_white_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

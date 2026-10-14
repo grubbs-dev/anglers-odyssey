@@ -27,14 +27,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": 2,
-      "y": 2,
+      "y": 4,
+      "x": -4,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Mangrove Swamp."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:tarpon"
+                                 "item":  "anglers_odyssey:tarpon"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

@@ -19,14 +19,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": -3,
-      "y": 2,
+      "y": 3,
+      "x": -4,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Frozen Ocean."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:greenland_shark"
+                                 "item":  "anglers_odyssey:greenland_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

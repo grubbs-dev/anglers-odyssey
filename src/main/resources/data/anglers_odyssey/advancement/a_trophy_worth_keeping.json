@@ -363,14 +363,14 @@
   },
   "parent": "anglers_odyssey:something_special",
   "display": {
-    "x": 2,
     "y": 3,
+    "x": 2,
     "description": {
       "text": "Catch your first Epic fish."
     },
     "show_toast": true,
     "icon": {
-      "id": "anglers_odyssey:sailfish"
+      "item": "anglers_odyssey:sailfish"
     },
     "hidden": false,
     "announce_to_chat": true,

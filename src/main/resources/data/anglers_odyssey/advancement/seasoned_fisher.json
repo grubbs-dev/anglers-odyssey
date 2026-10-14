@@ -123,14 +123,14 @@
                  },
     "parent":  "anglers_odyssey:local_angler",
     "display":  {
-      "x": 0,
       "y": 3,
+      "x": 0,
                     "description":  {
                                         "text":  "Catch every Uncommon fish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:rainbow_trout"
+                                 "item":  "anglers_odyssey:rainbow_trout"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

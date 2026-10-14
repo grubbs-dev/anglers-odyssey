@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": -2,
-      "y": 5,
+      "y": 6,
+      "x": 3,
                     "description":  {
                                         "text":  "Catch a Colossal Squid."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:colossal_squid"
+                                 "item":  "anglers_odyssey:colossal_squid"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

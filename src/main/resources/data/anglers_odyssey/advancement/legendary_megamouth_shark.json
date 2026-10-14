@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
+      "y": 9,
       "x": -1,
-      "y": 6,
                     "description":  {
                                         "text":  "Catch a Megamouth Shark."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:megamouth_shark"
+                                 "item":  "anglers_odyssey:megamouth_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

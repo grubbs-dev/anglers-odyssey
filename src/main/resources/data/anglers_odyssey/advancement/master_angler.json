@@ -127,14 +127,14 @@
                  },
     "parent":  "anglers_odyssey:seasoned_fisher",
     "display":  {
-      "x": 0,
       "y": 4,
+      "x": 0,
                     "description":  {
                                         "text":  "Catch every Rare fish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:northern_pike"
+                                 "item":  "anglers_odyssey:northern_pike"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

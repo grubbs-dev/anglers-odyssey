@@ -11,14 +11,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": 5,
-      "y": 2,
+      "y": 4,
+      "x": -1,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Stony Shore."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:smallmouth_bass"
+                                 "item":  "anglers_odyssey:smallmouth_bass"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

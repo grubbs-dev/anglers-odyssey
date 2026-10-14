@@ -123,14 +123,14 @@
                  },
     "parent":  "anglers_odyssey:beyond_the_horizon",
     "display":  {
+      "y": 6,
       "x": 0,
-      "y": 5,
                     "description":  {
                                         "text":  "Catch every Legendary fish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:whale_shark"
+                                 "item":  "anglers_odyssey:whale_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

@@ -1,10 +1,10 @@
 {
   "parent": "anglers_odyssey:root",
   "display": {
-    "x": -2,
     "y": 1,
+    "x": -3,
     "icon": {
-      "id": "anglers_odyssey:anglers_journal"
+      "item": "anglers_odyssey:anglers_journal"
     },
     "title": {
       "text": "The Angler's Odyssey"
@@ -18,7 +18,7 @@
     "hidden": false
   },
   "criteria": {
-    "granted": {
+    "impossible": {
       "trigger": "minecraft:impossible"
     }
   }

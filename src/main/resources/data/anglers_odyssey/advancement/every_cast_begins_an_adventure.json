@@ -1,13 +1,20 @@
 {
   "parent": "anglers_odyssey:root",
   "criteria": {
-    "granted": {
-      "trigger": "minecraft:impossible"
+    "caught_any_custom_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "anglers_odyssey:fish"
+          }
+        ]
+      }
     }
   },
   "display": {
-    "x": 0,
     "y": 1,
+    "x": 0,
     "title": {
       "text": "Every Cast Begins an Adventure"
     },
@@ -15,7 +22,7 @@
       "text": "Catch your first Angler's Odyssey fish."
     },
     "icon": {
-      "id": "anglers_odyssey:bluegill"
+      "item": "anglers_odyssey:bluegill"
     },
     "frame": "task",
     "show_toast": true,

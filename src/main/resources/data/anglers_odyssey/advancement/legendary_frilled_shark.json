@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": 3,
-      "y": 5,
+      "y": 7,
+      "x": 1,
                     "description":  {
                                         "text":  "Catch a Frilled Shark."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:frilled_shark"
+                                 "item":  "anglers_odyssey:frilled_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

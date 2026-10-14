@@ -15,14 +15,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": -2,
       "y": 2,
+      "x": -2,
                     "description":  {
                                         "text":  "Cook your first Angler\u0027s Odyssey fish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:cooked_fish"
+                                 "item":  "anglers_odyssey:cooked_fish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

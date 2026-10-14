@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": -8,
-      "y": 5,
+      "y": 6,
+      "x": -3,
                     "description":  {
                                         "text":  "Catch a Abyssal Grenadier."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:abyssal_grenadier"
+                                 "item":  "anglers_odyssey:abyssal_grenadier"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

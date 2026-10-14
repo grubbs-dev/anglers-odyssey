@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": -1,
-      "y": 5,
+      "y": 7,
+      "x": -3,
                     "description":  {
                                         "text":  "Catch a Devil Catfish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:devil_catfish"
+                                 "item":  "anglers_odyssey:devil_catfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

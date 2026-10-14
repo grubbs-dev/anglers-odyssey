@@ -375,14 +375,14 @@
   },
   "parent": "anglers_odyssey:every_cast_begins_an_adventure",
   "display": {
-    "x": 2,
     "y": 2,
+    "x": 2,
     "description": {
       "text": "Catch your first Rare fish."
     },
     "show_toast": true,
     "icon": {
-      "id": "anglers_odyssey:northern_pike"
+      "item": "anglers_odyssey:northern_pike"
     },
     "hidden": false,
     "announce_to_chat": true,

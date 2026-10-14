@@ -19,14 +19,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": 3,
-      "y": 2,
+      "y": 4,
+      "x": -3,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Ocean."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:sardine"
+                                 "item":  "anglers_odyssey:sardine"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

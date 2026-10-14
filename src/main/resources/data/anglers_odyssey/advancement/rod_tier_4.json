@@ -1,9 +1,9 @@
 {
   "parent": "anglers_odyssey:rod_tier_3",
   "display": {
-    "x": 4,
     "y": 4,
-    "icon": { "id": "anglers_odyssey:anglers_rod" },
+    "x": 3,
+    "icon": { "item": "anglers_odyssey:anglers_rod" },
     "title": { "text": "The Angler's Rod" },
     "description": { "text": "Discover 150 fish and earn the Angler's Rod with Master Angler." },
     "frame": "challenge",

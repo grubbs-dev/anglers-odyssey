@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": 5,
-      "y": 5,
+      "y": 7,
+      "x": 3,
                     "description":  {
                                         "text":  "Catch a Giant Isopod Fish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:giant_isopod_fish"
+                                 "item":  "anglers_odyssey:giant_isopod_fish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

@@ -5,8 +5,8 @@
                               }
                  },
     "display":  {
-      "x": 0,
       "y": 0,
+      "x": 0,
                     "background":  "minecraft:textures/block/water_still.png",
                     "announce_to_chat":  false,
                     "frame":  "task",
@@ -20,7 +20,7 @@
                                     },
                     "hidden":  false,
                     "icon":  {
-                                 "id":  "anglers_odyssey:bluegill"
+                                 "item":  "anglers_odyssey:bluegill"
                              },
                     "show_toast":  false
                 }

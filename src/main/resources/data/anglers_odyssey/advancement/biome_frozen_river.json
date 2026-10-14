@@ -19,14 +19,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": -2,
-      "y": 2,
+      "y": 3,
+      "x": -3,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Frozen River."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:smelt"
+                                 "item":  "anglers_odyssey:smelt"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

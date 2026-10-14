@@ -363,14 +363,14 @@
   },
   "parent": "anglers_odyssey:a_trophy_worth_keeping",
   "display": {
+    "y": 5,
     "x": 2,
-    "y": 4,
     "description": {
       "text": "Catch your first Legendary fish."
     },
     "show_toast": true,
     "icon": {
-      "id": "anglers_odyssey:whale_shark"
+      "item": "anglers_odyssey:whale_shark"
     },
     "hidden": false,
     "announce_to_chat": true,

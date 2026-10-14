@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": 7,
-      "y": 5,
+      "y": 8,
+      "x": -2,
                     "description":  {
                                         "text":  "Catch a Goblin Shark."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:goblin_shark"
+                                 "item":  "anglers_odyssey:goblin_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

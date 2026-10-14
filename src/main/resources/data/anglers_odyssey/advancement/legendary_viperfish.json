@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": 4,
-      "y": 6,
+      "y": 10,
+      "x": -3,
                     "description":  {
                                         "text":  "Catch a Viperfish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:viperfish"
+                                 "item":  "anglers_odyssey:viperfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

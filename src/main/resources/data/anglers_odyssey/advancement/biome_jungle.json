@@ -51,14 +51,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": 1,
-      "y": 2,
+      "y": 3,
+      "x": 0,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Jungle."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:arapaima"
+                                 "item":  "anglers_odyssey:arapaima"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

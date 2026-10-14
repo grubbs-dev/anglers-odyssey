@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": -5,
-      "y": 5,
+      "y": 6,
+      "x": 0,
                     "description":  {
                                         "text":  "Catch a Anglerfish."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:anglerfish"
+                                 "item":  "anglers_odyssey:anglerfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

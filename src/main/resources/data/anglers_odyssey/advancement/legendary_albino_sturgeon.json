@@ -7,14 +7,14 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": -6,
-      "y": 5,
+      "y": 6,
+      "x": -1,
                     "description":  {
                                         "text":  "Catch a Albino Sturgeon."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:albino_sturgeon"
+                                 "item":  "anglers_odyssey:albino_sturgeon"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

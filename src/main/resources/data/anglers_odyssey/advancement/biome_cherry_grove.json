@@ -11,14 +11,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": -7,
       "y": 2,
+      "x": -3,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Cherry Grove."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:koi"
+                                 "item":  "anglers_odyssey:koi"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

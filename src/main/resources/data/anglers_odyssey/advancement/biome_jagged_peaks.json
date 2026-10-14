@@ -11,14 +11,14 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
-      "x": 0,
-      "y": 2,
+      "y": 3,
+      "x": -1,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Jagged Peaks."
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "id":  "anglers_odyssey:golden_trout"
+                                 "item":  "anglers_odyssey:golden_trout"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,
