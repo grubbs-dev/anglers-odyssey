@@ -1,0 +1,1089 @@
+{
+    "criteria":  {
+                     "oarfish":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:oarfish" ] } ] }
+                                 },
+                     "swordfish":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:swordfish" ] } ] }
+                                   },
+                     "lane_snapper":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:lane_snapper" ] } ] }
+                                      },
+                     "anchovy":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:anchovy" ] } ] }
+                                 },
+                     "muskellunge":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:muskellunge" ] } ] }
+                                     },
+                     "emerald_shiner":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:emerald_shiner" ] } ] }
+                                        },
+                     "cubera_snapper":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:cubera_snapper" ] } ] }
+                                        },
+                     "tarpon":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:tarpon" ] } ] }
+                                },
+                     "european_catfish":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:european_catfish" ] } ] }
+                                          },
+                     "brook_trout":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:brook_trout" ] } ] }
+                                     },
+                     "white_marlin":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:white_marlin" ] } ] }
+                                      },
+                     "snook":  {
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:snook" ] } ] }
+                               },
+                     "redfish":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:redfish" ] } ] }
+                                 },
+                     "tiger_trout":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:tiger_trout" ] } ] }
+                                     },
+                     "bowfin":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:bowfin" ] } ] }
+                                },
+                     "cobia":  {
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:cobia" ] } ] }
+                               },
+                     "pumpkinseed":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:pumpkinseed" ] } ] }
+                                     },
+                     "barracuda":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:barracuda" ] } ] }
+                                   },
+                     "hammerhead_shark":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:hammerhead_shark" ] } ] }
+                                          },
+                     "triggerfish":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:triggerfish" ] } ] }
+                                     },
+                     "mekong_catfish":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:mekong_catfish" ] } ] }
+                                        },
+                     "white_perch":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:white_perch" ] } ] }
+                                     },
+                     "black_drum":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:black_drum" ] } ] }
+                                    },
+                     "yellow_perch":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:yellow_perch" ] } ] }
+                                      },
+                     "snakehead":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:snakehead" ] } ] }
+                                   },
+                     "dogtooth_tuna":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:dogtooth_tuna" ] } ] }
+                                       },
+                     "blue_catfish":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:blue_catfish" ] } ] }
+                                      },
+                     "coelacanth":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:coelacanth" ] } ] }
+                                    },
+                     "devil_ray":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:devil_ray" ] } ] }
+                                   },
+                     "white_crappie":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:white_crappie" ] } ] }
+                                       },
+                     "striped_bass":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:striped_bass" ] } ] }
+                                      },
+                     "smallmouth_bass":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:smallmouth_bass" ] } ] }
+                                         },
+                     "barreleye_fish":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:barreleye_fish" ] } ] }
+                                        },
+                     "giant_snakehead":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_snakehead" ] } ] }
+                                         },
+                     "alligator_gar":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:alligator_gar" ] } ] }
+                                       },
+                     "warmouth":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:warmouth" ] } ] }
+                                  },
+                     "green_sunfish":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:green_sunfish" ] } ] }
+                                       },
+                     "lingcod":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:lingcod" ] } ] }
+                                 },
+                     "smelt":  {
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:smelt" ] } ] }
+                               },
+                     "wolf_fish":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:wolf_fish" ] } ] }
+                                   },
+                     "bluegill":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:bluegill" ] } ] }
+                                  },
+                     "northern_pike":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:northern_pike" ] } ] }
+                                       },
+                     "bigeye_tuna":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:bigeye_tuna" ] } ] }
+                                     },
+                     "channel_catfish":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:channel_catfish" ] } ] }
+                                         },
+                     "abyssal_grenadier":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:abyssal_grenadier" ] } ] }
+                                           },
+                     "sauger":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:sauger" ] } ] }
+                                },
+                     "blue_marlin":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:blue_marlin" ] } ] }
+                                     },
+                     "albacore_tuna":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:albacore_tuna" ] } ] }
+                                       },
+                     "grass_carp":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:grass_carp" ] } ] }
+                                    },
+                     "giant_gourami":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_gourami" ] } ] }
+                                       },
+                     "giant_isopod_fish":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_isopod_fish" ] } ] }
+                                           },
+                     "amberjack":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:amberjack" ] } ] }
+                                   },
+                     "bluefin_tuna":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:bluefin_tuna" ] } ] }
+                                      },
+                     "viperfish":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:viperfish" ] } ] }
+                                   },
+                     "dorado":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:dorado" ] } ] }
+                                },
+                     "mosquitofish":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:mosquitofish" ] } ] }
+                                      },
+                     "spotted_gar":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:spotted_gar" ] } ] }
+                                     },
+                     "grouper":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:grouper" ] } ] }
+                                 },
+                     "golden_trout":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_trout" ] } ] }
+                                      },
+                     "spanish_mackerel":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:spanish_mackerel" ] } ] }
+                                          },
+                     "hybrid_striped_bass":  {
+                                                 "trigger":  "minecraft:inventory_changed",
+                                                 "conditions": { "items": [ { "items": [ "anglers_odyssey:hybrid_striped_bass" ] } ] }
+                                             },
+                     "black_swallower":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:black_swallower" ] } ] }
+                                         },
+                     "largemouth_bass":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:largemouth_bass" ] } ] }
+                                         },
+                     "koi":  {
+                                 "trigger":  "minecraft:inventory_changed",
+                                 "conditions": { "items": [ { "items": [ "anglers_odyssey:koi" ] } ] }
+                             },
+                     "whale_shark":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:whale_shark" ] } ] }
+                                     },
+                     "dolly_varden":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:dolly_varden" ] } ] }
+                                      },
+                     "devil_catfish":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:devil_catfish" ] } ] }
+                                       },
+                     "giant_squid":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_squid" ] } ] }
+                                     },
+                     "great_white_shark":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:great_white_shark" ] } ] }
+                                           },
+                     "black_crappie":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:black_crappie" ] } ] }
+                                       },
+                     "beluga_sturgeon":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:beluga_sturgeon" ] } ] }
+                                         },
+                     "sawfish":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sawfish" ] } ] }
+                                 },
+                     "fangtooth":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:fangtooth" ] } ] }
+                                   },
+                     "cutthroat_trout":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:cutthroat_trout" ] } ] }
+                                         },
+                     "goonch_catfish":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:goonch_catfish" ] } ] }
+                                        },
+                     "flathead_catfish":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:flathead_catfish" ] } ] }
+                                          },
+                     "yellowtail_snapper":  {
+                                                "trigger":  "minecraft:inventory_changed",
+                                                "conditions": { "items": [ { "items": [ "anglers_odyssey:yellowtail_snapper" ] } ] }
+                                            },
+                     "tilapia":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:tilapia" ] } ] }
+                                 },
+                     "bonefish":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:bonefish" ] } ] }
+                                  },
+                     "herring":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:herring" ] } ] }
+                                 },
+                     "redear_sunfish":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:redear_sunfish" ] } ] }
+                                        },
+                     "golden_shiner":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_shiner" ] } ] }
+                                       },
+                     "golden_koi_emperor":  {
+                                                "trigger":  "minecraft:inventory_changed",
+                                                "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_koi_emperor" ] } ] }
+                                            },
+                     "payara":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:payara" ] } ] }
+                                },
+                     "red_snapper":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:red_snapper" ] } ] }
+                                     },
+                     "chain_pickerel":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:chain_pickerel" ] } ] }
+                                        },
+                     "sailfish":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:sailfish" ] } ] }
+                                  },
+                     "anglerfish":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:anglerfish" ] } ] }
+                                    },
+                     "roosterfish":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:roosterfish" ] } ] }
+                                     },
+                     "halibut":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:halibut" ] } ] }
+                                 },
+                     "lake_trout":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:lake_trout" ] } ] }
+                                    },
+                     "common_carp":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:common_carp" ] } ] }
+                                     },
+                     "giant_trevally":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_trevally" ] } ] }
+                                        },
+                     "mackerel":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:mackerel" ] } ] }
+                                  },
+                     "shortnose_gar":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:shortnose_gar" ] } ] }
+                                       },
+                     "frilled_shark":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:frilled_shark" ] } ] }
+                                       },
+                     "blue_trevally":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:blue_trevally" ] } ] }
+                                       },
+                     "sardine":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sardine" ] } ] }
+                                 },
+                     "whiting":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:whiting" ] } ] }
+                                 },
+                     "dragonfish":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:dragonfish" ] } ] }
+                                    },
+                     "tiger_muskie":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:tiger_muskie" ] } ] }
+                                      },
+                     "white_sturgeon":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:white_sturgeon" ] } ] }
+                                        },
+                     "goliath_tigerfish":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:goliath_tigerfish" ] } ] }
+                                           },
+                     "pompano":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:pompano" ] } ] }
+                                 },
+                     "goliath_grouper":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:goliath_grouper" ] } ] }
+                                         },
+                     "flounder":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:flounder" ] } ] }
+                                  },
+                     "vampire_squid":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:vampire_squid" ] } ] }
+                                       },
+                     "tiger_shark":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:tiger_shark" ] } ] }
+                                     },
+                     "bullhead_catfish":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:bullhead_catfish" ] } ] }
+                                          },
+                     "golden_dorado":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_dorado" ] } ] }
+                                       },
+                     "walleye":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:walleye" ] } ] }
+                                 },
+                     "king_mackerel":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:king_mackerel" ] } ] }
+                                       },
+                     "manta_ray":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:manta_ray" ] } ] }
+                                   },
+                     "wahoo":  {
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:wahoo" ] } ] }
+                               },
+                     "creek_chub":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:creek_chub" ] } ] }
+                                    },
+                     "permit":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:permit" ] } ] }
+                                },
+                     "yellowfin_tuna":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:yellowfin_tuna" ] } ] }
+                                        },
+                     "sheepshead":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:sheepshead" ] } ] }
+                                    },
+                     "brown_trout":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:brown_trout" ] } ] }
+                                     },
+                     "albino_alligator_gar":  {
+                                                  "trigger":  "minecraft:inventory_changed",
+                                                  "conditions": { "items": [ { "items": [ "anglers_odyssey:albino_alligator_gar" ] } ] }
+                                              },
+                     "napoleon_wrasse":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:napoleon_wrasse" ] } ] }
+                                         },
+                     "trevally":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:trevally" ] } ] }
+                                  },
+                     "mahi_mahi":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:mahi_mahi" ] } ] }
+                                   },
+                     "albino_sturgeon":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:albino_sturgeon" ] } ] }
+                                         },
+                     "rainbow_trout":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:rainbow_trout" ] } ] }
+                                       },
+                     "arctic_char":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:arctic_char" ] } ] }
+                                     },
+                     "longnose_gar":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:longnose_gar" ] } ] }
+                                      },
+                     "black_pacu":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:black_pacu" ] } ] }
+                                    },
+                     "lake_sturgeon":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:lake_sturgeon" ] } ] }
+                                       },
+                     "giant_freshwater_stingray":  {
+                                                       "trigger":  "minecraft:inventory_changed",
+                                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_freshwater_stingray" ] } ] }
+                                                   },
+                     "arapaima":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:arapaima" ] } ] }
+                                  },
+                     "chinese_paddlefish":  {
+                                                "trigger":  "minecraft:inventory_changed",
+                                                "conditions": { "items": [ { "items": [ "anglers_odyssey:chinese_paddlefish" ] } ] }
+                                            },
+                     "vermilion_snapper":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:vermilion_snapper" ] } ] }
+                                           },
+                     "mangrove_snapper":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:mangrove_snapper" ] } ] }
+                                          },
+                     "rock_bass":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:rock_bass" ] } ] }
+                                   },
+                     "megamouth_shark":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:megamouth_shark" ] } ] }
+                                         },
+                     "goblin_shark":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:goblin_shark" ] } ] }
+                                      },
+                     "huchen":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:huchen" ] } ] }
+                                },
+                     "paddlefish":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:paddlefish" ] } ] }
+                                    },
+                     "african_tigerfish":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:african_tigerfish" ] } ] }
+                                           },
+                     "freshwater_drum":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:freshwater_drum" ] } ] }
+                                         },
+                     "black_marlin":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:black_marlin" ] } ] }
+                                      },
+                     "colossal_squid":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:colossal_squid" ] } ] }
+                                        },
+                     "bonito":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:bonito" ] } ] }
+                                },
+                     "white_bass":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:white_bass" ] } ] }
+                                    },
+                     "lancetfish":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:lancetfish" ] } ] }
+                                    },
+                     "taimen":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:taimen" ] } ] }
+                                },
+                     "greenland_shark":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:greenland_shark" ] } ] }
+                                         },
+                     "sunfish_mola_mola":  {
+                                               "trigger":  "minecraft:inventory_changed",
+                                               "conditions": { "items": [ { "items": [ "anglers_odyssey:sunfish_mola_mola" ] } ] }
+                                           },
+                     "peacock_bass":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:peacock_bass" ] } ] }
+                                      },
+                     "fathead_minnow":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:fathead_minnow" ] } ] }
+                                        }
+                 },
+    "parent":  "anglers_odyssey:living_legend",
+    "display":  {
+      "y": 5,
+      "x": 1,
+                    "description":  {
+                                        "text":  "Catch every fish species in Angler\u0027s Odyssey."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:golden_koi_emperor"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "bold":  true,
+                                  "color":  "gold",
+                                  "text":  "Angler\u0027s Odyssey"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "bluegill"
+                         ],
+                         [
+                             "pumpkinseed"
+                         ],
+                         [
+                             "green_sunfish"
+                         ],
+                         [
+                             "redear_sunfish"
+                         ],
+                         [
+                             "warmouth"
+                         ],
+                         [
+                             "black_crappie"
+                         ],
+                         [
+                             "white_crappie"
+                         ],
+                         [
+                             "yellow_perch"
+                         ],
+                         [
+                             "white_perch"
+                         ],
+                         [
+                             "rock_bass"
+                         ],
+                         [
+                             "largemouth_bass"
+                         ],
+                         [
+                             "smallmouth_bass"
+                         ],
+                         [
+                             "white_bass"
+                         ],
+                         [
+                             "channel_catfish"
+                         ],
+                         [
+                             "bullhead_catfish"
+                         ],
+                         [
+                             "common_carp"
+                         ],
+                         [
+                             "grass_carp"
+                         ],
+                         [
+                             "koi"
+                         ],
+                         [
+                             "tilapia"
+                         ],
+                         [
+                             "golden_shiner"
+                         ],
+                         [
+                             "fathead_minnow"
+                         ],
+                         [
+                             "creek_chub"
+                         ],
+                         [
+                             "mosquitofish"
+                         ],
+                         [
+                             "emerald_shiner"
+                         ],
+                         [
+                             "sardine"
+                         ],
+                         [
+                             "anchovy"
+                         ],
+                         [
+                             "herring"
+                         ],
+                         [
+                             "smelt"
+                         ],
+                         [
+                             "mackerel"
+                         ],
+                         [
+                             "whiting"
+                         ],
+                         [
+                             "rainbow_trout"
+                         ],
+                         [
+                             "brown_trout"
+                         ],
+                         [
+                             "brook_trout"
+                         ],
+                         [
+                             "cutthroat_trout"
+                         ],
+                         [
+                             "lake_trout"
+                         ],
+                         [
+                             "arctic_char"
+                         ],
+                         [
+                             "striped_bass"
+                         ],
+                         [
+                             "hybrid_striped_bass"
+                         ],
+                         [
+                             "sauger"
+                         ],
+                         [
+                             "walleye"
+                         ],
+                         [
+                             "freshwater_drum"
+                         ],
+                         [
+                             "bowfin"
+                         ],
+                         [
+                             "longnose_gar"
+                         ],
+                         [
+                             "shortnose_gar"
+                         ],
+                         [
+                             "spotted_gar"
+                         ],
+                         [
+                             "redfish"
+                         ],
+                         [
+                             "black_drum"
+                         ],
+                         [
+                             "sheepshead"
+                         ],
+                         [
+                             "flounder"
+                         ],
+                         [
+                             "king_mackerel"
+                         ],
+                         [
+                             "spanish_mackerel"
+                         ],
+                         [
+                             "cobia"
+                         ],
+                         [
+                             "triggerfish"
+                         ],
+                         [
+                             "pompano"
+                         ],
+                         [
+                             "bonefish"
+                         ],
+                         [
+                             "barracuda"
+                         ],
+                         [
+                             "yellowtail_snapper"
+                         ],
+                         [
+                             "mangrove_snapper"
+                         ],
+                         [
+                             "lane_snapper"
+                         ],
+                         [
+                             "vermilion_snapper"
+                         ],
+                         [
+                             "northern_pike"
+                         ],
+                         [
+                             "chain_pickerel"
+                         ],
+                         [
+                             "tiger_muskie"
+                         ],
+                         [
+                             "muskellunge"
+                         ],
+                         [
+                             "blue_catfish"
+                         ],
+                         [
+                             "flathead_catfish"
+                         ],
+                         [
+                             "white_sturgeon"
+                         ],
+                         [
+                             "lake_sturgeon"
+                         ],
+                         [
+                             "paddlefish"
+                         ],
+                         [
+                             "peacock_bass"
+                         ],
+                         [
+                             "snakehead"
+                         ],
+                         [
+                             "taimen"
+                         ],
+                         [
+                             "golden_trout"
+                         ],
+                         [
+                             "tiger_trout"
+                         ],
+                         [
+                             "dolly_varden"
+                         ],
+                         [
+                             "permit"
+                         ],
+                         [
+                             "tarpon"
+                         ],
+                         [
+                             "snook"
+                         ],
+                         [
+                             "grouper"
+                         ],
+                         [
+                             "goliath_grouper"
+                         ],
+                         [
+                             "red_snapper"
+                         ],
+                         [
+                             "cubera_snapper"
+                         ],
+                         [
+                             "mahi_mahi"
+                         ],
+                         [
+                             "yellowfin_tuna"
+                         ],
+                         [
+                             "albacore_tuna"
+                         ],
+                         [
+                             "bonito"
+                         ],
+                         [
+                             "wahoo"
+                         ],
+                         [
+                             "amberjack"
+                         ],
+                         [
+                             "roosterfish"
+                         ],
+                         [
+                             "trevally"
+                         ],
+                         [
+                             "blue_trevally"
+                         ],
+                         [
+                             "sailfish"
+                         ],
+                         [
+                             "black_marlin"
+                         ],
+                         [
+                             "blue_marlin"
+                         ],
+                         [
+                             "white_marlin"
+                         ],
+                         [
+                             "swordfish"
+                         ],
+                         [
+                             "bigeye_tuna"
+                         ],
+                         [
+                             "bluefin_tuna"
+                         ],
+                         [
+                             "giant_trevally"
+                         ],
+                         [
+                             "dogtooth_tuna"
+                         ],
+                         [
+                             "napoleon_wrasse"
+                         ],
+                         [
+                             "arapaima"
+                         ],
+                         [
+                             "alligator_gar"
+                         ],
+                         [
+                             "mekong_catfish"
+                         ],
+                         [
+                             "european_catfish"
+                         ],
+                         [
+                             "beluga_sturgeon"
+                         ],
+                         [
+                             "chinese_paddlefish"
+                         ],
+                         [
+                             "coelacanth"
+                         ],
+                         [
+                             "oarfish"
+                         ],
+                         [
+                             "wolf_fish"
+                         ],
+                         [
+                             "lingcod"
+                         ],
+                         [
+                             "halibut"
+                         ],
+                         [
+                             "giant_snakehead"
+                         ],
+                         [
+                             "dorado"
+                         ],
+                         [
+                             "golden_dorado"
+                         ],
+                         [
+                             "huchen"
+                         ],
+                         [
+                             "goonch_catfish"
+                         ],
+                         [
+                             "african_tigerfish"
+                         ],
+                         [
+                             "payara"
+                         ],
+                         [
+                             "black_pacu"
+                         ],
+                         [
+                             "giant_gourami"
+                         ],
+                         [
+                             "whale_shark"
+                         ],
+                         [
+                             "great_white_shark"
+                         ],
+                         [
+                             "hammerhead_shark"
+                         ],
+                         [
+                             "tiger_shark"
+                         ],
+                         [
+                             "manta_ray"
+                         ],
+                         [
+                             "sawfish"
+                         ],
+                         [
+                             "devil_ray"
+                         ],
+                         [
+                             "sunfish_mola_mola"
+                         ],
+                         [
+                             "giant_squid"
+                         ],
+                         [
+                             "colossal_squid"
+                         ],
+                         [
+                             "megamouth_shark"
+                         ],
+                         [
+                             "goblin_shark"
+                         ],
+                         [
+                             "greenland_shark"
+                         ],
+                         [
+                             "frilled_shark"
+                         ],
+                         [
+                             "vampire_squid"
+                         ],
+                         [
+                             "dragonfish"
+                         ],
+                         [
+                             "barreleye_fish"
+                         ],
+                         [
+                             "anglerfish"
+                         ],
+                         [
+                             "black_swallower"
+                         ],
+                         [
+                             "giant_isopod_fish"
+                         ],
+                         [
+                             "abyssal_grenadier"
+                         ],
+                         [
+                             "lancetfish"
+                         ],
+                         [
+                             "fangtooth"
+                         ],
+                         [
+                             "viperfish"
+                         ],
+                         [
+                             "goliath_tigerfish"
+                         ],
+                         [
+                             "giant_freshwater_stingray"
+                         ],
+                         [
+                             "devil_catfish"
+                         ],
+                         [
+                             "albino_sturgeon"
+                         ],
+                         [
+                             "albino_alligator_gar"
+                         ],
+                         [
+                             "golden_koi_emperor"
+                         ]
+                     ],
+    "rewards":  {
+                    "experience":  500
+                }
+}
+
+
+

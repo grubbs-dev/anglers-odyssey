@@ -1,0 +1,30 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:golden_koi_emperor"
+                                                                              ]
+                                                                }
+                                                   }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch a Golden Koi Emperor."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:golden_koi_emperor"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Royalty of the Pond"
+                              },
+                    "frame":  "challenge"
+                }
+}

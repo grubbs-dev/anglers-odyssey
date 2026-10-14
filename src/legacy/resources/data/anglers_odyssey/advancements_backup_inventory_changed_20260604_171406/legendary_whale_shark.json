@@ -1,0 +1,30 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:whale_shark"
+                                                                              ]
+                                                                }
+                                                   }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch a Whale Shark."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:whale_shark"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Gentle Giant"
+                              },
+                    "frame":  "challenge"
+                }
+}

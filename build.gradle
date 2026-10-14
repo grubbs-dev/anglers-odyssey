@@ -33,6 +33,14 @@ loom {
 
 }
 
+def adapterBand = project.minecraft_version in ["1.20.5", "1.20.6"] ? "component" : "legacy"
+sourceSets.main.java.setSrcDirs(["src/${adapterBand}/java"])
+sourceSets.client.java.setSrcDirs(["src/${adapterBand}-client/java"])
+sourceSets.main.resources.setSrcDirs(["src/${adapterBand}/resources"])
+// Client resources are already packaged by the main source set. Reusing the
+// directory here causes Loom's jar task to see every resource twice.
+sourceSets.client.resources.setSrcDirs([])
+
 fabricApi {
 	configureDataGeneration {
 		client = true
@@ -70,7 +78,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
+	it.options.release = project.java_version.toInteger()
 }
 
 java {
@@ -79,8 +87,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	sourceCompatibility = JavaVersion.toVersion(project.java_version)
+	targetCompatibility = JavaVersion.toVersion(project.java_version)
 }
 
 jar {

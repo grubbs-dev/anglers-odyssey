@@ -1,0 +1,9 @@
+{
+    "ingredient":  {
+                       "item":  "anglers_odyssey:walleye"
+                   },
+    "result":  { "id":  "anglers_odyssey:cooked_fish" },
+    "cookingtime":  100,
+    "experience":  0.35,
+    "type":  "minecraft:smoking"
+}

@@ -1,0 +1,74 @@
+{
+    "criteria":  {
+                     "tiger_trout":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:tiger_trout"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "smelt":  {
+                                   "trigger":  "minecraft:fishing_rod_hooked",
+                                   "conditions":  {
+                                                      "item":  {
+                                                                   "items":  [
+                                                                                 "anglers_odyssey:smelt"
+                                                                             ]
+                                                               }
+                                                  }
+                               },
+                     "taimen":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:taimen"
+                                                                              ]
+                                                                }
+                                                   }
+                                },
+                     "brook_trout":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:brook_trout"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Frozen River."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:smelt"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Frozen River Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "smelt"
+                         ],
+                         [
+                             "brook_trout"
+                         ],
+                         [
+                             "taimen"
+                         ],
+                         [
+                             "tiger_trout"
+                         ]
+                     ]
+}

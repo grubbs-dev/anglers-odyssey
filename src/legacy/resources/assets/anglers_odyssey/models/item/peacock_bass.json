@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/peacock_bass"
+                 },
+    "parent":  "item/generated"
+}

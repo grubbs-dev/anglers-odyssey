@@ -1,0 +1,29 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:whale_shark" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+      "y": 6,
+      "x": 5,
+                    "description":  {
+                                        "text":  "Catch a Whale Shark."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:whale_shark"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Gentle Giant"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+
