@@ -1,1 +1,32 @@
-﻿id,name,rarity,item
+id,name,rarity,item,biome
+sailfish,Sailfish,EPIC,anglers_odyssey:sailfish,Warm Ocean
+black_marlin,Black Marlin,EPIC,anglers_odyssey:black_marlin,Warm Ocean
+blue_marlin,Blue Marlin,EPIC,anglers_odyssey:blue_marlin,Deep Ocean
+white_marlin,White Marlin,EPIC,anglers_odyssey:white_marlin,Deep Ocean
+swordfish,Swordfish,EPIC,anglers_odyssey:swordfish,Deep Ocean
+bigeye_tuna,Bigeye Tuna,EPIC,anglers_odyssey:bigeye_tuna,Deep Ocean
+bluefin_tuna,Bluefin Tuna,EPIC,anglers_odyssey:bluefin_tuna,Deep Cold Ocean
+giant_trevally,Giant Trevally,EPIC,anglers_odyssey:giant_trevally,Warm Ocean
+dogtooth_tuna,Dogtooth Tuna,EPIC,anglers_odyssey:dogtooth_tuna,Warm Ocean
+napoleon_wrasse,Napoleon Wrasse,EPIC,anglers_odyssey:napoleon_wrasse,Warm Ocean
+arapaima,Arapaima,EPIC,anglers_odyssey:arapaima,Jungle
+alligator_gar,Alligator Gar,EPIC,anglers_odyssey:alligator_gar,Swamp
+mekong_catfish,Mekong Catfish,EPIC,anglers_odyssey:mekong_catfish,Jungle
+european_catfish,European Catfish,EPIC,anglers_odyssey:european_catfish,River
+beluga_sturgeon,Beluga Sturgeon,EPIC,anglers_odyssey:beluga_sturgeon,River
+chinese_paddlefish,Chinese Paddlefish,EPIC,anglers_odyssey:chinese_paddlefish,River
+coelacanth,Coelacanth,EPIC,anglers_odyssey:coelacanth,Deep Ocean
+oarfish,Oarfish,EPIC,anglers_odyssey:oarfish,Deep Ocean
+wolf_fish,Wolf Fish,EPIC,anglers_odyssey:wolf_fish,Frozen Ocean
+lingcod,Lingcod,EPIC,anglers_odyssey:lingcod,Cold Ocean
+halibut,Halibut,EPIC,anglers_odyssey:halibut,Deep Cold Ocean
+giant_snakehead,Giant Snakehead,EPIC,anglers_odyssey:giant_snakehead,Mangrove Swamp
+dorado,Dorado,EPIC,anglers_odyssey:dorado,Jungle
+golden_dorado,Golden Dorado,EPIC,anglers_odyssey:golden_dorado,Jungle
+huchen,Huchen,EPIC,anglers_odyssey:huchen,Jagged Peaks
+goonch_catfish,Goonch Catfish,EPIC,anglers_odyssey:goonch_catfish,Stony Shore
+african_tigerfish,African Tigerfish,EPIC,anglers_odyssey:african_tigerfish,Jungle
+payara,Payara,EPIC,anglers_odyssey:payara,Jungle
+black_pacu,Black Pacu,EPIC,anglers_odyssey:black_pacu,Jungle
+giant_gourami,Giant Gourami,EPIC,anglers_odyssey:giant_gourami,Jungle
+

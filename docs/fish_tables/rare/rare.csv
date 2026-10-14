@@ -1,1 +1,33 @@
-﻿id,name,rarity,item
+id,name,rarity,item,biome
+northern_pike,Northern Pike,RARE,anglers_odyssey:northern_pike,River
+chain_pickerel,Chain Pickerel,RARE,anglers_odyssey:chain_pickerel,Swamp
+tiger_muskie,Tiger Muskie,RARE,anglers_odyssey:tiger_muskie,River
+muskellunge,Muskellunge,RARE,anglers_odyssey:muskellunge,River
+blue_catfish,Blue Catfish,RARE,anglers_odyssey:blue_catfish,River
+flathead_catfish,Flathead Catfish,RARE,anglers_odyssey:flathead_catfish,Swamp
+white_sturgeon,White Sturgeon,RARE,anglers_odyssey:white_sturgeon,River
+lake_sturgeon,Lake Sturgeon,RARE,anglers_odyssey:lake_sturgeon,River
+paddlefish,Paddlefish,RARE,anglers_odyssey:paddlefish,River
+peacock_bass,Peacock Bass,RARE,anglers_odyssey:peacock_bass,Jungle
+snakehead,Snakehead,RARE,anglers_odyssey:snakehead,Mangrove Swamp
+taimen,Taimen,RARE,anglers_odyssey:taimen,Frozen River
+golden_trout,Golden Trout,RARE,anglers_odyssey:golden_trout,Jagged Peaks
+tiger_trout,Tiger Trout,RARE,anglers_odyssey:tiger_trout,Frozen River
+dolly_varden,Dolly Varden,RARE,anglers_odyssey:dolly_varden,Frozen Ocean
+permit,Permit,RARE,anglers_odyssey:permit,Beach
+tarpon,Tarpon,RARE,anglers_odyssey:tarpon,Mangrove Swamp
+snook,Snook,RARE,anglers_odyssey:snook,Mangrove Swamp
+grouper,Grouper,RARE,anglers_odyssey:grouper,Warm Ocean
+goliath_grouper,Goliath Grouper,RARE,anglers_odyssey:goliath_grouper,Warm Ocean
+red_snapper,Red Snapper,RARE,anglers_odyssey:red_snapper,Warm Ocean
+cubera_snapper,Cubera Snapper,RARE,anglers_odyssey:cubera_snapper,Warm Ocean
+mahi_mahi,Mahi-Mahi,RARE,anglers_odyssey:mahi_mahi,Warm Ocean
+yellowfin_tuna,Yellowfin Tuna,RARE,anglers_odyssey:yellowfin_tuna,Deep Ocean
+albacore_tuna,Albacore Tuna,RARE,anglers_odyssey:albacore_tuna,Deep Cold Ocean
+bonito,Bonito,RARE,anglers_odyssey:bonito,Ocean
+wahoo,Wahoo,RARE,anglers_odyssey:wahoo,Warm Ocean
+amberjack,Amberjack,RARE,anglers_odyssey:amberjack,Deep Ocean
+roosterfish,Roosterfish,RARE,anglers_odyssey:roosterfish,Beach
+trevally,Trevally,RARE,anglers_odyssey:trevally,Warm Ocean
+blue_trevally,Blue Trevally,RARE,anglers_odyssey:blue_trevally,Warm Ocean
+
