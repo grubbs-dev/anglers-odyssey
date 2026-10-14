@@ -100,7 +100,13 @@ tasks.register("validateCompatibility") {
 		def biomeRegions = fileTree(resourceRoot).matching { include "data/anglers_odyssey/tags/worldgen/biome/regions/*.json" }.files
 		def fishData = file("${commonRoot}/grubbs/anglersodyssey/fish/FishDatabase.java")
 		assert fishData.exists(): "Fish database is missing for ${adapterBand} adapter"
-		assert fishData.text.count("new FishData(") == 151: "Expected 151 fish definitions"
+		def fishEntries = fishData.text.findAll(/new FishData\("([^"]+)",\s*"[^"]+",\s*FishRarity\.[A-Z]+,\s*"([^"]+)"\)/)
+		assert fishEntries.size() == 151: "Expected 151 fish definitions, found ${fishEntries.size()}"
+		def fishHabitats = fishEntries.collect { match -> match.replaceFirst(/^.*FishRarity\.[A-Z]+,\s*"([^"]+)"\).*$/, '$1') }.findAll { it }
+		assert fishHabitats.size() == 151: "Every fish must have a non-empty habitat"
+		def expectedHabitats = fishHabitats.collect { it.toLowerCase(Locale.ROOT).replace(' ', '_') }.toSet()
+		def habitatTags = biomeRegions.collect { it.name - '.json' } as Set
+		assert expectedHabitats.every { habitatTags.contains(it) }: "Fish habitat has no matching biome region tag: ${expectedHabitats - habitatTags}"
 		assert advancements.size() == 69: "Expected 69 advancement files, found ${advancements.size()}"
 		assert fishingLoot.size() == 5: "Expected five rarity fishing loot tables, found ${fishingLoot.size()}"
 		assert biomeRegions.size() == 16: "Expected 16 biome region tags, found ${biomeRegions.size()}"
