@@ -23,6 +23,13 @@ repositories {
 
 loom {
 	splitEnvironmentSourceSets()
+	def serverRunDirectory = project.findProperty("run_dir") ?: "run"
+	runs {
+		server {
+			server()
+			runDir serverRunDirectory
+		}
+	}
 
 	mods {
 		"anglers-odyssey" {

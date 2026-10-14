@@ -4,6 +4,7 @@
 
 - Added the component-era 1.20.5+ item, tooltip, persistence, networking, rendering, and fishing-data adapter.
 - Updated custom fish loot to use `minecraft:set_custom_data`, component-era recipe results, and component-era advancement icons.
+- Corrected the component-era Angler's Journal recipe result schema and completed isolated dedicated-server smoke validation for 1.20.2 through 1.20.6.
 - Updated Fabric metadata and Java requirements for Minecraft 1.20.6.
 
 ## 1.0.5 — Minecraft 1.20.5
