@@ -51,7 +51,10 @@ jobs:
       - name: setup jdk
         uses: actions/setup-java@v5
         with:
-          java-version: ${{ matrix.java }}
+          # Fabric Loom 1.16.3 requires a Java 21 runtime to configure Gradle.
+          # The matrix's java value remains the target Java requirement written
+          # into each mod artifact, so 1.20.2–1.20.4 still declare Java 17.
+          java-version: '21'
           distribution: 'microsoft'
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
