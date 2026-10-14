@@ -78,7 +78,7 @@ The first build downloads the Gradle and Fabric dependencies. The dev client use
 
 ## Release build
 
-Run `./gradlew.bat clean build` from PowerShell. The 1.21.1 distributable JAR is written to `build/libs/anglers-odyssey-1.1.1-mc-1.21.1.jar`; the sources JAR is not required for player installation.
+Run `./gradlew.bat clean build` from PowerShell. For this 1.20.1 project checkout, the distributable JAR is written to `build/libs/anglers-odyssey-1.0.1-mc-1.20.1.jar`; the sources JAR is not required for player installation. The 1.21.1 release is built from its version branch.
 
 ## Project structure
 

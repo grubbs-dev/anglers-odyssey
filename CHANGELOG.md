@@ -1,13 +1,19 @@
 # Changelog
 
-## 1.1.1 — Minecraft 1.21.1
+## 1.0.1 — Minecraft 1.20.1
 
-Quality-of-life maintenance release following the 1.21.1 port.
+Maintenance release for the original 1.20.1 experience.
 
 - Fixed custom rods switching to their cast-state texture while fishing.
 - Tightened the Angler's Odyssey advancement tree layout.
 - Added mouse-wheel panning for the advancement tree.
 - Preserved existing fish, progression, journal records, worlds, and persistence behavior.
+
+## 1.1.1 — Minecraft 1.21.1
+
+Quality-of-life maintenance release following the 1.21.1 port.
+
+The 1.21.1 release includes the same advancement-navigation and rod-rendering improvements, plus the version-specific data, component, networking, and rendering migrations described below.
 
 ## 1.1.0 — Minecraft 1.21.1
 
@@ -33,3 +39,6 @@ Angler's Odyssey now supports Minecraft 1.21.1 with a dedicated, version-qualifi
 - Fixed journal rendering order so Minecraft's 1.21.1 background blur does not blur the journal itself.
 
 Client and dedicated-server smoke tests passed in the development environment. The 1.21.1 file is approved for CurseForge upload; publication itself is managed from the existing Angler's Odyssey project page.
+## 1.0.0 — Minecraft 1.20.1
+
+Initial Angler's Odyssey release with 151 fish, the Angler's Journal, four unlockable rods, shiny variants, trophy catches, and biome-based fishing.
