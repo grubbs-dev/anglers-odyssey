@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 public class FishingBobberEntityRendererMixin {
 
     @Redirect(
-            method = "getHandPos",
+            method = "render",
             at = @At(
                     value = "INVOKE",
                     target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"

@@ -12,9 +12,9 @@ public abstract class AdvancementsScreenMouseMixin {
     @Shadow
     private AdvancementTab selectedTab;
 
-    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double amount) {
+    public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
         if (selectedTab != null) {
-            selectedTab.move(horizontalAmount * 24.0D, amount * 24.0D);
+            selectedTab.move(0.0D, amount * 24.0D);
             return true;
         }
         return false;

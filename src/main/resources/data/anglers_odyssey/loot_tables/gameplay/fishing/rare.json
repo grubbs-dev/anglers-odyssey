@@ -1,0 +1,537 @@
+﻿{
+    "type":  "minecraft:fishing",
+    "pools":  [
+                  {
+                      "rolls":  1,
+                      "entries":  [
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:northern_pike",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:chain_pickerel",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:tiger_muskie",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:muskellunge",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:blue_catfish",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:flathead_catfish",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:white_sturgeon",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:lake_sturgeon",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:paddlefish",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:peacock_bass",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:snakehead",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:taimen",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:golden_trout",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:tiger_trout",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:dolly_varden",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:permit",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:tarpon",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:snook",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:grouper",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:goliath_grouper",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:red_snapper",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:cubera_snapper",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:mahi_mahi",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:yellowfin_tuna",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:albacore_tuna",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:bonito",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:wahoo",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:amberjack",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:roosterfish",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:trevally",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      },
+                                      {
+                                          "type":  "minecraft:item",
+                                          "name":  "anglers_odyssey:blue_trevally",
+                                          "weight":  1,
+                                          "functions":  [
+                                                            {
+                                                                "function":  "minecraft:set_nbt",
+                                                                "conditions":  [
+                                                                                   {
+                                                                                       "condition":  "minecraft:random_chance",
+                                                                                       "chance":  0.000244140625
+                                                                                   }
+                                                                               ],
+                                                                "tag":  "{anglers_odyssey_shiny:1b}"
+                                                            }
+                                                        ]
+                                      }
+                                  ]
+                  }
+              ]
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "anglers_odyssey:every_cast_begins_an_adventure",
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "anglers_odyssey:koi"
+    },
+    "title": {
+      "text": "A Glimmer Beneath the Waves"
+    },
+    "description": {
+      "text": "Catch your first shiny fish."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": -2,
+    "y": 3
+}
+}
