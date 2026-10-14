@@ -7,6 +7,8 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
+      "x": -6,
+      "y": 5,
                     "description":  {
                                         "text":  "Catch a Albino Sturgeon."
                                     },

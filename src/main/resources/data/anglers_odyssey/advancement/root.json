@@ -5,6 +5,8 @@
                               }
                  },
     "display":  {
+      "x": 0,
+      "y": 0,
                     "background":  "minecraft:textures/block/water_still.png",
                     "announce_to_chat":  false,
                     "frame":  "task",

@@ -1,6 +1,8 @@
 {
   "parent": "anglers_odyssey:root",
   "display": {
+    "x": 2,
+    "y": 1,
     "icon": { "id": "anglers_odyssey:reed_rod" },
     "title": { "text": "A Better Start" },
     "description": { "text": "Discover 20 fish and earn the Reed Rod with Steady Grip." },

@@ -2,7 +2,6 @@ package grubbs.anglersodyssey.client;
 
 import grubbs.anglersodyssey.journal.FishJournalClient;
 import grubbs.anglersodyssey.fish.RodRegistry;
-import grubbs.anglersodyssey.fish.AnglersFishingBobberAccess;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
@@ -28,8 +27,10 @@ public class AnglersOdysseyClient implements ClientModInitializer {
     private static void registerRodCastPredicate(Item rod, Identifier cast) {
         ModelPredicateProviderRegistry.register(rod, cast,
                 (stack, world, entity, seed) -> entity instanceof PlayerEntity player
-                        && player.fishHook instanceof AnglersFishingBobberAccess bobber
-                        && bobber.anglers_odyssey$getCastRod() == stack.getItem()
+                        // The bobber's custom cast-rod field is server-side state and is not
+                        // synchronized to the client. The active hook plus the held rod is
+                        // the reliable client-side equivalent for the cast model predicate.
+                        && player.fishHook != null
                         && (player.getMainHandStack().getItem() == stack.getItem()
                         || player.getOffHandStack().getItem() == stack.getItem())
                         ? 1.0F : 0.0F);
