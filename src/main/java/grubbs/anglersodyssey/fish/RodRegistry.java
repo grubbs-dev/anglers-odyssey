@@ -1,7 +1,7 @@
 package grubbs.anglersodyssey.fish;
 
 import grubbs.anglersodyssey.AnglersOdyssey;
-import net.minecraft.item.Item;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -38,8 +38,8 @@ public final class RodRegistry {
     private static Item registerRod(String id, int tier, int durability, int lureLevel, int luckLevel, int unlockCount, String specialAbility) {
         return Registry.register(
                 Registries.ITEM,
-                Identifier.of(AnglersOdyssey.MOD_ID, id),
-                new AnglersRodItem(new Item.Settings().maxCount(1).maxDamage(durability),
+                new Identifier(AnglersOdyssey.MOD_ID, id),
+                new AnglersRodItem(new FabricItemSettings().maxCount(1).maxDamage(durability),
                         tier, lureLevel, luckLevel, unlockCount, specialAbility)
         );
     }

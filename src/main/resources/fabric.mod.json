@@ -3,16 +3,12 @@
 	"id": "anglers_odyssey",
 	"version": "${version}",
 	"name": "Angler's Odyssey",
-	"description": "Turn every cast into a small adventure: discover 151 fish, fill your journal, chase shiny and trophy catches, and earn better rods as your collection grows.",
+	"description": "A fishing-focused Fabric mod that expands Minecraft's waters with new fish, bait, fishing progression, treasures, and legendary catches.",
 	"authors": [
 		"grubbs"
 	],
-	"contact": {
-		"homepage": "https://github.com/grubbs-dev/anglers-odyssey",
-		"sources": "https://github.com/grubbs-dev/anglers-odyssey",
-		"issues": "https://github.com/grubbs-dev/anglers-odyssey/issues"
-	},
-	"license": "CC0-1.0",
+	"contact": {},
+	"license": "All Rights Reserved",
 	"icon": "assets/anglers_odyssey/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -34,8 +30,8 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.16.5",
-		"minecraft": "~1.21.1",
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	}

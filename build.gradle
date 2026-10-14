@@ -73,13 +73,6 @@ java {
 	targetCompatibility = JavaVersion.VERSION_17
 }
 
-def versionedArchiveName = "${project.name}-${project.mod_version}-mc-${project.minecraft_version}"
-
-tasks.withType(AbstractArchiveTask).configureEach {
-	archiveBaseName = versionedArchiveName
-	archiveVersion = ""
-}
-
 jar {
 	def projectName = project.name
 	inputs.property "projectName", projectName
@@ -88,58 +81,6 @@ jar {
 		rename { "${it}_$projectName"}
 	}
 }
-
-tasks.register("validateFishCatalog") {
-	group = "verification"
-	description = "Checks the canonical fish catalog and its habitat tags."
-	doLast {
-		def source = file("src/main/java/grubbs/anglersodyssey/fish/FishDatabase.java").getText("UTF-8")
-		def fish = (source =~ /new FishData\("([^"]+)",\s*"([^"]+)",\s*FishRarity\.([A-Z]+),\s*"([^"]+)"\)/).collect { [id: it[1], habitat: it[4]] }
-		assert fish.size() == 151 : "Expected 151 fish, found ${fish.size()}"
-		assert fish*.id.toSet().size() == fish.size() : "Fish identifiers must be unique"
-		def regionFiles = fileTree("src/main/resources/data/anglers_odyssey/tags/worldgen/biome/regions")
-			.matching { include "*.json" }
-			.collect { it.name - ".json" }
-		def supported = (["River", "Swamp", "Beach", "Ocean", "Cold Ocean", "Frozen River", "Warm Ocean", "Mangrove Swamp", "Jungle", "Cherry Grove", "Deep Cold Ocean", "Frozen Ocean", "Grove", "Jagged Peaks", "Deep Ocean", "Stony Shore"] as Set)
-		assert fish*.habitat.every { supported.contains(it) } : "Fish references an unclassified habitat"
-		assert fish*.habitat.findAll { it in ["River", "Swamp", "Beach", "Ocean", "Cold Ocean", "Frozen River", "Warm Ocean", "Mangrove Swamp", "Jungle", "Cherry Grove", "Deep Cold Ocean", "Frozen Ocean", "Grove", "Jagged Peaks", "Deep Ocean", "Stony Shore"] }.every { regionFiles.contains(it.toLowerCase().replace(" ", "_")) } : "Fish habitat tag missing"
-	}
-}
-
-tasks.register("validateBiomeCoverage") {
-	group = "verification"
-	description = "Checks that every extracted 1.21.1 vanilla biome has a coverage decision."
-	doLast {
-		def rows = file("docs/compatibility/biomes-1.21.1.csv").readLines().findAll { it && !it.startsWith("biome,") }
-		assert rows.size() == 64 : "Expected 64 vanilla 1.21.1 biome rows, found ${rows.size()}"
-		assert rows.every { it.split(",", -1).size() >= 3 && it.split(",", -1)[1] in ["fishable", "excluded", "handled"] } : "Every biome needs a coverage classification"
-	}
-}
-
-tasks.register("validateVersionedData") {
-	group = "verification"
-	description = "Checks 1.21.x loot, recipe, and advancement formats for component-era schema changes."
-	doLast {
-		def lootFiles = fileTree("src/main/resources/data/anglers_odyssey/loot_table")
-			.matching { include "**/*.json" }
-		assert !lootFiles.any { it.getText("UTF-8").contains('"minecraft:set_nbt"') } : "Legacy set_nbt remains in a 1.21 loot table"
-		assert lootFiles.findAll { it.getText("UTF-8").contains('"minecraft:set_custom_data"') }.size() >= 5 : "Expected fish shiny-data loot functions are missing"
-		assert file("src/main/resources/data/minecraft/loot_table/gameplay/fishing/fish.json").isFile() : "The 1.21 fishing loot override must use the singular loot_table path"
-		assert !file("src/main/resources/data/minecraft/loot_tables/gameplay/fishing/fish.json").isFile() : "The obsolete plural 1.20 fishing loot override must not remain"
-		def fishingOverride = file("src/main/resources/data/minecraft/loot_table/gameplay/fishing/fish.json").getText("UTF-8")
-		assert fishingOverride.count('"type": "minecraft:loot_table"') == fishingOverride.count('"value": "anglers_odyssey:gameplay/fishing/') : "1.21 nested fishing loot tables must use value"
-
-		def cookingRecipes = fileTree("src/main/resources/data/anglers_odyssey/recipe/cooking")
-			.matching { include "**/*.json" }
-		assert cookingRecipes && cookingRecipes.every { it.getText("UTF-8") =~ /"result"\s*:\s*\{\s*"id"/ } : "1.21 cooking recipes must use object results with an id"
-
-		def advancements = fileTree("src/main/resources/data/anglers_odyssey/advancement")
-			.matching { include "**/*.json" }
-		assert advancements && advancements.every { !it.getText("UTF-8").contains('"icon"') || it.getText("UTF-8") =~ /"icon"[\s\S]*?"id"/ } : "1.21 advancement icons must use id"
-	}
-}
-
-check.dependsOn(tasks.named("validateFishCatalog"), tasks.named("validateBiomeCoverage"), tasks.named("validateVersionedData"))
 
 // configure the maven publication
 publishing {

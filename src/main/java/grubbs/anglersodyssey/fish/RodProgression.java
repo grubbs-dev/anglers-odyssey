@@ -42,7 +42,12 @@ public final class RodProgression {
                                 .formatted(Formatting.GREEN)),
                 false
         );
-        player.playSound(SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, 0.4F, 1.25F);
+        player.playSound(
+                SoundEvents.UI_TOAST_CHALLENGE_COMPLETE,
+                SoundCategory.PLAYERS,
+                0.4F,
+                1.25F
+        );
         AnglersAdvancementHelper.grant(player, "rod_tier_" + targetTier);
     }
 

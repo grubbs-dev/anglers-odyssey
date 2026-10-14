@@ -1,9 +1,8 @@
 # Angler's Odyssey
 
-Angler's Odyssey is a cozy, collection-focused fishing adventure for Fabric. Cast into rivers, lakes, oceans, and other habitats to discover 151 fish, chase shiny variants, land trophy catches, and work your way through four custom rod tiers.
+Angler's Odyssey is a cozy, collection-focused fishing adventure for Fabric 1.20.1. Cast into rivers, lakes, oceans, and other habitats to discover 151 fish, chase shiny variants, land trophy catches, and work your way through four custom rod tiers.
 
 [![Minecraft 1.20.1](https://img.shields.io/badge/Minecraft-1.20.1-5b8c3a?style=flat-square)](https://fabricmc.net/)
-[![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-3f7f5f?style=flat-square)](https://fabricmc.net/)
 [![Fabric](https://img.shields.io/badge/Loader-Fabric-dbd0b4?style=flat-square)](https://fabricmc.net/)
 [![Release](https://img.shields.io/github/v/release/grubbs-dev/anglers-odyssey?style=flat-square&color=cf8f35)](https://github.com/grubbs-dev/anglers-odyssey/releases)
 
@@ -25,20 +24,11 @@ Angler's Odyssey is a cozy, collection-focused fishing adventure for Fabric. Cas
 - Unlock stronger rods as you discover species, each with a custom fishing bonus alongside vanilla rod enchantments.
 - Find trophy catches and celebrate new species with in-game announcements.
 
-## Supported versions
-
-- Minecraft 1.20.1 — released baseline (`1.0.0`)
-- Minecraft 1.21.1 — current release (`1.1.1`)
-
-Each Minecraft version has its own JAR. Install only the file matching your Minecraft version.
-
-See the [compatibility audit](docs/compatibility/release-matrix.md) for supported versions and port status.
-
 ## Installation
 
-1. Install a supported Minecraft version with Fabric Loader.
-2. Install the matching Fabric API version.
-3. Place the matching `anglers-odyssey-<version>-mc-<minecraft-version>.jar` in the instance's `mods` folder.
+1. Install Minecraft 1.20.1 with Fabric Loader.
+2. Install Fabric API for Minecraft 1.20.1.
+3. Place `anglers-odyssey-1.0.1-mc-1.20.1.jar` in the instance's `mods` folder.
 4. Launch the Fabric profile and fish with a vanilla or Angler's Odyssey rod.
 
 The mod is designed for both client and dedicated-server play. Install the same mod and Fabric API versions on the server and every client.
@@ -78,7 +68,7 @@ The first build downloads the Gradle and Fabric dependencies. The dev client use
 
 ## Release build
 
-Run `./gradlew.bat clean build` from PowerShell. For this 1.20.1 project checkout, the distributable JAR is written to `build/libs/anglers-odyssey-1.0.1-mc-1.20.1.jar`; the sources JAR is not required for player installation. The 1.21.1 release is built from its version branch.
+Run `./gradlew.bat clean build` from PowerShell. The distributable JAR is written to `build/libs/anglers-odyssey-1.0.1-mc-1.20.1.jar`; the sources JAR is not required for player installation.
 
 ## Project structure
 

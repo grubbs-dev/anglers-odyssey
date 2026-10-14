@@ -1,7 +1,7 @@
 package grubbs.anglersodyssey.journal;
 
 import grubbs.anglersodyssey.AnglersOdyssey;
-import net.minecraft.item.Item;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -16,8 +16,8 @@ public class FishJournalRegistry {
     public static void register() {
         ANGLERS_JOURNAL = Registry.register(
                 Registries.ITEM,
-                Identifier.of(AnglersOdyssey.MOD_ID, "anglers_journal"),
-                new FishJournalItem(new Item.Settings().maxCount(1))
+                new Identifier(AnglersOdyssey.MOD_ID, "anglers_journal"),
+                new FishJournalItem(new FabricItemSettings().maxCount(1))
         );
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
