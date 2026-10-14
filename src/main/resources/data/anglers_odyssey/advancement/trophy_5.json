@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "id": "anglers_odyssey:largemouth_bass"
+      "item": "anglers_odyssey:largemouth_bass"
     },
     "title": {
       "text": "Five Trophy Catches"
@@ -20,6 +20,6 @@
     "announce_to_chat": true,
     "hidden": false,
     "x": 3,
-    "y": 4
-}
+    "y": 4,
+  }
 }

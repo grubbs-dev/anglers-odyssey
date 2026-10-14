@@ -104,7 +104,7 @@
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
       "y": 2,
-      "x": 0,
+      "x": -4,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Deep Ocean."
                                     },

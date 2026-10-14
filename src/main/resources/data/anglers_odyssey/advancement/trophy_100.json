@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "id": "anglers_odyssey:whale_shark"
+      "item": "anglers_odyssey:whale_shark"
     },
     "title": {
       "text": "Legendary Trophy Hunter"
@@ -20,6 +20,6 @@
     "announce_to_chat": true,
     "hidden": false,
     "x": 6,
-    "y": 4
-}
+    "y": 4,
+  }
 }

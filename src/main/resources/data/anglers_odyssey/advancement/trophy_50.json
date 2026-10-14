@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "id": "anglers_odyssey:sailfish"
+      "item": "anglers_odyssey:sailfish"
     },
     "title": {
       "text": "Trophy Hunter"
@@ -20,6 +20,6 @@
     "announce_to_chat": true,
     "hidden": false,
     "x": 5,
-    "y": 4
-}
+    "y": 4,
+  }
 }

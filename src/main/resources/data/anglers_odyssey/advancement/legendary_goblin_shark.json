@@ -7,8 +7,8 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "y": 8,
-      "x": -2,
+      "y": 5,
+      "x": 7,
                     "description":  {
                                         "text":  "Catch a Goblin Shark."
                                     },

@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "id": "anglers_odyssey:bluegill"
+      "item": "anglers_odyssey:bluegill"
     },
     "title": {
       "text": "Trophy Catch"
@@ -20,6 +20,6 @@
     "announce_to_chat": true,
     "hidden": false,
     "x": 2,
-    "y": 4
-}
+    "y": 4,
+  }
 }

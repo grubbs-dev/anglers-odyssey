@@ -7,8 +7,8 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "y": 8,
-      "x": 2,
+      "y": 6,
+      "x": -5,
                     "description":  {
                                         "text":  "Catch a Greenland Shark."
                                     },

@@ -7,8 +7,8 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "y": 8,
-      "x": -3,
+      "y": 5,
+      "x": 6,
                     "description":  {
                                         "text":  "Catch a Giant Squid."
                                     },

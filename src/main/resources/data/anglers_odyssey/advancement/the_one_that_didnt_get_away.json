@@ -363,7 +363,7 @@
   },
   "parent": "anglers_odyssey:a_trophy_worth_keeping",
   "display": {
-    "y": 5,
+    "y": 4,
     "x": 2,
     "description": {
       "text": "Catch your first Legendary fish."
