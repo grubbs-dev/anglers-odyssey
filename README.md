@@ -28,7 +28,7 @@ Angler's Odyssey is a cozy, collection-focused fishing adventure for Fabric. Cas
 ## Supported versions
 
 - Minecraft 1.20.1 — released baseline (`1.0.0`)
-- Minecraft 1.21.1 — current release (`1.1.0`)
+- Minecraft 1.21.1 — current release (`1.1.1`)
 
 Each Minecraft version has its own JAR. Install only the file matching your Minecraft version.
 
@@ -78,7 +78,7 @@ The first build downloads the Gradle and Fabric dependencies. The dev client use
 
 ## Release build
 
-Run `./gradlew.bat clean build` from PowerShell. The 1.21.1 distributable JAR is written to `build/libs/anglers-odyssey-1.1.0-mc-1.21.1.jar`; the sources JAR is not required for player installation.
+Run `./gradlew.bat clean build` from PowerShell. The 1.21.1 distributable JAR is written to `build/libs/anglers-odyssey-1.1.1-mc-1.21.1.jar`; the sources JAR is not required for player installation.
 
 ## Project structure
 
