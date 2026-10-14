@@ -6,6 +6,13 @@ plugins {
 version = project.mod_version
 group = project.maven_group
 
+def versionedArchiveName = "${project.name}-${project.mod_version}-mc-${project.minecraft_version}"
+
+tasks.withType(AbstractArchiveTask).configureEach {
+	archiveBaseName = versionedArchiveName
+	archiveVersion = ""
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
