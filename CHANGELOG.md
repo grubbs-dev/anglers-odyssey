@@ -6,7 +6,7 @@
 - Added an isolated official-Mojang-mappings adapter using Java 25 and the no-remap Fabric Loom workflow.
 - Migrated custom networking, saved data, advancement lookup, item components, creative tabs, fishing behavior, and the journal UI to the 26.x APIs.
 - Added 26.x biome registry coverage for every stable target, including Dappled Forest in 26.3.
-- Build and registry gates pass for all five targets; runtime and manual fishing/journal gates remain required before publication.
+- Build, registry, dedicated-server, and client-bootstrap gates pass for all five targets; manual fishing/journal validation remains required before publication.
 
 ## 1.2.x — Minecraft 1.21.0 through 1.21.11
 
