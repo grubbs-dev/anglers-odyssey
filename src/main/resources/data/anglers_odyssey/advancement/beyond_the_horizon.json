@@ -123,6 +123,8 @@
                  },
     "parent":  "anglers_odyssey:master_angler",
     "display":  {
+      "x": 0,
+      "y": 5,
                     "description":  {
                                         "text":  "Catch every Epic fish."
                                     },

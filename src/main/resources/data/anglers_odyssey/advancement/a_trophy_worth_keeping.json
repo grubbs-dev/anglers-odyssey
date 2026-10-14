@@ -363,6 +363,8 @@
   },
   "parent": "anglers_odyssey:something_special",
   "display": {
+    "x": 2,
+    "y": 3,
     "description": {
       "text": "Catch your first Epic fish."
     },

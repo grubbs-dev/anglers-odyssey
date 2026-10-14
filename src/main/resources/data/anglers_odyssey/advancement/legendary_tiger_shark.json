@@ -7,6 +7,8 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
+      "x": 2,
+      "y": 9,
                     "description":  {
                                         "text":  "Catch a Tiger Shark."
                                     },

@@ -607,6 +607,8 @@
                  },
     "parent":  "anglers_odyssey:living_legend",
     "display":  {
+      "x": 0,
+      "y": 7,
                     "description":  {
                                         "text":  "Catch every fish species in Angler\u0027s Odyssey."
                                     },

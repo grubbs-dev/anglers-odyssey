@@ -107,6 +107,8 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
+      "x": -4,
+      "y": 5,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Warm Ocean."
                                     },

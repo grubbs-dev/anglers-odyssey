@@ -1,6 +1,8 @@
 {
   "parent": "anglers_odyssey:root",
   "display": {
+    "x": -3,
+    "y": 1,
     "icon": {
       "id": "anglers_odyssey:anglers_journal"
     },

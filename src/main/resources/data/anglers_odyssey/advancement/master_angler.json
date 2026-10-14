@@ -127,6 +127,8 @@
                  },
     "parent":  "anglers_odyssey:seasoned_fisher",
     "display":  {
+      "x": 0,
+      "y": 4,
                     "description":  {
                                         "text":  "Catch every Rare fish."
                                     },

@@ -123,6 +123,8 @@
                  },
     "parent":  "anglers_odyssey:local_angler",
     "display":  {
+      "x": 0,
+      "y": 3,
                     "description":  {
                                         "text":  "Catch every Uncommon fish."
                                     },

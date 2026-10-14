@@ -7,6 +7,8 @@
                  },
     "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
     "display":  {
+      "x": -2,
+      "y": 3,
                     "description":  {
                                         "text":  "Catch every Angler\u0027s Odyssey fish found in Grove."
                                     },
