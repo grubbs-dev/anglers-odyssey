@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — 26.x port investigation
+
+- Audited the stable 26.1, 26.1.1, 26.1.2, 26.2, and 26.3 release scope.
+- Recorded the official-mappings, Java 25, Loom, component, persistence, fishing-hook, networking, rendering, and biome migration requirements.
+- Added a fail-closed 26.x release matrix. No 26.x JAR is publishable until the adapter compiles with Angler's Odyssey gameplay intact and passes both server and client smoke gates.
+
 ## 1.2.x — Minecraft 1.21.0 through 1.21.11
 
 - Added separately named Fabric JARs for every stable 1.21.x release currently available in the project matrix.
