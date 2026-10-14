@@ -7,8 +7,8 @@
                  },
     "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
     "display":  {
-      "x": -3,
-      "y": 10,
+      "x": 4,
+      "y": 6,
                     "description":  {
                                         "text":  "Catch a Viperfish."
                                     },
