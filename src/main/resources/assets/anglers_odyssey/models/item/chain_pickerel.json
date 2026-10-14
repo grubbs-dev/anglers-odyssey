@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/chain_pickerel"
+                 },
+    "parent":  "item/generated"
+}

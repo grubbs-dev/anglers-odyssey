@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "anglers_odyssey",
+	"version": "${version}",
+	"name": "Angler's Odyssey",
+	"description": "A fishing-focused Fabric mod that expands Minecraft's waters with new fish, bait, fishing progression, treasures, and legendary catches.",
+	"authors": [
+		"grubbs"
+	],
+	"contact": {},
+	"license": "All Rights Reserved",
+	"icon": "assets/anglers_odyssey/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"grubbs.anglersodyssey.AnglersOdyssey"
+		],
+		"client": [
+			"grubbs.anglersodyssey.client.AnglersOdysseyClient"
+		],
+		"fabric-datagen": [
+			"grubbs.anglersodyssey.client.AnglersOdysseyDataGenerator"
+		]
+	},
+	"mixins": [
+		"anglers_odyssey.mixins.json",
+		{
+			"config": "anglers_odyssey.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

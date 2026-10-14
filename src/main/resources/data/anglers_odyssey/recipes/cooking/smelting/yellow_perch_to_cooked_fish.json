@@ -1,0 +1,9 @@
+{
+    "ingredient":  {
+                       "item":  "anglers_odyssey:yellow_perch"
+                   },
+    "result":  "anglers_odyssey:cooked_fish",
+    "cookingtime":  200,
+    "experience":  0.35,
+    "type":  "minecraft:smelting"
+}

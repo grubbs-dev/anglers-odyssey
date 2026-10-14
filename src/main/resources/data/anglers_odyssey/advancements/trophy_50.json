@@ -1,0 +1,25 @@
+﻿{
+  "parent": "anglers_odyssey:trophy_10",
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "anglers_odyssey:sailfish"
+    },
+    "title": {
+      "text": "Trophy Hunter"
+    },
+    "description": {
+      "text": "Catch 50 trophy fish."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 3,
+    "y": 4
+  }
+}
