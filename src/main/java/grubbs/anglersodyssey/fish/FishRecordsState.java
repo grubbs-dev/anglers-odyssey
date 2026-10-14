@@ -5,10 +5,17 @@ import net.minecraft.registry.Registries;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.PersistentState;
+import net.minecraft.registry.RegistryWrapper;
 
 import java.util.UUID;
 
 public class FishRecordsState extends PersistentState {
+
+    private static final PersistentState.Type<FishRecordsState> TYPE = new PersistentState.Type<>(
+            FishRecordsState::new,
+            (nbt, lookup) -> fromNbt(nbt),
+            null
+    );
 
     private final NbtCompound records = new NbtCompound();
 
@@ -16,7 +23,7 @@ public class FishRecordsState extends PersistentState {
         return world.getServer()
                 .getOverworld()
                 .getPersistentStateManager()
-                .getOrCreate(FishRecordsState::fromNbt, FishRecordsState::new, "anglers_odyssey_fish_records");
+                .getOrCreate(TYPE, "anglers_odyssey_fish_records");
     }
 
     public static FishRecordsState fromNbt(NbtCompound nbt) {
@@ -30,7 +37,7 @@ public class FishRecordsState extends PersistentState {
     }
 
     @Override
-    public NbtCompound writeNbt(NbtCompound nbt) {
+    public NbtCompound writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
         nbt.put("records", records);
         return nbt;
     }

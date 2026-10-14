@@ -125,7 +125,10 @@ public boolean mouseClicked(double mouseX, double mouseY, int button) {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context);
+        // Screen.render applies Minecraft's background blur and renders the
+        // child buttons. It must run before the journal contents; calling it
+        // at the end blurs the panel and all of its text on 1.21.1.
+        super.render(context, mouseX, mouseY, delta);
 
         int panelX = this.width / 2 - 160;
         int panelY = 12;
@@ -173,7 +176,6 @@ public boolean mouseClicked(double mouseX, double mouseY, int button) {
                 0xFFFFFF
         );
 
-        super.render(context, mouseX, mouseY, delta);
     }
 
         private Text getPageTitle() {
@@ -500,7 +502,7 @@ public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
     return super.keyPressed(keyCode, scanCode, modifiers);
 }
     @Override
-public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
+public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double amount) {
     if (page >= 1 && page <= 5) {
         FishRarity rarity = switch (page) {
             case 1 -> FishRarity.COMMON;
@@ -527,6 +529,6 @@ public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
         return true;
     }
 
-    return super.mouseScrolled(mouseX, mouseY, amount);
+    return super.mouseScrolled(mouseX, mouseY, horizontalAmount, amount);
 }
 }

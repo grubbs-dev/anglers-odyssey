@@ -1,0 +1,39 @@
+{
+    "criteria":  {
+                     "golden_koi_emperor":  {
+                                                "trigger":  "minecraft:inventory_changed",
+                                                "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_koi_emperor" ] } ] }
+                                            },
+                     "koi":  {
+                                 "trigger":  "minecraft:inventory_changed",
+                                 "conditions": { "items": [ { "items": [ "anglers_odyssey:koi" ] } ] }
+                             }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Cherry Grove."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:koi"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Cherry Grove Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "koi"
+                         ],
+                         [
+                             "golden_koi_emperor"
+                         ]
+                     ]
+}
+
+
+

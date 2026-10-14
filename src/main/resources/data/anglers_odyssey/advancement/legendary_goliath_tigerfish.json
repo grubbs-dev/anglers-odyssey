@@ -1,0 +1,27 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:goliath_tigerfish" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch a Goliath Tigerfish."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:goliath_tigerfish"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "River Monster"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+

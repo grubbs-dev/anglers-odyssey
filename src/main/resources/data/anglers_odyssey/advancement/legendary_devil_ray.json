@@ -1,0 +1,27 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:devil_ray" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch a Devil Ray."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:devil_ray"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Devil of the Deep"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+
