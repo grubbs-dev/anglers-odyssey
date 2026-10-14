@@ -1,7 +1,7 @@
 {
   "parent": "anglers_odyssey:rod_tier_3",
   "display": {
-    "x": 3,
+    "x": 4,
     "y": 4,
     "icon": { "id": "anglers_odyssey:anglers_rod" },
     "title": { "text": "The Angler's Rod" },
