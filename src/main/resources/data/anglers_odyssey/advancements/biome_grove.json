@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:cutthroat_trout"
+                                 "id":  "anglers_odyssey:cutthroat_trout"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

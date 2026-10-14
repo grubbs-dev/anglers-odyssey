@@ -58,7 +58,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:arapaima"
+                                 "id":  "anglers_odyssey:arapaima"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

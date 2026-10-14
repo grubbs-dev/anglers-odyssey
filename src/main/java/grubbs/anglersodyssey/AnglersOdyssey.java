@@ -3,6 +3,7 @@ package grubbs.anglersodyssey;
 import grubbs.anglersodyssey.fish.FishRegistry;
 import grubbs.anglersodyssey.fish.RodRegistry;
 import grubbs.anglersodyssey.journal.FishJournalRegistry;
+import grubbs.anglersodyssey.journal.FishJournalNetworking;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,7 @@ public class AnglersOdyssey implements ModInitializer {
 		FishRegistry.register();
 		RodRegistry.register();
 		FishJournalRegistry.register();
+		FishJournalNetworking.register();
 
 		LOGGER.info("Angler's Odyssey has loaded.");
 	}

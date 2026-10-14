@@ -34,7 +34,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:tarpon"
+                                 "id":  "anglers_odyssey:tarpon"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

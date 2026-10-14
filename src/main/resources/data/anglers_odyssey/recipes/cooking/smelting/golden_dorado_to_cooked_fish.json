@@ -2,7 +2,7 @@
     "ingredient":  {
                        "item":  "anglers_odyssey:golden_dorado"
                    },
-    "result":  "anglers_odyssey:cooked_fish",
+    "result":  { "id":  "anglers_odyssey:cooked_fish" },
     "cookingtime":  200,
     "experience":  0.35,
     "type":  "minecraft:smelting"

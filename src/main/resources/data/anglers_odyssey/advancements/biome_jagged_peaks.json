@@ -18,7 +18,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:golden_trout"
+                                 "id":  "anglers_odyssey:golden_trout"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

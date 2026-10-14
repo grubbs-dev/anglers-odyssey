@@ -20,7 +20,7 @@
                                     },
                     "hidden":  false,
                     "icon":  {
-                                 "item":  "anglers_odyssey:bluegill"
+                                 "id":  "anglers_odyssey:bluegill"
                              },
                     "show_toast":  false
                 }

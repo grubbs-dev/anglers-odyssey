@@ -1,6 +1,7 @@
 package grubbs.anglersodyssey.mixin;
 
 import grubbs.anglersodyssey.AnglersOdyssey;
+import grubbs.anglersodyssey.advancement.AnglersAdvancementHelper;
 import grubbs.anglersodyssey.fish.FishData;
 import grubbs.anglersodyssey.fish.FishRegistry;
 import grubbs.anglersodyssey.fish.RegionalFishSelector;
@@ -8,9 +9,12 @@ import grubbs.anglersodyssey.fish.AnglersRodItem;
 import grubbs.anglersodyssey.fish.AnglersFishingBobberAccess;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.entity.projectile.FishingBobberEntity;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.NbtComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.loot.LootTable;
 import net.minecraft.registry.Registries;
@@ -98,6 +102,10 @@ public abstract class FishingBobberEntityMixin implements AnglersFishingBobberAc
                     bobber.getWorld().getRandom()
             );
 
+            if (regionalFishData != null && bobber.getPlayerOwner() instanceof ServerPlayerEntity serverPlayer) {
+                AnglersAdvancementHelper.grant(serverPlayer, "every_cast_begins_an_adventure");
+            }
+
             if (regionalFishData == null) {
                 replacedLoot.add(new ItemStack(Items.COD, originalStack.getCount()));
                 continue;
@@ -117,8 +125,9 @@ public abstract class FishingBobberEntityMixin implements AnglersFishingBobberAc
 
             ItemStack regionalStack = new ItemStack(regionalItem, originalStack.getCount());
 
-            if (originalStack.hasNbt() && originalStack.getNbt() != null) {
-                regionalStack.setNbt(originalStack.getNbt().copy());
+            NbtComponent customData = originalStack.get(DataComponentTypes.CUSTOM_DATA);
+            if (customData != null) {
+                regionalStack.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(customData.getNbt().copy()));
             }
 
             replacedLoot.add(regionalStack);

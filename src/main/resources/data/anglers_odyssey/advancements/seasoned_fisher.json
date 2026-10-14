@@ -130,7 +130,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:rainbow_trout"
+                                 "id":  "anglers_odyssey:rainbow_trout"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

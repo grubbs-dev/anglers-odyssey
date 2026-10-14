@@ -382,7 +382,7 @@
     },
     "show_toast": true,
     "icon": {
-      "item": "anglers_odyssey:northern_pike"
+      "id": "anglers_odyssey:northern_pike"
     },
     "hidden": false,
     "announce_to_chat": true,

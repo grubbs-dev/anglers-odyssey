@@ -22,7 +22,7 @@
       "text": "Catch your first Angler's Odyssey fish."
     },
     "icon": {
-      "item": "anglers_odyssey:bluegill"
+      "id": "anglers_odyssey:bluegill"
     },
     "frame": "task",
     "show_toast": true,

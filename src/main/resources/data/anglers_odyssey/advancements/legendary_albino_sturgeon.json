@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:albino_sturgeon"
+                                 "id":  "anglers_odyssey:albino_sturgeon"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "item": "anglers_odyssey:koi"
+      "id": "anglers_odyssey:koi"
     },
     "title": {
       "text": "A Glimmer Beneath the Waves"

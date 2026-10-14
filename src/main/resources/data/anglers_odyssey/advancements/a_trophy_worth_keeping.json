@@ -370,7 +370,7 @@
     },
     "show_toast": true,
     "icon": {
-      "item": "anglers_odyssey:sailfish"
+      "id": "anglers_odyssey:sailfish"
     },
     "hidden": false,
     "announce_to_chat": true,

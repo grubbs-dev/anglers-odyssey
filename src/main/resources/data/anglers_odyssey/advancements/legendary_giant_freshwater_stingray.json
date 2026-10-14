@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:giant_freshwater_stingray"
+                                 "id":  "anglers_odyssey:giant_freshwater_stingray"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

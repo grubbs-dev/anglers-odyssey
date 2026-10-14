@@ -1,10 +1,9 @@
 package grubbs.anglersodyssey.fish;
 
 import grubbs.anglersodyssey.AnglersOdyssey;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -21,12 +20,12 @@ public class FishRegistry {
     public static Item COOKED_FISH;
 
     private static final FoodComponent RAW_FISH_FOOD = new FoodComponent.Builder()
-            .hunger(2)
+            .nutrition(2)
             .saturationModifier(0.1f)
             .build();
 
     private static final FoodComponent COOKED_FISH_FOOD = new FoodComponent.Builder()
-            .hunger(5)
+            .nutrition(5)
             .saturationModifier(0.6f)
             .build();
 
@@ -35,8 +34,8 @@ public class FishRegistry {
 
         COOKED_FISH = Registry.register(
                 Registries.ITEM,
-                new Identifier(AnglersOdyssey.MOD_ID, "cooked_fish"),
-                new Item(new FabricItemSettings().food(COOKED_FISH_FOOD))
+                Identifier.of(AnglersOdyssey.MOD_ID, "cooked_fish"),
+                new Item(new Item.Settings().food(COOKED_FISH_FOOD))
         );
 
         for (FishData fish : FishDatabase.FISH) {
@@ -57,8 +56,8 @@ public class FishRegistry {
     private static void registerFish(FishData fish) {
         Item item = Registry.register(
                 Registries.ITEM,
-                new Identifier(AnglersOdyssey.MOD_ID, fish.id()),
-                new FishItem(new FabricItemSettings().food(RAW_FISH_FOOD), fish)
+                Identifier.of(AnglersOdyssey.MOD_ID, fish.id()),
+                new FishItem(new Item.Settings().food(RAW_FISH_FOOD), fish)
         );
 
         FISH_ITEMS.put(fish.id(), item);

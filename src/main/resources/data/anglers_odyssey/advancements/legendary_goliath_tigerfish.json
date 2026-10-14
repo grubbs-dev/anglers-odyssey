@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:goliath_tigerfish"
+                                 "id":  "anglers_odyssey:goliath_tigerfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

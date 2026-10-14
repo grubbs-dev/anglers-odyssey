@@ -54,7 +54,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:striped_bass"
+                                 "id":  "anglers_odyssey:striped_bass"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

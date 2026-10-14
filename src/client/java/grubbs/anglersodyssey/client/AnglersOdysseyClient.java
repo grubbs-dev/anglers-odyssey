@@ -17,7 +17,7 @@ public class AnglersOdysseyClient implements ClientModInitializer {
     }
 
     private static void registerRodCastPredicates() {
-        Identifier cast = new Identifier("minecraft", "cast");
+        Identifier cast = Identifier.of("minecraft", "cast");
         registerRodCastPredicate(RodRegistry.REED_ROD, cast);
         registerRodCastPredicate(RodRegistry.OAK_ROD, cast);
         registerRodCastPredicate(RodRegistry.IRONWOOD_ROD, cast);
@@ -27,6 +27,9 @@ public class AnglersOdysseyClient implements ClientModInitializer {
     private static void registerRodCastPredicate(Item rod, Identifier cast) {
         ModelPredicateProviderRegistry.register(rod, cast,
                 (stack, world, entity, seed) -> entity instanceof PlayerEntity player
+                        // The bobber's custom cast-rod field is server-side state and is not
+                        // synchronized to the client. The active hook plus the held rod is
+                        // the reliable client-side equivalent for the cast model predicate.
                         && player.fishHook != null
                         && (player.getMainHandStack().getItem() == stack.getItem()
                         || player.getOffHandStack().getItem() == stack.getItem())

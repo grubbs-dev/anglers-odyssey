@@ -3,9 +3,10 @@ package grubbs.anglersodyssey.journal;
 import grubbs.anglersodyssey.fish.FishDatabase;
 import grubbs.anglersodyssey.fish.FishData;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.TooltipContext;
+import net.minecraft.client.item.TooltipType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -71,7 +72,7 @@ public class FishJournalItem extends Item {
         buf.writeInt(FishDatabase.FISH.length);
 
 for (FishData fish : FishDatabase.FISH) {
-    Identifier fishId = new Identifier("anglers_odyssey", fish.id());
+    Identifier fishId = Identifier.of("anglers_odyssey", fish.id());
 
     buf.writeIdentifier(fishId);
 
@@ -87,7 +88,9 @@ for (FishData fish : FishDatabase.FISH) {
     buf.writeInt(journal.getCatchCount(playerUuid, fishId));
 }
 
-        ServerPlayNetworking.send(serverPlayer, FishJournalNetworking.OPEN_JOURNAL, buf);
+        byte[] data = new byte[buf.readableBytes()];
+        buf.readBytes(data);
+        ServerPlayNetworking.send(serverPlayer, new FishJournalNetworking.OpenJournalPayload(data));
 
         return TypedActionResult.success(stack);
     }
@@ -95,15 +98,15 @@ for (FishData fish : FishDatabase.FISH) {
     @Override
     public void appendTooltip(
             ItemStack stack,
-            World world,
+            TooltipContext context,
             List<Text> tooltip,
-            TooltipContext context
+            TooltipType type
     ) {
         tooltip.add(
                 Text.translatable("tooltip.anglers_odyssey.journal")
                         .formatted(Formatting.GRAY)
         );
 
-        super.appendTooltip(stack, world, tooltip, context);
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

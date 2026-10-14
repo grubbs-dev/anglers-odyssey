@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:barreleye_fish"
+                                 "id":  "anglers_odyssey:barreleye_fish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

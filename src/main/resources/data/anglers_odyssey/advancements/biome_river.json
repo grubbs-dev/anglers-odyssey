@@ -142,7 +142,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:bluegill"
+                                 "id":  "anglers_odyssey:bluegill"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

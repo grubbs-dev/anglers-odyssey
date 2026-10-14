@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:devil_ray"
+                                 "id":  "anglers_odyssey:devil_ray"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

@@ -58,7 +58,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:alligator_gar"
+                                 "id":  "anglers_odyssey:alligator_gar"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

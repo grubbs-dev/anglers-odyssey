@@ -22,7 +22,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:herring"
+                                 "id":  "anglers_odyssey:herring"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

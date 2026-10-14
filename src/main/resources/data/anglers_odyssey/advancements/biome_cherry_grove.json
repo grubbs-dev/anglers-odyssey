@@ -18,7 +18,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:koi"
+                                 "id":  "anglers_odyssey:koi"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,
