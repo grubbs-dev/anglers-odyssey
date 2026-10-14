@@ -13,4 +13,4 @@ The smoke test is a startup/registration gate, not a replacement for client fish
 
 ## Client bootstrap follow-up
 
-The 1.21.11 client was launched after the late-1.21 rod-renderer adapter was corrected. It registered 151 fish, four rods, and the journal, completed resource reload without Angler's Odyssey mixin errors, and reached the title screen. The unauthenticated development profile produced only expected Mojang/Realms authentication warnings. In-game fishing, journal interaction, and cast-rod visual confirmation remain manual checks.
+The committed `scripts/client-bootstrap-smoke.ps1` harness launched every 1.21.x client. All twelve versions registered 151 fish, four rods, and the journal, completed resource reload without Angler's Odyssey mixin errors, and reached the title screen. The unauthenticated development profile produced only expected Mojang/Realms authentication warnings. In-game fishing, journal interaction, and cast-rod visual confirmation remain manual checks.
