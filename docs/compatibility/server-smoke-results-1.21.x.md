@@ -10,3 +10,7 @@ All rows were launched from isolated `run-server-1.21.x` directories with Java 2
 | 1.21.9–1.21.11 | 151 fish, four rods, journal | recipes and advancements loaded without Angler's Odyssey errors | Pass | Pass |
 
 The smoke test is a startup/registration gate, not a replacement for client fishing and journal interaction tests. Those remain part of the manual CurseForge release checklist.
+
+## Client bootstrap follow-up
+
+The 1.21.11 client was launched after the late-1.21 rod-renderer adapter was corrected. It registered 151 fish, four rods, and the journal, completed resource reload without Angler's Odyssey mixin errors, and reached the title screen. The unauthenticated development profile produced only expected Mojang/Realms authentication warnings. In-game fishing, journal interaction, and cast-rod visual confirmation remain manual checks.

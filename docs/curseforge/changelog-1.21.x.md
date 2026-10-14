@@ -1,5 +1,7 @@
 # Angler's Odyssey 1.21.x release notes
 
+The 1.21.9–1.21.11 adapter removes an obsolete renderer redirect that no longer matches the vanilla client call site. Custom rods inherit `FishingRodItem`, so vanilla's late-1.21 renderer recognizes them without a redirect while preserving cast item-model behavior.
+
 Use the entry matching the Minecraft version of the uploaded file.
 
 ## `anglers-odyssey-1.2.0-mc-1.21.jar`
