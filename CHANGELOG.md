@@ -1,10 +1,12 @@
 # Changelog
 
-## Unreleased — 26.x port investigation
+## Unreleased — 26.x compatibility sweep
 
 - Audited the stable 26.1, 26.1.1, 26.1.2, 26.2, and 26.3 release scope.
-- Recorded the official-mappings, Java 25, Loom, component, persistence, fishing-hook, networking, rendering, and biome migration requirements.
-- Added a fail-closed 26.x release matrix. No 26.x JAR is publishable until the adapter compiles with Angler's Odyssey gameplay intact and passes both server and client smoke gates.
+- Added an isolated official-Mojang-mappings adapter using Java 25 and the no-remap Fabric Loom workflow.
+- Migrated custom networking, saved data, advancement lookup, item components, creative tabs, fishing behavior, and the journal UI to the 26.x APIs.
+- Added 26.x biome registry coverage for every stable target, including Dappled Forest in 26.3.
+- Build and registry gates pass for all five targets; runtime and manual fishing/journal gates remain required before publication.
 
 ## 1.2.x — Minecraft 1.21.0 through 1.21.11
 

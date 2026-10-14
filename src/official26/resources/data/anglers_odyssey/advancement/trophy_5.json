@@ -1,0 +1,25 @@
+{
+  "parent": "anglers_odyssey:trophy_1",
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "anglers_odyssey:largemouth_bass"
+    },
+    "title": {
+      "text": "Five Trophy Catches"
+    },
+    "description": {
+      "text": "Catch 5 trophy fish."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 3,
+    "y": 4
+}
+}

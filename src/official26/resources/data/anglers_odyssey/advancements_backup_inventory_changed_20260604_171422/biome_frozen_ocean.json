@@ -1,0 +1,74 @@
+{
+    "criteria":  {
+                     "arctic_char":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:arctic_char"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "wolf_fish":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:wolf_fish"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "greenland_shark":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:greenland_shark"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "dolly_varden":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:dolly_varden"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Frozen Ocean."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:greenland_shark"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Frozen Ocean Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "arctic_char"
+                         ],
+                         [
+                             "dolly_varden"
+                         ],
+                         [
+                             "wolf_fish"
+                         ],
+                         [
+                             "greenland_shark"
+                         ]
+                     ]
+}

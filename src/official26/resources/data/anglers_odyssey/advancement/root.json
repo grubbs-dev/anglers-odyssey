@@ -1,0 +1,30 @@
+{
+    "criteria":  {
+                     "tick":  {
+                                  "trigger":  "minecraft:tick"
+                              }
+                 },
+    "display":  {
+      "x": 0,
+      "y": 0,
+                    "background":  "minecraft:textures/block/water_still.png",
+                    "announce_to_chat":  false,
+                    "frame":  "task",
+                    "title":  {
+                                  "bold":  true,
+                                  "color":  "aqua",
+                                  "text":  "Angler\u0027s Odyssey"
+                              },
+                    "description":  {
+                                        "text":  "Every cast begins an adventure."
+                                    },
+                    "hidden":  false,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:bluegill"
+                             },
+                    "show_toast":  false
+                }
+}
+
+
+
