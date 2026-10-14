@@ -1,0 +1,29 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:lancetfish" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+      "x": -3,
+      "y": 6,
+                    "description":  {
+                                        "text":  "Catch a Lancetfish."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:lancetfish"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Blade Runner"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+

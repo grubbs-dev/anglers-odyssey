@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": { "layer0": "anglers_odyssey:item/reed_rod_cast" }
+}

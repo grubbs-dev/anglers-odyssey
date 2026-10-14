@@ -1,0 +1,15 @@
+{
+  "parent": "anglers_odyssey:rod_tier_2",
+  "display": {
+    "x": 3,
+    "y": 3,
+    "icon": { "id": "anglers_odyssey:ironwood_rod" },
+    "title": { "text": "Master Angler" },
+    "description": { "text": "Discover 100 fish and earn the Ironwood Rod with Treasure Sense." },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": { "granted": { "trigger": "minecraft:impossible" } }
+}

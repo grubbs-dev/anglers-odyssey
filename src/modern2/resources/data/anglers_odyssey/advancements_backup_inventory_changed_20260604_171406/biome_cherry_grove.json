@@ -1,0 +1,48 @@
+{
+    "criteria":  {
+                     "golden_koi_emperor":  {
+                                                "trigger":  "minecraft:fishing_rod_hooked",
+                                                "conditions":  {
+                                                                   "item":  {
+                                                                                "items":  [
+                                                                                              "anglers_odyssey:golden_koi_emperor"
+                                                                                          ]
+                                                                            }
+                                                               }
+                                            },
+                     "koi":  {
+                                 "trigger":  "minecraft:fishing_rod_hooked",
+                                 "conditions":  {
+                                                    "item":  {
+                                                                 "items":  [
+                                                                               "anglers_odyssey:koi"
+                                                                           ]
+                                                             }
+                                                }
+                             }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Cherry Grove."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:koi"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Cherry Grove Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "koi"
+                         ],
+                         [
+                             "golden_koi_emperor"
+                         ]
+                     ]
+}

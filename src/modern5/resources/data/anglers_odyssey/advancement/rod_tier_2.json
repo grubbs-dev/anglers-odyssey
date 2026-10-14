@@ -1,0 +1,15 @@
+{
+  "parent": "anglers_odyssey:rod_tier_1",
+  "display": {
+    "x": 3,
+    "y": 2,
+    "icon": { "id": "anglers_odyssey:oak_rod" },
+    "title": { "text": "Seasoned Angler" },
+    "description": { "text": "Discover 50 fish and earn the Oak Rod with Quick Set." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": { "granted": { "trigger": "minecraft:impossible" } }
+}

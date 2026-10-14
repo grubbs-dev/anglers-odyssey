@@ -40,7 +40,7 @@ loom {
 
 }
 
-def adapterBand = project.minecraft_version in ["1.20.5", "1.20.6"] ? "component" : "legacy"
+    def adapterBand = project.minecraft_version in ["1.21", "1.21.1"] ? "modern" : (project.minecraft_version in ["1.21.2", "1.21.3"] ? "modern2" : (project.minecraft_version == "1.21.4" ? "modern3" : (project.minecraft_version == "1.21.5" ? "modern4" : (project.minecraft_version in ["1.21.6", "1.21.7", "1.21.8"] ? "modern5" : (project.minecraft_version.startsWith("1.21") ? "modern6" : (project.minecraft_version in ["1.20.5", "1.20.6"] ? "component" : "legacy"))))))
 sourceSets.main.java.setSrcDirs(["src/${adapterBand}/java"])
 sourceSets.client.java.setSrcDirs(["src/${adapterBand}-client/java"])
 sourceSets.main.resources.setSrcDirs(["src/${adapterBand}/resources"])
@@ -95,12 +95,18 @@ tasks.register("validateCompatibility") {
 		def resourceRoot = file("src/${adapterBand}/resources")
 		def commonRoot = file("src/${adapterBand}/java")
 		def jsonFiles = fileTree(resourceRoot).matching { include "data/anglers_odyssey/**/*.json" }.files
-		def advancements = fileTree(resourceRoot).matching { include "data/anglers_odyssey/advancements/*.json" }.files
-		def fishingLoot = fileTree(resourceRoot).matching { include "data/anglers_odyssey/loot_tables/gameplay/fishing/*.json" }.files
+		def advancements = fileTree(resourceRoot).matching { include adapterBand in ["modern", "modern2", "modern3", "modern4", "modern5", "modern6"] ? "data/anglers_odyssey/advancement/*.json" : "data/anglers_odyssey/advancements/*.json" }.files
+		def fishingLoot = fileTree(resourceRoot).matching { include adapterBand in ["modern", "modern2", "modern3", "modern4", "modern5", "modern6"] ? "data/anglers_odyssey/loot_table/gameplay/fishing/*.json" : "data/anglers_odyssey/loot_tables/gameplay/fishing/*.json" }.files
 		def biomeRegions = fileTree(resourceRoot).matching { include "data/anglers_odyssey/tags/worldgen/biome/regions/*.json" }.files
 		def fishData = file("${commonRoot}/grubbs/anglersodyssey/fish/FishDatabase.java")
 		assert fishData.exists(): "Fish database is missing for ${adapterBand} adapter"
-		assert fishData.text.count("new FishData(") == 151: "Expected 151 fish definitions"
+		def fishEntries = fishData.text.findAll(/new FishData\("([^"]+)",\s*"[^"]+",\s*FishRarity\.[A-Z]+,\s*"([^"]+)"\)/)
+		assert fishEntries.size() == 151: "Expected 151 fish definitions, found ${fishEntries.size()}"
+		def fishHabitats = fishEntries.collect { match -> match.replaceFirst(/^.*FishRarity\.[A-Z]+,\s*"([^"]+)"\).*$/, '$1') }.findAll { it }
+		assert fishHabitats.size() == 151: "Every fish must have a non-empty habitat"
+		def expectedHabitats = fishHabitats.collect { it.toLowerCase(Locale.ROOT).replace(' ', '_') }.toSet()
+		def habitatTags = biomeRegions.collect { it.name - '.json' } as Set
+		assert expectedHabitats.every { habitatTags.contains(it) }: "Fish habitat has no matching biome region tag: ${expectedHabitats - habitatTags}"
 		assert advancements.size() == 69: "Expected 69 advancement files, found ${advancements.size()}"
 		assert fishingLoot.size() == 5: "Expected five rarity fishing loot tables, found ${fishingLoot.size()}"
 		assert biomeRegions.size() == 16: "Expected 16 biome region tags, found ${biomeRegions.size()}"
@@ -112,7 +118,32 @@ tasks.register("validateCompatibility") {
 	}
 }
 
-check.dependsOn(tasks.named("validateCompatibility"))
+tasks.register("validateBiomeCoverageMatrix") {
+	group = "verification"
+	description = "Validate the committed 1.21.x vanilla biome registry audit."
+	 dependsOn tasks.named("validateCompatibility")
+	doLast {
+		def matrix = file("docs/compatibility/biome-coverage-1.21.x.csv")
+		assert matrix.exists(): "The 1.21.x biome coverage audit is missing"
+		def rows = matrix.readLines("UTF-8").drop(1).findAll { it.trim() }
+		def expectedVersions = ["1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4", "1.21.5", "1.21.6", "1.21.7", "1.21.8", "1.21.9", "1.21.10", "1.21.11"]
+		def expectedCounts = ["1.21": 64, "1.21.1": 64, "1.21.2": 64, "1.21.3": 64, "1.21.4": 65, "1.21.5": 65, "1.21.6": 65, "1.21.7": 65, "1.21.8": 65, "1.21.9": 65, "1.21.10": 65, "1.21.11": 65]
+		def validClassifications = ["fishable", "intentionally_excluded", "otherwise_handled"] as Set
+		def grouped = rows.groupBy { it.split(",", 5)[0] }
+		expectedVersions.each { version ->
+			assert grouped[version]?.size() == expectedCounts[version]: "Expected ${expectedCounts[version]} vanilla biomes for ${version}, found ${grouped[version]?.size() ?: 0}"
+			grouped[version].each { row ->
+				def columns = row.split(",", 5)
+				assert columns.size() == 5: "Malformed biome coverage row: ${row}"
+				assert validClassifications.contains(columns[2]): "Unknown biome classification in ${row}"
+			}
+		}
+		assert rows.every { expectedVersions.contains(it.split(",", 5)[0]) }: "Biome audit contains an unsupported version"
+		println "Biome coverage matrix passed: ${rows.size()} vanilla biome entries across ${expectedVersions.size()} Minecraft releases."
+	}
+}
+
+check.dependsOn(tasks.named("validateBiomeCoverageMatrix"))
 
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task

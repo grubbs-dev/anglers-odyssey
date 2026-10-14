@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/golden_koi_emperor"
+                 },
+    "parent":  "item/generated"
+}

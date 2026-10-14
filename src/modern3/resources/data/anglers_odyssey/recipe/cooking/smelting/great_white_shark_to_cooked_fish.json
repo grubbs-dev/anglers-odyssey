@@ -1,0 +1,9 @@
+{
+  "ingredient": "anglers_odyssey:great_white_shark",
+  "result": {
+    "id": "anglers_odyssey:cooked_fish"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "type": "minecraft:smelting"
+}

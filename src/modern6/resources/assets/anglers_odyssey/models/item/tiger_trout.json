@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/tiger_trout"
+                 },
+    "parent":  "item/generated"
+}
