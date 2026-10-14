@@ -1,0 +1,48 @@
+{
+    "criteria":  {
+                     "herring":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:herring" ] } ] }
+                                 },
+                     "whiting":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:whiting" ] } ] }
+                                 },
+                     "lingcod":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:lingcod" ] } ] }
+                                 }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+      "x": -6,
+      "y": 2,
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Cold Ocean."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:herring"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Cold Ocean Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "herring"
+                         ],
+                         [
+                             "whiting"
+                         ],
+                         [
+                             "lingcod"
+                         ]
+                     ]
+}
+
+
+

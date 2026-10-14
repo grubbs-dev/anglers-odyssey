@@ -1,0 +1,412 @@
+{
+    "criteria":  {
+                     "huchen":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:huchen"
+                                                                              ]
+                                                                }
+                                                   }
+                                },
+                     "dogtooth_tuna":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:dogtooth_tuna"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "giant_gourami":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:giant_gourami"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "black_pacu":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:black_pacu"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "dorado":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:dorado"
+                                                                              ]
+                                                                }
+                                                   }
+                                },
+                     "oarfish":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:oarfish"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 },
+                     "swordfish":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:swordfish"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "beluga_sturgeon":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:beluga_sturgeon"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "giant_trevally":  {
+                                            "trigger":  "minecraft:fishing_rod_hooked",
+                                            "conditions":  {
+                                                               "item":  {
+                                                                            "items":  [
+                                                                                          "anglers_odyssey:giant_trevally"
+                                                                                      ]
+                                                                        }
+                                                           }
+                                        },
+                     "arapaima":  {
+                                      "trigger":  "minecraft:fishing_rod_hooked",
+                                      "conditions":  {
+                                                         "item":  {
+                                                                      "items":  [
+                                                                                    "anglers_odyssey:arapaima"
+                                                                                ]
+                                                                  }
+                                                     }
+                                  },
+                     "mekong_catfish":  {
+                                            "trigger":  "minecraft:fishing_rod_hooked",
+                                            "conditions":  {
+                                                               "item":  {
+                                                                            "items":  [
+                                                                                          "anglers_odyssey:mekong_catfish"
+                                                                                      ]
+                                                                        }
+                                                           }
+                                        },
+                     "giant_snakehead":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:giant_snakehead"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "golden_dorado":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:golden_dorado"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "coelacanth":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:coelacanth"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "black_marlin":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:black_marlin"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "chinese_paddlefish":  {
+                                                "trigger":  "minecraft:fishing_rod_hooked",
+                                                "conditions":  {
+                                                                   "item":  {
+                                                                                "items":  [
+                                                                                              "anglers_odyssey:chinese_paddlefish"
+                                                                                          ]
+                                                                            }
+                                                               }
+                                            },
+                     "payara":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:payara"
+                                                                              ]
+                                                                }
+                                                   }
+                                },
+                     "bigeye_tuna":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:bigeye_tuna"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "european_catfish":  {
+                                              "trigger":  "minecraft:fishing_rod_hooked",
+                                              "conditions":  {
+                                                                 "item":  {
+                                                                              "items":  [
+                                                                                            "anglers_odyssey:european_catfish"
+                                                                                        ]
+                                                                          }
+                                                             }
+                                          },
+                     "sailfish":  {
+                                      "trigger":  "minecraft:fishing_rod_hooked",
+                                      "conditions":  {
+                                                         "item":  {
+                                                                      "items":  [
+                                                                                    "anglers_odyssey:sailfish"
+                                                                                ]
+                                                                  }
+                                                     }
+                                  },
+                     "blue_marlin":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:blue_marlin"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "bluefin_tuna":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:bluefin_tuna"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "african_tigerfish":  {
+                                               "trigger":  "minecraft:fishing_rod_hooked",
+                                               "conditions":  {
+                                                                  "item":  {
+                                                                               "items":  [
+                                                                                             "anglers_odyssey:african_tigerfish"
+                                                                                         ]
+                                                                           }
+                                                              }
+                                           },
+                     "alligator_gar":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:alligator_gar"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "napoleon_wrasse":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:napoleon_wrasse"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "wolf_fish":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:wolf_fish"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "goonch_catfish":  {
+                                            "trigger":  "minecraft:fishing_rod_hooked",
+                                            "conditions":  {
+                                                               "item":  {
+                                                                            "items":  [
+                                                                                          "anglers_odyssey:goonch_catfish"
+                                                                                      ]
+                                                                        }
+                                                           }
+                                        },
+                     "halibut":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:halibut"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 },
+                     "white_marlin":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:white_marlin"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "lingcod":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:lingcod"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 }
+                 },
+    "parent":  "anglers_odyssey:master_angler",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Epic fish."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:sailfish"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Beyond the Horizon"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "sailfish"
+                         ],
+                         [
+                             "black_marlin"
+                         ],
+                         [
+                             "blue_marlin"
+                         ],
+                         [
+                             "white_marlin"
+                         ],
+                         [
+                             "swordfish"
+                         ],
+                         [
+                             "bigeye_tuna"
+                         ],
+                         [
+                             "bluefin_tuna"
+                         ],
+                         [
+                             "giant_trevally"
+                         ],
+                         [
+                             "dogtooth_tuna"
+                         ],
+                         [
+                             "napoleon_wrasse"
+                         ],
+                         [
+                             "arapaima"
+                         ],
+                         [
+                             "alligator_gar"
+                         ],
+                         [
+                             "mekong_catfish"
+                         ],
+                         [
+                             "european_catfish"
+                         ],
+                         [
+                             "beluga_sturgeon"
+                         ],
+                         [
+                             "chinese_paddlefish"
+                         ],
+                         [
+                             "coelacanth"
+                         ],
+                         [
+                             "oarfish"
+                         ],
+                         [
+                             "wolf_fish"
+                         ],
+                         [
+                             "lingcod"
+                         ],
+                         [
+                             "halibut"
+                         ],
+                         [
+                             "giant_snakehead"
+                         ],
+                         [
+                             "dorado"
+                         ],
+                         [
+                             "golden_dorado"
+                         ],
+                         [
+                             "huchen"
+                         ],
+                         [
+                             "goonch_catfish"
+                         ],
+                         [
+                             "african_tigerfish"
+                         ],
+                         [
+                             "payara"
+                         ],
+                         [
+                             "black_pacu"
+                         ],
+                         [
+                             "giant_gourami"
+                         ]
+                     ]
+}

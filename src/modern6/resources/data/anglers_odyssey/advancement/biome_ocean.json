@@ -1,0 +1,55 @@
+{
+    "criteria":  {
+                     "anchovy":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:anchovy" ] } ] }
+                                 },
+                     "bonito":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:bonito" ] } ] }
+                                },
+                     "mackerel":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:mackerel" ] } ] }
+                                  },
+                     "sardine":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sardine" ] } ] }
+                                 }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+      "x": 3,
+      "y": 2,
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Ocean."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:sardine"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Ocean Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "sardine"
+                         ],
+                         [
+                             "anchovy"
+                         ],
+                         [
+                             "mackerel"
+                         ],
+                         [
+                             "bonito"
+                         ]
+                     ]
+}
+
+
+

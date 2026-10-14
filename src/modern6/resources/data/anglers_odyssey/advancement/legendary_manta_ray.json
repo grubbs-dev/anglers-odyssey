@@ -1,0 +1,29 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:manta_ray" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+      "x": -2,
+      "y": 6,
+                    "description":  {
+                                        "text":  "Catch a Manta Ray."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:manta_ray"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Wings Beneath the Waves"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+

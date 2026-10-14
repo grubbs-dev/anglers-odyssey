@@ -1,0 +1,412 @@
+{
+    "criteria":  {
+                     "hybrid_striped_bass":  {
+                                                 "trigger":  "minecraft:fishing_rod_hooked",
+                                                 "conditions":  {
+                                                                    "item":  {
+                                                                                 "items":  [
+                                                                                               "anglers_odyssey:hybrid_striped_bass"
+                                                                                           ]
+                                                                             }
+                                                                }
+                                             },
+                     "lane_snapper":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:lane_snapper"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "striped_bass":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:striped_bass"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "brown_trout":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:brown_trout"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "brook_trout":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:brook_trout"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "longnose_gar":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:longnose_gar"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "cutthroat_trout":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:cutthroat_trout"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "rainbow_trout":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:rainbow_trout"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "bonefish":  {
+                                      "trigger":  "minecraft:fishing_rod_hooked",
+                                      "conditions":  {
+                                                         "item":  {
+                                                                      "items":  [
+                                                                                    "anglers_odyssey:bonefish"
+                                                                                ]
+                                                                  }
+                                                     }
+                                  },
+                     "shortnose_gar":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:shortnose_gar"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "barracuda":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:barracuda"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "yellowtail_snapper":  {
+                                                "trigger":  "minecraft:fishing_rod_hooked",
+                                                "conditions":  {
+                                                                   "item":  {
+                                                                                "items":  [
+                                                                                              "anglers_odyssey:yellowtail_snapper"
+                                                                                          ]
+                                                                            }
+                                                               }
+                                            },
+                     "spotted_gar":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:spotted_gar"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "arctic_char":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:arctic_char"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "triggerfish":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:triggerfish"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "black_drum":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:black_drum"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "redfish":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:redfish"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 },
+                     "walleye":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:walleye"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 },
+                     "sauger":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:sauger"
+                                                                              ]
+                                                                }
+                                                   }
+                                },
+                     "flounder":  {
+                                      "trigger":  "minecraft:fishing_rod_hooked",
+                                      "conditions":  {
+                                                         "item":  {
+                                                                      "items":  [
+                                                                                    "anglers_odyssey:flounder"
+                                                                                ]
+                                                                  }
+                                                     }
+                                  },
+                     "sheepshead":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:sheepshead"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "mangrove_snapper":  {
+                                              "trigger":  "minecraft:fishing_rod_hooked",
+                                              "conditions":  {
+                                                                 "item":  {
+                                                                              "items":  [
+                                                                                            "anglers_odyssey:mangrove_snapper"
+                                                                                        ]
+                                                                          }
+                                                             }
+                                          },
+                     "bowfin":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:bowfin"
+                                                                              ]
+                                                                }
+                                                   }
+                                },
+                     "spanish_mackerel":  {
+                                              "trigger":  "minecraft:fishing_rod_hooked",
+                                              "conditions":  {
+                                                                 "item":  {
+                                                                              "items":  [
+                                                                                            "anglers_odyssey:spanish_mackerel"
+                                                                                        ]
+                                                                          }
+                                                             }
+                                          },
+                     "pompano":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:pompano"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 },
+                     "king_mackerel":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:king_mackerel"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "cobia":  {
+                                   "trigger":  "minecraft:fishing_rod_hooked",
+                                   "conditions":  {
+                                                      "item":  {
+                                                                   "items":  [
+                                                                                 "anglers_odyssey:cobia"
+                                                                             ]
+                                                               }
+                                                  }
+                               },
+                     "vermilion_snapper":  {
+                                               "trigger":  "minecraft:fishing_rod_hooked",
+                                               "conditions":  {
+                                                                  "item":  {
+                                                                               "items":  [
+                                                                                             "anglers_odyssey:vermilion_snapper"
+                                                                                         ]
+                                                                           }
+                                                              }
+                                           },
+                     "freshwater_drum":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:freshwater_drum"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "lake_trout":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:lake_trout"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    }
+                 },
+    "parent":  "anglers_odyssey:local_angler",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Uncommon fish."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:rainbow_trout"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Seasoned Fisher"
+                              },
+                    "frame":  "task"
+                },
+    "requirements":  [
+                         [
+                             "rainbow_trout"
+                         ],
+                         [
+                             "brown_trout"
+                         ],
+                         [
+                             "brook_trout"
+                         ],
+                         [
+                             "cutthroat_trout"
+                         ],
+                         [
+                             "lake_trout"
+                         ],
+                         [
+                             "arctic_char"
+                         ],
+                         [
+                             "striped_bass"
+                         ],
+                         [
+                             "hybrid_striped_bass"
+                         ],
+                         [
+                             "sauger"
+                         ],
+                         [
+                             "walleye"
+                         ],
+                         [
+                             "freshwater_drum"
+                         ],
+                         [
+                             "bowfin"
+                         ],
+                         [
+                             "longnose_gar"
+                         ],
+                         [
+                             "shortnose_gar"
+                         ],
+                         [
+                             "spotted_gar"
+                         ],
+                         [
+                             "redfish"
+                         ],
+                         [
+                             "black_drum"
+                         ],
+                         [
+                             "sheepshead"
+                         ],
+                         [
+                             "flounder"
+                         ],
+                         [
+                             "king_mackerel"
+                         ],
+                         [
+                             "spanish_mackerel"
+                         ],
+                         [
+                             "cobia"
+                         ],
+                         [
+                             "triggerfish"
+                         ],
+                         [
+                             "pompano"
+                         ],
+                         [
+                             "bonefish"
+                         ],
+                         [
+                             "barracuda"
+                         ],
+                         [
+                             "yellowtail_snapper"
+                         ],
+                         [
+                             "mangrove_snapper"
+                         ],
+                         [
+                             "lane_snapper"
+                         ],
+                         [
+                             "vermilion_snapper"
+                         ]
+                     ]
+}

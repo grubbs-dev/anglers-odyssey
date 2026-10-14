@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "anglers_odyssey:item/anglers_journal"
+  }
+}

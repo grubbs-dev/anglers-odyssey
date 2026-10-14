@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.x — Minecraft 1.21.0 through 1.21.11
+
+- Added separately named Fabric JARs for every stable 1.21.x release currently available in the project matrix.
+- Preserved all 151 fish, five rarity loot pools, biome restrictions, journal records, four-rod progression, advancements, and existing 1.20.1–1.20.6 support.
+- Added release-specific adapters for item registry keys, component-era persistence, recipe ingredient formats, fishing-bobber APIs, rod cast models, and late-1.21 client input/render APIs.
+- Added explicit dedicated-server smoke validation for each 1.21.x release: 151 fish, four rods, journal registration, recipe loading, advancement loading, and clean world startup.
+- Updated CI to build each 1.21.x artifact independently so a failure cannot silently produce a misleading release asset.
+
 ## 1.0.6 — Minecraft 1.20.6
 
 - Added the component-era 1.20.5+ item, tooltip, persistence, networking, rendering, and fishing-data adapter.

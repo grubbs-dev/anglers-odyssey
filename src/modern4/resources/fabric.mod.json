@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "anglers_odyssey",
+	"version": "${version}",
+	"name": "Angler's Odyssey",
+	"description": "Turn every cast into a small adventure: discover 151 fish, fill your journal, chase shiny and trophy catches, and earn better rods as your collection grows.",
+	"authors": [
+		"grubbs"
+	],
+	"contact": {
+		"homepage": "https://github.com/grubbs-dev/anglers-odyssey",
+		"sources": "https://github.com/grubbs-dev/anglers-odyssey",
+		"issues": "https://github.com/grubbs-dev/anglers-odyssey/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/anglers_odyssey/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"grubbs.anglersodyssey.AnglersOdyssey"
+		],
+		"client": [
+			"grubbs.anglersodyssey.client.AnglersOdysseyClient"
+		],
+		"fabric-datagen": [
+			"grubbs.anglersodyssey.client.AnglersOdysseyDataGenerator"
+		]
+	},
+	"mixins": [
+		"anglers_odyssey.mixins.json",
+		{
+			"config": "anglers_odyssey.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=${java_version}",
+		"fabric-api": "*"
+	}
+}

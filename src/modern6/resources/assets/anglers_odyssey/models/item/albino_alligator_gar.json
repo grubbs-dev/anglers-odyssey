@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/albino_alligator_gar"
+                 },
+    "parent":  "item/generated"
+}

@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/giant_isopod_fish"
+                 },
+    "parent":  "item/generated"
+}

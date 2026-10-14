@@ -1,0 +1,30 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:fishing_rod_hooked",
+                                    "conditions":  {
+                                                       "item":  {
+                                                                    "items":  [
+                                                                                  "anglers_odyssey:colossal_squid"
+                                                                              ]
+                                                                }
+                                                   }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch a Colossal Squid."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:colossal_squid"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Colossal Problem"
+                              },
+                    "frame":  "challenge"
+                }
+}

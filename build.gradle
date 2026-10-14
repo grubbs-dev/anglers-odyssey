@@ -40,7 +40,7 @@ loom {
 
 }
 
-def adapterBand = project.minecraft_version in ["1.20.5", "1.20.6"] ? "component" : "legacy"
+    def adapterBand = project.minecraft_version in ["1.21", "1.21.1"] ? "modern" : (project.minecraft_version in ["1.21.2", "1.21.3"] ? "modern2" : (project.minecraft_version == "1.21.4" ? "modern3" : (project.minecraft_version == "1.21.5" ? "modern4" : (project.minecraft_version in ["1.21.6", "1.21.7", "1.21.8"] ? "modern5" : (project.minecraft_version.startsWith("1.21") ? "modern6" : (project.minecraft_version in ["1.20.5", "1.20.6"] ? "component" : "legacy"))))))
 sourceSets.main.java.setSrcDirs(["src/${adapterBand}/java"])
 sourceSets.client.java.setSrcDirs(["src/${adapterBand}-client/java"])
 sourceSets.main.resources.setSrcDirs(["src/${adapterBand}/resources"])
@@ -95,8 +95,8 @@ tasks.register("validateCompatibility") {
 		def resourceRoot = file("src/${adapterBand}/resources")
 		def commonRoot = file("src/${adapterBand}/java")
 		def jsonFiles = fileTree(resourceRoot).matching { include "data/anglers_odyssey/**/*.json" }.files
-		def advancements = fileTree(resourceRoot).matching { include "data/anglers_odyssey/advancements/*.json" }.files
-		def fishingLoot = fileTree(resourceRoot).matching { include "data/anglers_odyssey/loot_tables/gameplay/fishing/*.json" }.files
+		def advancements = fileTree(resourceRoot).matching { include adapterBand in ["modern", "modern2", "modern3", "modern4", "modern5", "modern6"] ? "data/anglers_odyssey/advancement/*.json" : "data/anglers_odyssey/advancements/*.json" }.files
+		def fishingLoot = fileTree(resourceRoot).matching { include adapterBand in ["modern", "modern2", "modern3", "modern4", "modern5", "modern6"] ? "data/anglers_odyssey/loot_table/gameplay/fishing/*.json" : "data/anglers_odyssey/loot_tables/gameplay/fishing/*.json" }.files
 		def biomeRegions = fileTree(resourceRoot).matching { include "data/anglers_odyssey/tags/worldgen/biome/regions/*.json" }.files
 		def fishData = file("${commonRoot}/grubbs/anglersodyssey/fish/FishDatabase.java")
 		assert fishData.exists(): "Fish database is missing for ${adapterBand} adapter"
