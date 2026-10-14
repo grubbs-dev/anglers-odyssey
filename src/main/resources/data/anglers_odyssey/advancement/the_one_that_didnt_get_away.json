@@ -1,0 +1,414 @@
+{
+  "criteria": {
+    "greenland_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:greenland_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "lancetfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:lancetfish"
+            ]
+          }
+        ]
+      }
+    },
+    "giant_isopod_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:giant_isopod_fish"
+            ]
+          }
+        ]
+      }
+    },
+    "giant_squid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:giant_squid"
+            ]
+          }
+        ]
+      }
+    },
+    "black_swallower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:black_swallower"
+            ]
+          }
+        ]
+      }
+    },
+    "great_white_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:great_white_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "sawfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:sawfish"
+            ]
+          }
+        ]
+      }
+    },
+    "abyssal_grenadier": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:abyssal_grenadier"
+            ]
+          }
+        ]
+      }
+    },
+    "viperfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:viperfish"
+            ]
+          }
+        ]
+      }
+    },
+    "colossal_squid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:colossal_squid"
+            ]
+          }
+        ]
+      }
+    },
+    "hammerhead_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:hammerhead_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "fangtooth": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:fangtooth"
+            ]
+          }
+        ]
+      }
+    },
+    "dragonfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:dragonfish"
+            ]
+          }
+        ]
+      }
+    },
+    "golden_koi_emperor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:golden_koi_emperor"
+            ]
+          }
+        ]
+      }
+    },
+    "giant_freshwater_stingray": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:giant_freshwater_stingray"
+            ]
+          }
+        ]
+      }
+    },
+    "tiger_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:tiger_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "goliath_tigerfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:goliath_tigerfish"
+            ]
+          }
+        ]
+      }
+    },
+    "barreleye_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:barreleye_fish"
+            ]
+          }
+        ]
+      }
+    },
+    "anglerfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:anglerfish"
+            ]
+          }
+        ]
+      }
+    },
+    "devil_catfish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:devil_catfish"
+            ]
+          }
+        ]
+      }
+    },
+    "vampire_squid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:vampire_squid"
+            ]
+          }
+        ]
+      }
+    },
+    "albino_alligator_gar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:albino_alligator_gar"
+            ]
+          }
+        ]
+      }
+    },
+    "albino_sturgeon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:albino_sturgeon"
+            ]
+          }
+        ]
+      }
+    },
+    "manta_ray": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:manta_ray"
+            ]
+          }
+        ]
+      }
+    },
+    "frilled_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:frilled_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "whale_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:whale_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "goblin_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:goblin_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "devil_ray": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:devil_ray"
+            ]
+          }
+        ]
+      }
+    },
+    "megamouth_shark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:megamouth_shark"
+            ]
+          }
+        ]
+      }
+    },
+    "sunfish_mola_mola": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anglers_odyssey:sunfish_mola_mola"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "anglers_odyssey:a_trophy_worth_keeping",
+  "display": {
+    "description": {
+      "text": "Catch your first Legendary fish."
+    },
+    "show_toast": true,
+    "icon": {
+      "id": "anglers_odyssey:whale_shark"
+    },
+    "hidden": false,
+    "announce_to_chat": true,
+    "title": {
+      "text": "The One That Didn't Get Away"
+    },
+    "frame": "challenge"
+  },
+  "requirements": [
+    [
+      "greenland_shark",
+      "lancetfish",
+      "giant_isopod_fish",
+      "giant_squid",
+      "black_swallower",
+      "great_white_shark",
+      "sawfish",
+      "abyssal_grenadier",
+      "viperfish",
+      "colossal_squid",
+      "hammerhead_shark",
+      "fangtooth",
+      "dragonfish",
+      "golden_koi_emperor",
+      "giant_freshwater_stingray",
+      "tiger_shark",
+      "goliath_tigerfish",
+      "barreleye_fish",
+      "anglerfish",
+      "devil_catfish",
+      "vampire_squid",
+      "albino_alligator_gar",
+      "albino_sturgeon",
+      "manta_ray",
+      "frilled_shark",
+      "whale_shark",
+      "goblin_shark",
+      "devil_ray",
+      "megamouth_shark",
+      "sunfish_mola_mola"
+    ]
+  ]
+}

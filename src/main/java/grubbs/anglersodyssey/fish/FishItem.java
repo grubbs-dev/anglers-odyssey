@@ -2,7 +2,8 @@ package grubbs.anglersodyssey.fish;
 
 import grubbs.anglersodyssey.advancement.AnglersAdvancementHelper;
 import grubbs.anglersodyssey.journal.FishJournalState;
-import net.minecraft.client.item.TooltipContext;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.NbtComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -11,9 +12,10 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.minecraft.item.Item.TooltipContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
@@ -62,7 +64,7 @@ public class FishItem extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(
                 Text.literal(fishData.rarity().getDisplayName())
                         .formatted(fishData.rarity().getColor())
@@ -104,7 +106,7 @@ public class FishItem extends Item {
             );
         }
 
-        super.appendTooltip(stack, world, tooltip, context);
+        super.appendTooltip(stack, context, tooltip, type);
     }
 
     @Override
@@ -117,7 +119,7 @@ public class FishItem extends Item {
             applyRandomMeasurements(stack, world.getRandom());
         }
 
-        NbtCompound nbt = stack.getOrCreateNbt();
+        NbtCompound nbt = customData(stack);
 
         if (nbt.getBoolean(RECORD_CHECKED_NBT_KEY)) {
             return;
@@ -146,7 +148,6 @@ if (newSpecies) {
 
     player.playSound(
             SoundEvents.UI_TOAST_CHALLENGE_COMPLETE,
-            SoundCategory.PLAYERS,
             0.25F,
             1.6F
     );
@@ -172,6 +173,7 @@ if (newSpecies) {
                 .updateRecord(player.getUuid(), fishId, getWeight(stack), getLength(stack));
 
         nbt.putBoolean(RECORD_CHECKED_NBT_KEY, true);
+        stack.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
 
         if (newRecord) {
             player.sendMessage(
@@ -183,7 +185,7 @@ if (newSpecies) {
                     true
             );
 
-            player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.35F, 1.4F);
+            player.playSound(SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, 0.35F, 1.4F);
         }
 
         if (isTrophy(stack)) {
@@ -218,37 +220,25 @@ if (newSpecies) {
                     false
             );
 
-            player.playSound(SoundEvents.BLOCK_NOTE_BLOCK_BELL.value(), SoundCategory.PLAYERS, 0.25F, 1.8F);
+            player.playSound(SoundEvents.BLOCK_NOTE_BLOCK_BELL.value(), 0.25F, 1.8F);
         }
     }
 
     public static boolean isShiny(ItemStack stack) {
-        return stack.hasNbt()
-                && stack.getNbt() != null
-                && stack.getNbt().getBoolean(SHINY_NBT_KEY);
+        return customData(stack).getBoolean(SHINY_NBT_KEY);
     }
 
     public static boolean hasMeasurements(ItemStack stack) {
-        return stack.hasNbt()
-                && stack.getNbt() != null
-                && stack.getNbt().contains(WEIGHT_NBT_KEY)
-                && stack.getNbt().contains(LENGTH_NBT_KEY);
+        NbtCompound nbt = customData(stack);
+        return nbt.contains(WEIGHT_NBT_KEY) && nbt.contains(LENGTH_NBT_KEY);
     }
 
     public static double getWeight(ItemStack stack) {
-        if (!stack.hasNbt() || stack.getNbt() == null) {
-            return 0.0D;
-        }
-
-        return stack.getNbt().getDouble(WEIGHT_NBT_KEY);
+        return customData(stack).getDouble(WEIGHT_NBT_KEY);
     }
 
     public static int getLength(ItemStack stack) {
-        if (!stack.hasNbt() || stack.getNbt() == null) {
-            return 0;
-        }
-
-        return stack.getNbt().getInt(LENGTH_NBT_KEY);
+        return customData(stack).getInt(LENGTH_NBT_KEY);
     }
 
     public boolean isTrophy(ItemStack stack) {
@@ -270,9 +260,15 @@ if (newSpecies) {
 
         int length = range.minLength + random.nextInt(range.maxLength - range.minLength + 1);
 
-        NbtCompound nbt = stack.getOrCreateNbt();
+        NbtCompound nbt = customData(stack);
         nbt.putDouble(WEIGHT_NBT_KEY, weight);
         nbt.putInt(LENGTH_NBT_KEY, length);
+        stack.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+    }
+
+    private static NbtCompound customData(ItemStack stack) {
+        NbtComponent component = stack.get(DataComponentTypes.CUSTOM_DATA);
+        return component == null ? new NbtCompound() : component.getNbt().copy();
     }
 
     private static SizeRange getSizeRangeForRarity(FishRarity rarity) {

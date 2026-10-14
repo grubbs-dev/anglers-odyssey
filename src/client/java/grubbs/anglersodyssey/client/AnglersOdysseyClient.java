@@ -18,7 +18,7 @@ public class AnglersOdysseyClient implements ClientModInitializer {
     }
 
     private static void registerRodCastPredicates() {
-        Identifier cast = new Identifier("minecraft", "cast");
+        Identifier cast = Identifier.of("minecraft", "cast");
         registerRodCastPredicate(RodRegistry.REED_ROD, cast);
         registerRodCastPredicate(RodRegistry.OAK_ROD, cast);
         registerRodCastPredicate(RodRegistry.IRONWOOD_ROD, cast);

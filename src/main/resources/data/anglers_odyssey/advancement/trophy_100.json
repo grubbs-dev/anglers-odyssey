@@ -1,0 +1,25 @@
+{
+  "parent": "anglers_odyssey:trophy_50",
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "anglers_odyssey:whale_shark"
+    },
+    "title": {
+      "text": "Legendary Trophy Hunter"
+    },
+    "description": {
+      "text": "Catch 100 trophy fish."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "x": 4,
+    "y": 4
+  }
+}

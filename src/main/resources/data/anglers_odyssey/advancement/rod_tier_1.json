@@ -1,0 +1,13 @@
+{
+  "parent": "anglers_odyssey:root",
+  "display": {
+    "icon": { "id": "anglers_odyssey:reed_rod" },
+    "title": { "text": "A Better Start" },
+    "description": { "text": "Discover 20 fish and earn the Reed Rod with Steady Grip." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": { "granted": { "trigger": "minecraft:impossible" } }
+}

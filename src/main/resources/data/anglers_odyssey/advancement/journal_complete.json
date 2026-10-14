@@ -1,0 +1,23 @@
+{
+  "parent": "anglers_odyssey:root",
+  "display": {
+    "icon": {
+      "id": "anglers_odyssey:anglers_journal"
+    },
+    "title": {
+      "text": "The Angler's Odyssey"
+    },
+    "description": {
+      "text": "Complete the Angler's Journal."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,10 +1,12 @@
 package grubbs.anglersodyssey.fish;
 
-import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item.TooltipContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -42,7 +44,7 @@ public class AnglersRodItem extends FishingRodItem {
         if (user.fishHook != null) {
             if (!world.isClient()) {
                 int damage = user.fishHook.use(stack);
-                stack.damage(damage, user, player -> player.sendToolBreakStatus(hand));
+                stack.damage(damage, user, hand == Hand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
             }
 
             world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE,
@@ -71,7 +73,7 @@ public class AnglersRodItem extends FishingRodItem {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.literal("Tier " + tier + " Fishing Rod").formatted(Formatting.AQUA));
         tooltip.add(Text.literal("Durability: " + (stack.getMaxDamage() - stack.getDamage()) + " / " + stack.getMaxDamage())
                 .formatted(Formatting.GRAY));
@@ -82,7 +84,7 @@ public class AnglersRodItem extends FishingRodItem {
         tooltip.add(Text.literal("Special: " + specialAbility).formatted(Formatting.LIGHT_PURPLE));
         tooltip.add(Text.literal("Unlocks at " + unlockCount + " discovered fish")
                 .formatted(Formatting.DARK_AQUA));
-        super.appendTooltip(stack, world, tooltip, context);
+        super.appendTooltip(stack, context, tooltip, type);
     }
 
 }

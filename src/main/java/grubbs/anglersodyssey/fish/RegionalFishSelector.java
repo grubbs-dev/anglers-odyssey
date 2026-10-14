@@ -44,7 +44,7 @@ public final class RegionalFishSelector {
 
         RegistryKey<Biome> exactVanillaBiome = RegistryKey.of(
                 RegistryKeys.BIOME,
-                new Identifier("minecraft", biomePath)
+                Identifier.of("minecraft", biomePath)
         );
 
         if (biomeEntry.matchesKey(exactVanillaBiome)) {
@@ -53,7 +53,7 @@ public final class RegionalFishSelector {
 
         TagKey<Biome> regionTag = TagKey.of(
                 RegistryKeys.BIOME,
-                new Identifier(AnglersOdyssey.MOD_ID, "regions/" + biomePath)
+                Identifier.of(AnglersOdyssey.MOD_ID, "regions/" + biomePath)
         );
 
         return biomeEntry.isIn(regionTag);

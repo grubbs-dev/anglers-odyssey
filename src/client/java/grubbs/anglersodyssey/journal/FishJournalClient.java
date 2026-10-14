@@ -2,6 +2,8 @@ package grubbs.anglersodyssey.journal;
 
 import grubbs.anglersodyssey.fish.FishRarity;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import io.netty.buffer.Unpooled;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
@@ -10,8 +12,9 @@ import java.util.List;
 public class FishJournalClient {
 
     public static void registerClientPackets() {
-        ClientPlayNetworking.registerGlobalReceiver(FishJournalNetworking.OPEN_JOURNAL,
-                (client, handler, buf, responseSender) -> {
+        ClientPlayNetworking.registerGlobalReceiver(FishJournalNetworking.OpenJournalPayload.ID,
+                (payload, context) -> {
+                    PacketByteBuf buf = new PacketByteBuf(Unpooled.wrappedBuffer(payload.data()));
                     int totalFish = buf.readInt();
                     int discovered = buf.readInt();
                     int completion = buf.readInt();
@@ -51,7 +54,7 @@ for (int i = 0; i < fishCount; i++) {
     ));
 }
 
-                    client.execute(() -> client.setScreen(new FishJournalScreen(
+                    context.client().execute(() -> context.client().setScreen(new FishJournalScreen(
                             totalFish,
                             discovered,
                             completion,
