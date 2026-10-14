@@ -6,17 +6,17 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "anglers_odyssey:gameplay/fishing/common",
+          "value": "anglers_odyssey:gameplay/fishing/common",
           "weight": 100
         },
         {
           "type": "minecraft:loot_table",
-          "name": "anglers_odyssey:gameplay/fishing/uncommon",
+          "value": "anglers_odyssey:gameplay/fishing/uncommon",
           "weight": 35
         },
         {
           "type": "minecraft:loot_table",
-          "name": "anglers_odyssey:gameplay/fishing/rare",
+          "value": "anglers_odyssey:gameplay/fishing/rare",
           "weight": 12
         },
         {
@@ -41,12 +41,12 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "anglers_odyssey:gameplay/fishing/epic",
+          "value": "anglers_odyssey:gameplay/fishing/epic",
           "weight": 4
         },
         {
           "type": "minecraft:loot_table",
-          "name": "anglers_odyssey:gameplay/fishing/legendary",
+          "value": "anglers_odyssey:gameplay/fishing/legendary",
           "weight": 1
         }
       ]

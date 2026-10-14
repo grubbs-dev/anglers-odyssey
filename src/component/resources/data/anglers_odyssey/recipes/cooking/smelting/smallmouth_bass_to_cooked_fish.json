@@ -1,0 +1,9 @@
+{
+    "ingredient":  {
+                       "item":  "anglers_odyssey:smallmouth_bass"
+                   },
+    "result":  { "id":  "anglers_odyssey:cooked_fish" },
+    "cookingtime":  200,
+    "experience":  0.35,
+    "type":  "minecraft:smelting"
+}

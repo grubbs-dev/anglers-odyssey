@@ -22,7 +22,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:cooked_fish"
+                                 "id":  "anglers_odyssey:cooked_fish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

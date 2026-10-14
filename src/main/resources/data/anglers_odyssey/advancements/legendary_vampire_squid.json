@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:vampire_squid"
+                                 "id":  "anglers_odyssey:vampire_squid"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

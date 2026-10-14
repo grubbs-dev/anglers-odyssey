@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:whale_shark"
+                                 "id":  "anglers_odyssey:whale_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

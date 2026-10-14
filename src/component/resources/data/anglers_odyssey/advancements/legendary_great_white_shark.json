@@ -1,0 +1,29 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:great_white_shark" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+      "y": 6,
+      "x": -6,
+                    "description":  {
+                                        "text":  "Catch a Great White Shark."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:great_white_shark"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Apex Predator"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+

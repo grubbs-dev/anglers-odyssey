@@ -4,10 +4,17 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.PersistentState;
+import net.minecraft.registry.RegistryWrapper;
 
 import java.util.UUID;
 
 public class FishJournalState extends PersistentState {
+
+    private static final PersistentState.Type<FishJournalState> TYPE = new PersistentState.Type<>(
+            FishJournalState::new,
+            (nbt, lookup) -> fromNbt(nbt),
+            null
+    );
 
     private final NbtCompound journals = new NbtCompound();
 
@@ -15,7 +22,7 @@ public class FishJournalState extends PersistentState {
         return world.getServer()
                 .getOverworld()
                 .getPersistentStateManager()
-                .getOrCreate(FishJournalState::fromNbt, FishJournalState::new, "anglers_odyssey_fish_journal");
+                .getOrCreate(TYPE, "anglers_odyssey_fish_journal");
     }
 
     public static FishJournalState fromNbt(NbtCompound nbt) {
@@ -29,7 +36,7 @@ public class FishJournalState extends PersistentState {
     }
 
     @Override
-    public NbtCompound writeNbt(NbtCompound nbt) {
+    public NbtCompound writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup lookup) {
         nbt.put("journals", journals);
         return nbt;
     }

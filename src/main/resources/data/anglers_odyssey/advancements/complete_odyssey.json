@@ -614,7 +614,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:golden_koi_emperor"
+                                 "id":  "anglers_odyssey:golden_koi_emperor"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

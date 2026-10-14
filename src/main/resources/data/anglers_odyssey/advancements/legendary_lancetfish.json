@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:lancetfish"
+                                 "id":  "anglers_odyssey:lancetfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:devil_catfish"
+                                 "id":  "anglers_odyssey:devil_catfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

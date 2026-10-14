@@ -23,6 +23,13 @@ repositories {
 
 loom {
 	splitEnvironmentSourceSets()
+	def serverRunDirectory = project.findProperty("run_dir") ?: "run"
+	runs {
+		server {
+			server()
+			runDir serverRunDirectory
+		}
+	}
 
 	mods {
 		"anglers-odyssey" {
@@ -32,6 +39,14 @@ loom {
 	}
 
 }
+
+def adapterBand = project.minecraft_version in ["1.20.5", "1.20.6"] ? "component" : "legacy"
+sourceSets.main.java.setSrcDirs(["src/${adapterBand}/java"])
+sourceSets.client.java.setSrcDirs(["src/${adapterBand}-client/java"])
+sourceSets.main.resources.setSrcDirs(["src/${adapterBand}/resources"])
+// Client resources are already packaged by the main source set. Reusing the
+// directory here causes Loom's jar task to see every resource twice.
+sourceSets.client.resources.setSrcDirs([])
 
 fabricApi {
 	configureDataGeneration {
@@ -52,16 +67,52 @@ dependencies {
 
 processResources {
 	def version = project.version
-	inputs.property "version", version
+	inputs.properties(
+		"version": version,
+		"minecraft_version": project.minecraft_version,
+		"loader_version": project.loader_version,
+		"java_version": project.java_version
+	)
 
 	filesMatching("fabric.mod.json") {
-		expand "version": version
+		expand(
+			"version": version,
+			"minecraft_version": project.minecraft_version,
+			"loader_version": project.loader_version,
+			"java_version": project.java_version
+		)
 	}
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+	it.options.release = project.java_version.toInteger()
 }
+
+tasks.register("validateCompatibility") {
+	group = "verification"
+	description = "Validate the version adapter's fish, advancement, biome, and JSON resource invariants."
+	doLast {
+		def resourceRoot = file("src/${adapterBand}/resources")
+		def commonRoot = file("src/${adapterBand}/java")
+		def jsonFiles = fileTree(resourceRoot).matching { include "data/anglers_odyssey/**/*.json" }.files
+		def advancements = fileTree(resourceRoot).matching { include "data/anglers_odyssey/advancements/*.json" }.files
+		def fishingLoot = fileTree(resourceRoot).matching { include "data/anglers_odyssey/loot_tables/gameplay/fishing/*.json" }.files
+		def biomeRegions = fileTree(resourceRoot).matching { include "data/anglers_odyssey/tags/worldgen/biome/regions/*.json" }.files
+		def fishData = file("${commonRoot}/grubbs/anglersodyssey/fish/FishDatabase.java")
+		assert fishData.exists(): "Fish database is missing for ${adapterBand} adapter"
+		assert fishData.text.count("new FishData(") == 151: "Expected 151 fish definitions"
+		assert advancements.size() == 69: "Expected 69 advancement files, found ${advancements.size()}"
+		assert fishingLoot.size() == 5: "Expected five rarity fishing loot tables, found ${fishingLoot.size()}"
+		assert biomeRegions.size() == 16: "Expected 16 biome region tags, found ${biomeRegions.size()}"
+		jsonFiles.each {
+			def jsonText = it.getText("UTF-8").replaceFirst(/^\uFEFF/, "")
+			new groovy.json.JsonSlurper().parseText(jsonText)
+		}
+		println "Compatibility invariants passed for ${project.minecraft_version} (${adapterBand} adapter): 151 fish, 69 advancements, 16 biome regions, five fishing tables, ${jsonFiles.size()} valid JSON files."
+	}
+}
+
+check.dependsOn(tasks.named("validateCompatibility"))
 
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
@@ -69,8 +120,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.toVersion(project.java_version)
+	targetCompatibility = JavaVersion.toVersion(project.java_version)
 }
 
 jar {

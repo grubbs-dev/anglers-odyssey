@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "item": "anglers_odyssey:whale_shark"
+      "id": "anglers_odyssey:whale_shark"
     },
     "title": {
       "text": "Legendary Trophy Hunter"

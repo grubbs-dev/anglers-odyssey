@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:fishing_rod"
+    },
+    "title": {
+      "translate": "advancements.husbandry.fishy_business.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.fishy_business.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "caught_fish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:tropical_fish",
+            "minecraft:pufferfish"
+          ]
+        }
+      }
+    },
+    "caught_anglers_odyssey_fish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "tag": "minecraft:fishes"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "caught_fish",
+      "caught_anglers_odyssey_fish"
+    ]
+  ]
+}

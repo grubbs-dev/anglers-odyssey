@@ -1,1 +1,32 @@
-﻿id,name,rarity,item
+id,name,rarity,item,biome
+whale_shark,Whale Shark,LEGENDARY,anglers_odyssey:whale_shark,Warm Ocean
+great_white_shark,Great White Shark,LEGENDARY,anglers_odyssey:great_white_shark,Deep Ocean
+hammerhead_shark,Hammerhead Shark,LEGENDARY,anglers_odyssey:hammerhead_shark,Warm Ocean
+tiger_shark,Tiger Shark,LEGENDARY,anglers_odyssey:tiger_shark,Warm Ocean
+manta_ray,Manta Ray,LEGENDARY,anglers_odyssey:manta_ray,Warm Ocean
+sawfish,Sawfish,LEGENDARY,anglers_odyssey:sawfish,Mangrove Swamp
+devil_ray,Devil Ray,LEGENDARY,anglers_odyssey:devil_ray,Warm Ocean
+sunfish_mola_mola,Sunfish (Mola Mola),LEGENDARY,anglers_odyssey:sunfish_mola_mola,Deep Ocean
+giant_squid,Giant Squid,LEGENDARY,anglers_odyssey:giant_squid,Deep Ocean
+colossal_squid,Colossal Squid,LEGENDARY,anglers_odyssey:colossal_squid,Deep Ocean
+megamouth_shark,Megamouth Shark,LEGENDARY,anglers_odyssey:megamouth_shark,Deep Ocean
+goblin_shark,Goblin Shark,LEGENDARY,anglers_odyssey:goblin_shark,Deep Ocean
+greenland_shark,Greenland Shark,LEGENDARY,anglers_odyssey:greenland_shark,Frozen Ocean
+frilled_shark,Frilled Shark,LEGENDARY,anglers_odyssey:frilled_shark,Deep Ocean
+vampire_squid,Vampire Squid,LEGENDARY,anglers_odyssey:vampire_squid,Deep Ocean
+dragonfish,Dragonfish,LEGENDARY,anglers_odyssey:dragonfish,Deep Ocean
+barreleye_fish,Barreleye Fish,LEGENDARY,anglers_odyssey:barreleye_fish,Deep Ocean
+anglerfish,Anglerfish,LEGENDARY,anglers_odyssey:anglerfish,Deep Ocean
+black_swallower,Black Swallower,LEGENDARY,anglers_odyssey:black_swallower,Deep Ocean
+giant_isopod_fish,Giant Isopod Fish,LEGENDARY,anglers_odyssey:giant_isopod_fish,Deep Ocean
+abyssal_grenadier,Abyssal Grenadier,LEGENDARY,anglers_odyssey:abyssal_grenadier,Deep Ocean
+lancetfish,Lancetfish,LEGENDARY,anglers_odyssey:lancetfish,Deep Ocean
+fangtooth,Fangtooth,LEGENDARY,anglers_odyssey:fangtooth,Deep Ocean
+viperfish,Viperfish,LEGENDARY,anglers_odyssey:viperfish,Deep Ocean
+goliath_tigerfish,Goliath Tigerfish,LEGENDARY,anglers_odyssey:goliath_tigerfish,Jungle
+giant_freshwater_stingray,Giant Freshwater Stingray,LEGENDARY,anglers_odyssey:giant_freshwater_stingray,Jungle
+devil_catfish,Devil Catfish,LEGENDARY,anglers_odyssey:devil_catfish,Swamp
+albino_sturgeon,Albino Sturgeon,LEGENDARY,anglers_odyssey:albino_sturgeon,River
+albino_alligator_gar,Albino Alligator Gar,LEGENDARY,anglers_odyssey:albino_alligator_gar,Swamp
+golden_koi_emperor,Golden Koi Emperor,LEGENDARY,anglers_odyssey:golden_koi_emperor,Cherry Grove
+

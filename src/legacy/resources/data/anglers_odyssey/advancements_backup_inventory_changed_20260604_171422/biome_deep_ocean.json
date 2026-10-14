@@ -1,0 +1,347 @@
+{
+    "criteria":  {
+                     "megamouth_shark":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:megamouth_shark"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "black_swallower":  {
+                                             "trigger":  "minecraft:fishing_rod_hooked",
+                                             "conditions":  {
+                                                                "item":  {
+                                                                             "items":  [
+                                                                                           "anglers_odyssey:black_swallower"
+                                                                                       ]
+                                                                         }
+                                                            }
+                                         },
+                     "barreleye_fish":  {
+                                            "trigger":  "minecraft:fishing_rod_hooked",
+                                            "conditions":  {
+                                                               "item":  {
+                                                                            "items":  [
+                                                                                          "anglers_odyssey:barreleye_fish"
+                                                                                      ]
+                                                                        }
+                                                           }
+                                        },
+                     "giant_squid":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:giant_squid"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "lancetfish":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:lancetfish"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "abyssal_grenadier":  {
+                                               "trigger":  "minecraft:fishing_rod_hooked",
+                                               "conditions":  {
+                                                                  "item":  {
+                                                                               "items":  [
+                                                                                             "anglers_odyssey:abyssal_grenadier"
+                                                                                         ]
+                                                                           }
+                                                              }
+                                           },
+                     "viperfish":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:viperfish"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "white_marlin":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:white_marlin"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "anglerfish":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:anglerfish"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "fangtooth":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:fangtooth"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "colossal_squid":  {
+                                            "trigger":  "minecraft:fishing_rod_hooked",
+                                            "conditions":  {
+                                                               "item":  {
+                                                                            "items":  [
+                                                                                          "anglers_odyssey:colossal_squid"
+                                                                                      ]
+                                                                        }
+                                                           }
+                                        },
+                     "goblin_shark":  {
+                                          "trigger":  "minecraft:fishing_rod_hooked",
+                                          "conditions":  {
+                                                             "item":  {
+                                                                          "items":  [
+                                                                                        "anglers_odyssey:goblin_shark"
+                                                                                    ]
+                                                                      }
+                                                         }
+                                      },
+                     "yellowfin_tuna":  {
+                                            "trigger":  "minecraft:fishing_rod_hooked",
+                                            "conditions":  {
+                                                               "item":  {
+                                                                            "items":  [
+                                                                                          "anglers_odyssey:yellowfin_tuna"
+                                                                                      ]
+                                                                        }
+                                                           }
+                                        },
+                     "dragonfish":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:dragonfish"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "blue_marlin":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:blue_marlin"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "great_white_shark":  {
+                                               "trigger":  "minecraft:fishing_rod_hooked",
+                                               "conditions":  {
+                                                                  "item":  {
+                                                                               "items":  [
+                                                                                             "anglers_odyssey:great_white_shark"
+                                                                                         ]
+                                                                           }
+                                                              }
+                                           },
+                     "giant_isopod_fish":  {
+                                               "trigger":  "minecraft:fishing_rod_hooked",
+                                               "conditions":  {
+                                                                  "item":  {
+                                                                               "items":  [
+                                                                                             "anglers_odyssey:giant_isopod_fish"
+                                                                                         ]
+                                                                           }
+                                                              }
+                                           },
+                     "swordfish":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:swordfish"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "bigeye_tuna":  {
+                                         "trigger":  "minecraft:fishing_rod_hooked",
+                                         "conditions":  {
+                                                            "item":  {
+                                                                         "items":  [
+                                                                                       "anglers_odyssey:bigeye_tuna"
+                                                                                   ]
+                                                                     }
+                                                        }
+                                     },
+                     "vampire_squid":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:vampire_squid"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       },
+                     "amberjack":  {
+                                       "trigger":  "minecraft:fishing_rod_hooked",
+                                       "conditions":  {
+                                                          "item":  {
+                                                                       "items":  [
+                                                                                     "anglers_odyssey:amberjack"
+                                                                                 ]
+                                                                   }
+                                                      }
+                                   },
+                     "sunfish_mola_mola":  {
+                                               "trigger":  "minecraft:fishing_rod_hooked",
+                                               "conditions":  {
+                                                                  "item":  {
+                                                                               "items":  [
+                                                                                             "anglers_odyssey:sunfish_mola_mola"
+                                                                                         ]
+                                                                           }
+                                                              }
+                                           },
+                     "oarfish":  {
+                                     "trigger":  "minecraft:fishing_rod_hooked",
+                                     "conditions":  {
+                                                        "item":  {
+                                                                     "items":  [
+                                                                                   "anglers_odyssey:oarfish"
+                                                                               ]
+                                                                 }
+                                                    }
+                                 },
+                     "coelacanth":  {
+                                        "trigger":  "minecraft:fishing_rod_hooked",
+                                        "conditions":  {
+                                                           "item":  {
+                                                                        "items":  [
+                                                                                      "anglers_odyssey:coelacanth"
+                                                                                  ]
+                                                                    }
+                                                       }
+                                    },
+                     "frilled_shark":  {
+                                           "trigger":  "minecraft:fishing_rod_hooked",
+                                           "conditions":  {
+                                                              "item":  {
+                                                                           "items":  [
+                                                                                         "anglers_odyssey:frilled_shark"
+                                                                                     ]
+                                                                       }
+                                                          }
+                                       }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Deep Ocean."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:great_white_shark"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Deep Ocean Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "yellowfin_tuna"
+                         ],
+                         [
+                             "amberjack"
+                         ],
+                         [
+                             "blue_marlin"
+                         ],
+                         [
+                             "white_marlin"
+                         ],
+                         [
+                             "swordfish"
+                         ],
+                         [
+                             "bigeye_tuna"
+                         ],
+                         [
+                             "coelacanth"
+                         ],
+                         [
+                             "oarfish"
+                         ],
+                         [
+                             "great_white_shark"
+                         ],
+                         [
+                             "sunfish_mola_mola"
+                         ],
+                         [
+                             "giant_squid"
+                         ],
+                         [
+                             "colossal_squid"
+                         ],
+                         [
+                             "megamouth_shark"
+                         ],
+                         [
+                             "goblin_shark"
+                         ],
+                         [
+                             "frilled_shark"
+                         ],
+                         [
+                             "vampire_squid"
+                         ],
+                         [
+                             "dragonfish"
+                         ],
+                         [
+                             "barreleye_fish"
+                         ],
+                         [
+                             "anglerfish"
+                         ],
+                         [
+                             "black_swallower"
+                         ],
+                         [
+                             "giant_isopod_fish"
+                         ],
+                         [
+                             "abyssal_grenadier"
+                         ],
+                         [
+                             "lancetfish"
+                         ],
+                         [
+                             "fangtooth"
+                         ],
+                         [
+                             "viperfish"
+                         ]
+                     ]
+}

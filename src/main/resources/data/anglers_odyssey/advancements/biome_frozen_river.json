@@ -26,7 +26,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:smelt"
+                                 "id":  "anglers_odyssey:smelt"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

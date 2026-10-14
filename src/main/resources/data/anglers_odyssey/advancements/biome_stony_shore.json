@@ -18,7 +18,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:smallmouth_bass"
+                                 "id":  "anglers_odyssey:smallmouth_bass"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

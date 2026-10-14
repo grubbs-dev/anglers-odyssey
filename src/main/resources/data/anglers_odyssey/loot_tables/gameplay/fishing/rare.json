@@ -1,4 +1,4 @@
-﻿{
+{
     "type":  "minecraft:fishing",
     "pools":  [
                   {
@@ -10,7 +10,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -27,7 +27,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -44,7 +44,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -61,7 +61,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -78,7 +78,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -95,7 +95,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -112,7 +112,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -129,7 +129,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -146,7 +146,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -163,7 +163,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -180,7 +180,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -197,7 +197,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -214,7 +214,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -231,7 +231,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -248,7 +248,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -265,7 +265,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -282,7 +282,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -299,7 +299,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -316,7 +316,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -333,7 +333,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -350,7 +350,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -367,7 +367,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -384,7 +384,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -401,7 +401,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -418,7 +418,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -435,7 +435,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -452,7 +452,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -469,7 +469,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -486,7 +486,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -503,7 +503,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",
@@ -520,7 +520,7 @@
                                           "weight":  1,
                                           "functions":  [
                                                             {
-                                                                "function":  "minecraft:set_nbt",
+                                                                "function":  "minecraft:set_custom_data",
                                                                 "conditions":  [
                                                                                    {
                                                                                        "condition":  "minecraft:random_chance",

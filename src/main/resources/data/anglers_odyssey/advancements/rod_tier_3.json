@@ -3,7 +3,7 @@
   "display": {
     "y": 3,
     "x": 3,
-    "icon": { "item": "anglers_odyssey:ironwood_rod" },
+    "icon": { "id": "anglers_odyssey:ironwood_rod" },
     "title": { "text": "Master Angler" },
     "description": { "text": "Discover 100 fish and earn the Ironwood Rod with Treasure Sense." },
     "frame": "goal",

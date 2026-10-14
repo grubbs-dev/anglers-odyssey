@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:dragonfish"
+                                 "id":  "anglers_odyssey:dragonfish"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

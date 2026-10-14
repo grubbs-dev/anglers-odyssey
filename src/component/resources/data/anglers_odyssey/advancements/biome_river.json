@@ -1,0 +1,258 @@
+{
+    "criteria":  {
+                     "chinese_paddlefish":  {
+                                                "trigger":  "minecraft:inventory_changed",
+                                                "conditions": { "items": [ { "items": [ "anglers_odyssey:chinese_paddlefish" ] } ] }
+                                            },
+                     "rock_bass":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:rock_bass" ] } ] }
+                                   },
+                     "blue_catfish":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:blue_catfish" ] } ] }
+                                      },
+                     "pumpkinseed":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:pumpkinseed" ] } ] }
+                                     },
+                     "brown_trout":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:brown_trout" ] } ] }
+                                     },
+                     "european_catfish":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:european_catfish" ] } ] }
+                                          },
+                     "green_sunfish":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:green_sunfish" ] } ] }
+                                       },
+                     "largemouth_bass":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:largemouth_bass" ] } ] }
+                                         },
+                     "northern_pike":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:northern_pike" ] } ] }
+                                       },
+                     "black_crappie":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:black_crappie" ] } ] }
+                                       },
+                     "golden_shiner":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:golden_shiner" ] } ] }
+                                       },
+                     "white_sturgeon":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:white_sturgeon" ] } ] }
+                                        },
+                     "grass_carp":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:grass_carp" ] } ] }
+                                    },
+                     "white_crappie":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:white_crappie" ] } ] }
+                                       },
+                     "rainbow_trout":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:rainbow_trout" ] } ] }
+                                       },
+                     "walleye":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:walleye" ] } ] }
+                                 },
+                     "sauger":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:sauger" ] } ] }
+                                },
+                     "tiger_muskie":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:tiger_muskie" ] } ] }
+                                      },
+                     "creek_chub":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:creek_chub" ] } ] }
+                                    },
+                     "white_bass":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:white_bass" ] } ] }
+                                    },
+                     "albino_sturgeon":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:albino_sturgeon" ] } ] }
+                                         },
+                     "lake_sturgeon":  {
+                                           "trigger":  "minecraft:inventory_changed",
+                                           "conditions": { "items": [ { "items": [ "anglers_odyssey:lake_sturgeon" ] } ] }
+                                       },
+                     "redear_sunfish":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:redear_sunfish" ] } ] }
+                                        },
+                     "fathead_minnow":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:fathead_minnow" ] } ] }
+                                        },
+                     "bluegill":  {
+                                      "trigger":  "minecraft:inventory_changed",
+                                      "conditions": { "items": [ { "items": [ "anglers_odyssey:bluegill" ] } ] }
+                                  },
+                     "emerald_shiner":  {
+                                            "trigger":  "minecraft:inventory_changed",
+                                            "conditions": { "items": [ { "items": [ "anglers_odyssey:emerald_shiner" ] } ] }
+                                        },
+                     "paddlefish":  {
+                                        "trigger":  "minecraft:inventory_changed",
+                                        "conditions": { "items": [ { "items": [ "anglers_odyssey:paddlefish" ] } ] }
+                                    },
+                     "channel_catfish":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:channel_catfish" ] } ] }
+                                         },
+                     "yellow_perch":  {
+                                          "trigger":  "minecraft:inventory_changed",
+                                          "conditions": { "items": [ { "items": [ "anglers_odyssey:yellow_perch" ] } ] }
+                                      },
+                     "freshwater_drum":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:freshwater_drum" ] } ] }
+                                         },
+                     "beluga_sturgeon":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:beluga_sturgeon" ] } ] }
+                                         },
+                     "common_carp":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:common_carp" ] } ] }
+                                     },
+                     "muskellunge":  {
+                                         "trigger":  "minecraft:inventory_changed",
+                                         "conditions": { "items": [ { "items": [ "anglers_odyssey:muskellunge" ] } ] }
+                                     }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+      "y": 2,
+      "x": 4,
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in River."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "id":  "anglers_odyssey:bluegill"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "River Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "bluegill"
+                         ],
+                         [
+                             "pumpkinseed"
+                         ],
+                         [
+                             "green_sunfish"
+                         ],
+                         [
+                             "redear_sunfish"
+                         ],
+                         [
+                             "black_crappie"
+                         ],
+                         [
+                             "white_crappie"
+                         ],
+                         [
+                             "yellow_perch"
+                         ],
+                         [
+                             "rock_bass"
+                         ],
+                         [
+                             "largemouth_bass"
+                         ],
+                         [
+                             "white_bass"
+                         ],
+                         [
+                             "channel_catfish"
+                         ],
+                         [
+                             "common_carp"
+                         ],
+                         [
+                             "grass_carp"
+                         ],
+                         [
+                             "golden_shiner"
+                         ],
+                         [
+                             "fathead_minnow"
+                         ],
+                         [
+                             "creek_chub"
+                         ],
+                         [
+                             "emerald_shiner"
+                         ],
+                         [
+                             "rainbow_trout"
+                         ],
+                         [
+                             "brown_trout"
+                         ],
+                         [
+                             "sauger"
+                         ],
+                         [
+                             "walleye"
+                         ],
+                         [
+                             "freshwater_drum"
+                         ],
+                         [
+                             "northern_pike"
+                         ],
+                         [
+                             "tiger_muskie"
+                         ],
+                         [
+                             "muskellunge"
+                         ],
+                         [
+                             "blue_catfish"
+                         ],
+                         [
+                             "white_sturgeon"
+                         ],
+                         [
+                             "lake_sturgeon"
+                         ],
+                         [
+                             "paddlefish"
+                         ],
+                         [
+                             "european_catfish"
+                         ],
+                         [
+                             "beluga_sturgeon"
+                         ],
+                         [
+                             "chinese_paddlefish"
+                         ],
+                         [
+                             "albino_sturgeon"
+                         ]
+                     ]
+}
+
+
+

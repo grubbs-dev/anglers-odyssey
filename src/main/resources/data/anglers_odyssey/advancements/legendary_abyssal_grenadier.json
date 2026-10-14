@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:abyssal_grenadier"
+                                 "id":  "anglers_odyssey:abyssal_grenadier"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

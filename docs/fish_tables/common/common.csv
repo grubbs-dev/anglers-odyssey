@@ -1,1 +1,32 @@
-﻿id,name,rarity,item
+id,name,rarity,item,biome
+bluegill,Bluegill,COMMON,anglers_odyssey:bluegill,River
+pumpkinseed,Pumpkinseed,COMMON,anglers_odyssey:pumpkinseed,River
+green_sunfish,Green Sunfish,COMMON,anglers_odyssey:green_sunfish,River
+redear_sunfish,Redear Sunfish,COMMON,anglers_odyssey:redear_sunfish,River
+warmouth,Warmouth,COMMON,anglers_odyssey:warmouth,Swamp
+black_crappie,Black Crappie,COMMON,anglers_odyssey:black_crappie,River
+white_crappie,White Crappie,COMMON,anglers_odyssey:white_crappie,River
+yellow_perch,Yellow Perch,COMMON,anglers_odyssey:yellow_perch,River
+white_perch,White Perch,COMMON,anglers_odyssey:white_perch,Beach
+rock_bass,Rock Bass,COMMON,anglers_odyssey:rock_bass,River
+largemouth_bass,Largemouth Bass,COMMON,anglers_odyssey:largemouth_bass,River
+smallmouth_bass,Smallmouth Bass,COMMON,anglers_odyssey:smallmouth_bass,Stony Shore
+white_bass,White Bass,COMMON,anglers_odyssey:white_bass,River
+channel_catfish,Channel Catfish,COMMON,anglers_odyssey:channel_catfish,River
+bullhead_catfish,Bullhead Catfish,COMMON,anglers_odyssey:bullhead_catfish,Swamp
+common_carp,Common Carp,COMMON,anglers_odyssey:common_carp,River
+grass_carp,Grass Carp,COMMON,anglers_odyssey:grass_carp,River
+koi,Koi,COMMON,anglers_odyssey:koi,Cherry Grove
+tilapia,Tilapia,COMMON,anglers_odyssey:tilapia,Jungle
+golden_shiner,Golden Shiner,COMMON,anglers_odyssey:golden_shiner,River
+fathead_minnow,Fathead Minnow,COMMON,anglers_odyssey:fathead_minnow,River
+creek_chub,Creek Chub,COMMON,anglers_odyssey:creek_chub,River
+mosquitofish,Mosquitofish,COMMON,anglers_odyssey:mosquitofish,Swamp
+emerald_shiner,Emerald Shiner,COMMON,anglers_odyssey:emerald_shiner,River
+sardine,Sardine,COMMON,anglers_odyssey:sardine,Ocean
+anchovy,Anchovy,COMMON,anglers_odyssey:anchovy,Ocean
+herring,Herring,COMMON,anglers_odyssey:herring,Cold Ocean
+smelt,Smelt,COMMON,anglers_odyssey:smelt,Frozen River
+mackerel,Mackerel,COMMON,anglers_odyssey:mackerel,Ocean
+whiting,Whiting,COMMON,anglers_odyssey:whiting,Cold Ocean
+

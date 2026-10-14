@@ -14,7 +14,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:great_white_shark"
+                                 "id":  "anglers_odyssey:great_white_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

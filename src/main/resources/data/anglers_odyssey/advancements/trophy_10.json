@@ -7,7 +7,7 @@
   },
   "display": {
     "icon": {
-      "item": "anglers_odyssey:rainbow_trout"
+      "id": "anglers_odyssey:rainbow_trout"
     },
     "title": {
       "text": "Ten Trophy Catches"

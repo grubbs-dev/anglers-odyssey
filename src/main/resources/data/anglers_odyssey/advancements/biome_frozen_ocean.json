@@ -26,7 +26,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:greenland_shark"
+                                 "id":  "anglers_odyssey:greenland_shark"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,

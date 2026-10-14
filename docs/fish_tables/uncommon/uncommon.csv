@@ -1,1 +1,32 @@
-﻿id,name,rarity,item
+id,name,rarity,item,biome
+rainbow_trout,Rainbow Trout,UNCOMMON,anglers_odyssey:rainbow_trout,River
+brown_trout,Brown Trout,UNCOMMON,anglers_odyssey:brown_trout,River
+brook_trout,Brook Trout,UNCOMMON,anglers_odyssey:brook_trout,Frozen River
+cutthroat_trout,Cutthroat Trout,UNCOMMON,anglers_odyssey:cutthroat_trout,Grove
+lake_trout,Lake Trout,UNCOMMON,anglers_odyssey:lake_trout,Deep Cold Ocean
+arctic_char,Arctic Char,UNCOMMON,anglers_odyssey:arctic_char,Frozen Ocean
+striped_bass,Striped Bass,UNCOMMON,anglers_odyssey:striped_bass,Beach
+hybrid_striped_bass,Hybrid Striped Bass,UNCOMMON,anglers_odyssey:hybrid_striped_bass,Beach
+sauger,Sauger,UNCOMMON,anglers_odyssey:sauger,River
+walleye,Walleye,UNCOMMON,anglers_odyssey:walleye,River
+freshwater_drum,Freshwater Drum,UNCOMMON,anglers_odyssey:freshwater_drum,River
+bowfin,Bowfin,UNCOMMON,anglers_odyssey:bowfin,Swamp
+longnose_gar,Longnose Gar,UNCOMMON,anglers_odyssey:longnose_gar,Swamp
+shortnose_gar,Shortnose Gar,UNCOMMON,anglers_odyssey:shortnose_gar,Swamp
+spotted_gar,Spotted Gar,UNCOMMON,anglers_odyssey:spotted_gar,Swamp
+redfish,Redfish,UNCOMMON,anglers_odyssey:redfish,Beach
+black_drum,Black Drum,UNCOMMON,anglers_odyssey:black_drum,Beach
+sheepshead,Sheepshead,UNCOMMON,anglers_odyssey:sheepshead,Beach
+flounder,Flounder,UNCOMMON,anglers_odyssey:flounder,Beach
+king_mackerel,King Mackerel,UNCOMMON,anglers_odyssey:king_mackerel,Warm Ocean
+spanish_mackerel,Spanish Mackerel,UNCOMMON,anglers_odyssey:spanish_mackerel,Warm Ocean
+cobia,Cobia,UNCOMMON,anglers_odyssey:cobia,Warm Ocean
+triggerfish,Triggerfish,UNCOMMON,anglers_odyssey:triggerfish,Warm Ocean
+pompano,Pompano,UNCOMMON,anglers_odyssey:pompano,Beach
+bonefish,Bonefish,UNCOMMON,anglers_odyssey:bonefish,Beach
+barracuda,Barracuda,UNCOMMON,anglers_odyssey:barracuda,Warm Ocean
+yellowtail_snapper,Yellowtail Snapper,UNCOMMON,anglers_odyssey:yellowtail_snapper,Warm Ocean
+mangrove_snapper,Mangrove Snapper,UNCOMMON,anglers_odyssey:mangrove_snapper,Mangrove Swamp
+lane_snapper,Lane Snapper,UNCOMMON,anglers_odyssey:lane_snapper,Warm Ocean
+vermilion_snapper,Vermilion Snapper,UNCOMMON,anglers_odyssey:vermilion_snapper,Warm Ocean
+

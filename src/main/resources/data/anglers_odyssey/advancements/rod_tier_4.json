@@ -3,7 +3,7 @@
   "display": {
     "y": 4,
     "x": 4,
-    "icon": { "item": "anglers_odyssey:anglers_rod" },
+    "icon": { "id": "anglers_odyssey:anglers_rod" },
     "title": { "text": "The Angler's Rod" },
     "description": { "text": "Discover 150 fish and earn the Angler's Rod with Master Angler." },
     "frame": "challenge",

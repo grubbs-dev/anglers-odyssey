@@ -26,7 +26,7 @@
                                     },
                     "show_toast":  true,
                     "icon":  {
-                                 "item":  "anglers_odyssey:sardine"
+                                 "id":  "anglers_odyssey:sardine"
                              },
                     "hidden":  false,
                     "announce_to_chat":  true,
