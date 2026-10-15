@@ -4,8 +4,8 @@ Each row is an independently compiled artifact. The adapter column identifies th
 
 | Minecraft | Mod | Adapter | Build/automated invariants | Dedicated server smoke | Artifact |
 |---|---:|---|---|---|---|
-| 1.21.0 | 1.2.0 | modern | Pass | Pass | `anglers-odyssey-1.2.0-mc-1.21.jar` |
-| 1.21.1 | 1.2.1 | modern | Pass | Pass | `anglers-odyssey-1.2.1-mc-1.21.1.jar` |
+| 1.21.0 | 1.2.2 | modern | Pass | Pass | `anglers-odyssey-1.2.2-mc-1.21.jar` |
+| 1.21.1 | 1.2.3 | modern | Pass | Pass | `anglers-odyssey-1.2.3-mc-1.21.1.jar` |
 | 1.21.2 | 1.2.2 | modern2 | Pass | Pass | `anglers-odyssey-1.2.2-mc-1.21.2.jar` |
 | 1.21.3 | 1.2.3 | modern2 | Pass | Pass | `anglers-odyssey-1.2.3-mc-1.21.3.jar` |
 | 1.21.4 | 1.2.4 | modern3 | Pass | Pass | `anglers-odyssey-1.2.4-mc-1.21.4.jar` |

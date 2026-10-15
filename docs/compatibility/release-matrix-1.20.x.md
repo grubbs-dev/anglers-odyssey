@@ -8,8 +8,8 @@ Each row is a separate distributable. The original 1.20.1 release remains recove
 | 1.20.2 | 1.0.2 | registry, advancement, persistence, client-screen | passed | passed | client and dedicated server passed | supported |
 | 1.20.3 | 1.0.3 | shared pre-component adapter | passed | passed | client and dedicated server passed | supported |
 | 1.20.4 | 1.0.4 | shared pre-component adapter | passed | passed | client and dedicated server passed | supported |
-| 1.20.5 | 1.0.7 | item components, Java 21, fishing enchantment tag, advancement grant fix | passed | passed | automated build passed; manual enchantment/advancement test pending | candidate |
-| 1.20.6 | 1.0.8 | same component-era adapter as 1.20.5 | passed | passed | automated build passed; manual enchantment/advancement test pending | candidate |
+| 1.20.5 | 1.0.9 | item components, fishing/durability enchantment tags, advancement grant fix | passed | passed | automated build passed; manual enchantment/advancement test pending | candidate |
+| 1.20.6 | 1.0.10 | same component-era adapter as 1.20.5 | passed | passed | automated build passed; manual enchantment/advancement test pending | candidate |
 
 The 1.20.2–1.20.4 artifacts use the legacy NBT-era fishing data. The 1.20.5–1.20.6 artifacts use `minecraft:custom_data`, component-era recipe results, and component-era advancement icons. Dedicated-server smoke tests reached `Done` for every row with 151 fish, four rods, and the journal registered, and without Angler's Odyssey resource errors. The older 1.20.2–1.20.4 logs report Minecraft's normal seven-recipe startup count; this does not indicate missing mod recipes.
 
