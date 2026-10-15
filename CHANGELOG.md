@@ -33,7 +33,7 @@
 
 ## 1.2.0 / 1.2.1 — Minecraft 1.21 and 1.21.1 maintenance fixes
 
-- Added all four Angler's Odyssey rods to Minecraft's 1.21 fishing-enchantment compatibility tag.
+- Added all four Angler's Odyssey rods to Minecraft's 1.21 fishing and durability enchantment tags, matching the vanilla rod's supported Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing behavior.
 - Applied vanilla Lure and Luck of the Sea levels to custom rods in addition to their built-in progression bonuses.
 - Fixed 1.21.1 cast-model state so first-person and hotbar rod textures switch immediately when a custom rod is cast.
 - Preserved the modern adapter's 151-fish catalog, biome restrictions, journal data, and progression.
