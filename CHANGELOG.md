@@ -24,6 +24,13 @@
 - Added explicit dedicated-server smoke validation for each 1.21.x release: 151 fish, four rods, journal registration, recipe loading, advancement loading, and clean world startup.
 - Updated CI to build each 1.21.x artifact independently so a failure cannot silently produce a misleading release asset.
 
+## 1.2.2.1 through 1.2.5.1 — Minecraft 1.21.2 through 1.21.5 maintenance fixes
+
+- Added custom rods to the 1.21.2–1.21.5 fishing and durability enchantment tags, restoring vanilla Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing support.
+- Removed the obsolete 1.21.4/1.21.5 fishing-bobber renderer redirect that caused a critical mixin failure during client resource reload.
+- Preserved the component-based cast item-model behavior and all existing fish, loot, journal, advancement, and progression data.
+- Client bootstrap validation now reaches resource reload completion for 1.21.4 and 1.21.5; manual in-game enchantment and fishing checks remain required.
+
 ## 1.0.9 / 1.0.10 — Minecraft 1.20.5 and 1.20.6 rod enchantment parity
 
 - Prevented the Angler's Odyssey root and first-catch advancement from unlocking from a tick or inventory-change event; they are now granted only after a regional Angler's Odyssey fish is actually selected by the fishing result.

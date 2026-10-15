@@ -4,6 +4,28 @@ The 1.21.9–1.21.11 adapter removes an obsolete renderer redirect that no longe
 
 Use the entry matching the Minecraft version of the uploaded file.
 
+## `anglers-odyssey-1.2.2.1-mc-1.21.2.jar`
+
+- Restored vanilla fishing-rod enchantment parity for all four Angler's Odyssey rods: Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing.
+- Preserved the 1.21.2 fishing, loot, journal, advancement, and progression behavior.
+
+## `anglers-odyssey-1.2.3.1-mc-1.21.3.jar`
+
+- Restored vanilla fishing-rod enchantment parity for all four Angler's Odyssey rods: Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing.
+- Preserved the shared 1.21.2 adapter and all 151 fish and habitat rules.
+
+## `anglers-odyssey-1.2.4.1-mc-1.21.4.jar`
+
+- Restored vanilla fishing-rod enchantment parity for all four Angler's Odyssey rods.
+- Removed the obsolete renderer redirect that prevented the client from completing resource reload and could produce a black screen.
+- Preserved component-based cast-model behavior and all gameplay data.
+
+## `anglers-odyssey-1.2.5.1-mc-1.21.5.jar`
+
+- Restored vanilla fishing-rod enchantment parity for all four Angler's Odyssey rods.
+- Removed the obsolete renderer redirect that could fail during client startup/resource reload.
+- Preserved component-based cast-model behavior, persistence, fishing loot, and progression.
+
 ## `anglers-odyssey-1.2.0-mc-1.21.jar`
 
 - Added the Minecraft 1.21 Fabric build of Angler's Odyssey.
