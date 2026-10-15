@@ -27,7 +27,7 @@
 ## 1.0.7 / 1.0.8 — Minecraft 1.20.5 and 1.20.6 maintenance fixes
 
 - Prevented the Angler's Odyssey root and first-catch advancement from unlocking from a tick or inventory-change event; they are now granted only after a regional Angler's Odyssey fish is actually selected by the fishing result.
-- Added all four Angler's Odyssey rods to Minecraft's `enchantable/fishing` item tag so vanilla fishing enchantments can be applied.
+- Added all four Angler's Odyssey rods to Minecraft's fishing and durability enchantment tags so vanilla Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing can be applied.
 - Applied vanilla Lure and Luck of the Sea levels to custom rods in addition to each rod's built-in progression bonuses.
 - Preserved the component-era item data, 151-fish catalog, biome restrictions, journal records, and rod progression.
 
