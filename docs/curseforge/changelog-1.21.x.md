@@ -62,23 +62,20 @@ Use the entry matching the Minecraft version of the uploaded file.
 - Updated tooltip and inventory tick integrations and recipe ingredients.
 - Preserved all fish, progression, and fishing loot behavior.
 
-## `anglers-odyssey-1.2.6-mc-1.21.6.jar`
+## `anglers-odyssey-1.2.6.1-mc-1.21.6.jar`
 
-- Updated item registry keys and 1.21.6 recipe ingredient encoding.
-- Preserved the full collection and fishing progression.
-- Dedicated-server startup validated with 151 fish, four rods, the journal, 1,861 loaded recipes, and no Angler's Odyssey data errors.
+- Fixed the black-screen startup failure caused by an obsolete fishing-bobber renderer redirect.
+- Preserved all late-1.21 fishing, cast-model, journal, advancement, and progression behavior.
 
-## `anglers-odyssey-1.2.7-mc-1.21.7.jar`
+## `anglers-odyssey-1.2.7.1-mc-1.21.7.jar`
 
-- Added the 1.21.7-compatible build on the shared late-1.21 adapter.
-- Preserved all fish, habitats, loot tables, journal records, recipes, and advancements.
-- Dedicated-server startup validated.
+- Fixed the shared 1.21.6–1.21.8 client resource-reload failure that left menu audio running behind a black screen.
+- Preserved all fish, loot, rods, journal records, and progression.
 
-## `anglers-odyssey-1.2.8-mc-1.21.8.jar`
+## `anglers-odyssey-1.2.8.1-mc-1.21.8.jar`
 
-- Added the 1.21.8-compatible build.
-- Preserved the complete Angler's Odyssey gameplay loop and resource data.
-- Dedicated-server startup validated.
+- Fixed the shared 1.21.6–1.21.8 client resource-reload failure that left menu audio running behind a black screen.
+- Preserved all fish, loot, rods, journal records, and progression.
 
 ## `anglers-odyssey-1.2.9-mc-1.21.9.jar`
 

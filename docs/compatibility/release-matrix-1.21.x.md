@@ -10,9 +10,9 @@ Each row is an independently compiled artifact. The adapter column identifies th
 | 1.21.3 | 1.2.3.1 | modern2 | Pass | Pass | `anglers-odyssey-1.2.3.1-mc-1.21.3.jar` |
 | 1.21.4 | 1.2.4.1 | modern3 | Pass | Pass | `anglers-odyssey-1.2.4.1-mc-1.21.4.jar` |
 | 1.21.5 | 1.2.5.1 | modern4 | Pass | Pass | `anglers-odyssey-1.2.5.1-mc-1.21.5.jar` |
-| 1.21.6 | 1.2.6 | modern5 | Pass | Pass | `anglers-odyssey-1.2.6-mc-1.21.6.jar` |
-| 1.21.7 | 1.2.7 | modern5 | Pass | Pass | `anglers-odyssey-1.2.7-mc-1.21.7.jar` |
-| 1.21.8 | 1.2.8 | modern5 | Pass | Pass | `anglers-odyssey-1.2.8-mc-1.21.8.jar` |
+| 1.21.6 | 1.2.6.1 | modern5 | Pass | Pass | `anglers-odyssey-1.2.6.1-mc-1.21.6.jar` |
+| 1.21.7 | 1.2.7.1 | modern5 | Pass | Pass | `anglers-odyssey-1.2.7.1-mc-1.21.7.jar` |
+| 1.21.8 | 1.2.8.1 | modern5 | Pass | Pass | `anglers-odyssey-1.2.8.1-mc-1.21.8.jar` |
 | 1.21.9 | 1.2.9 | modern6 | Pass | Pass | `anglers-odyssey-1.2.9-mc-1.21.9.jar` |
 | 1.21.10 | 1.2.10 | modern6 | Pass | Pass | `anglers-odyssey-1.2.10-mc-1.21.10.jar` |
 | 1.21.11 | 1.2.11 | modern6 | Pass | Pass | `anglers-odyssey-1.2.11-mc-1.21.11.jar` |

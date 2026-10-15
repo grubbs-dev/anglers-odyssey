@@ -24,6 +24,12 @@
 - Added explicit dedicated-server smoke validation for each 1.21.x release: 151 fish, four rods, journal registration, recipe loading, advancement loading, and clean world startup.
 - Updated CI to build each 1.21.x artifact independently so a failure cannot silently produce a misleading release asset.
 
+## 1.2.6.1 through 1.2.8.1 — Minecraft 1.21.6 through 1.21.8 startup fixes
+
+- Removed the obsolete fishing-bobber renderer redirect from the shared 1.21.6–1.21.8 client adapter.
+- Fixed the resource-reload mixin failure that left the client on a black screen while menu audio continued in the background.
+- Preserved the shared late-1.21 fishing, cast-model, journal, advancement, and progression behavior.
+
 ## 1.2.2.1 through 1.2.5.1 — Minecraft 1.21.2 through 1.21.5 maintenance fixes
 
 - Added custom rods to the 1.21.2–1.21.5 fishing and durability enchantment tags, restoring vanilla Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing support.
