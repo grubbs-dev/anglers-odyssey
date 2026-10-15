@@ -3,6 +3,7 @@ package grubbs.anglersodyssey.fish;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item.TooltipContext;
@@ -55,7 +56,9 @@ public class AnglersRodItem extends FishingRodItem {
                     SoundCategory.NEUTRAL, 0.5F, 0.8F + world.getRandom().nextFloat() * 0.4F);
 
             if (!world.isClient()) {
-                FishingBobberEntity bobber = new FishingBobberEntity(user, world, luckLevel, lureLevel);
+                int effectiveLuck = luckLevel + EnchantmentHelper.getLuckOfTheSea(stack);
+                int effectiveLure = lureLevel + EnchantmentHelper.getLure(stack);
+                FishingBobberEntity bobber = new FishingBobberEntity(user, world, effectiveLuck, effectiveLure);
                 ((AnglersFishingBobberAccess) bobber).anglers_odyssey$setCastRod(this);
                 world.spawnEntity(bobber);
             }

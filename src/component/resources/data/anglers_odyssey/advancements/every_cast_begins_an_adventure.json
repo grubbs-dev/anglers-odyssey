@@ -1,15 +1,8 @@
 {
   "parent": "anglers_odyssey:root",
   "criteria": {
-    "caught_any_custom_fish": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "anglers_odyssey:fish"
-          }
-        ]
-      }
+    "granted": {
+      "trigger": "minecraft:impossible"
     }
   },
   "display": {

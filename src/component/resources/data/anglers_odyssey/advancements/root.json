@@ -1,7 +1,7 @@
 {
     "criteria":  {
-                     "tick":  {
-                                  "trigger":  "minecraft:tick"
+                     "granted":  {
+                                  "trigger":  "minecraft:impossible"
                               }
                  },
     "display":  {
