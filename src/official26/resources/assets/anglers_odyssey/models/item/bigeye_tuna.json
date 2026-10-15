@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/bigeye_tuna"
+                 },
+    "parent":  "item/generated"
+}

@@ -1,0 +1,6 @@
+﻿{
+    "textures":  {
+                     "layer0":  "anglers_odyssey:item/red_snapper"
+                 },
+    "parent":  "item/generated"
+}

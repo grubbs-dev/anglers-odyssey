@@ -1,0 +1,194 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+def versionedArchiveName = "${project.name}-${project.mod_version}-mc-${project.minecraft_version}"
+
+tasks.withType(AbstractArchiveTask).configureEach {
+	archiveBaseName = versionedArchiveName
+	archiveVersion = ""
+}
+
+repositories {
+	// Add repositories to retrieve artifacts from in here.
+	// You should only use this when depending on other mods because
+	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
+	// for more information about repositories.
+}
+
+loom {
+	splitEnvironmentSourceSets()
+	def serverRunDirectory = project.findProperty("run_dir") ?: "run"
+	runs {
+		server {
+			server()
+			runDir serverRunDirectory
+		}
+	}
+
+	mods {
+		"anglers-odyssey" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+
+}
+
+    def adapterBand = "official26"
+sourceSets.main.java.setSrcDirs(["../../src/${adapterBand}/java"])
+sourceSets.client.java.setSrcDirs(["../../src/${adapterBand}-client/java"])
+def resourceRoots = ["../../src/${adapterBand}/resources"]
+if (project.minecraft_version in ["26.1", "26.1.1", "26.1.2"]) {
+	resourceRoots = ["../../src/${adapterBand}/resources-26.1", "../../src/${adapterBand}/resources"]
+}
+if (project.minecraft_version in ["26.2", "26.3"]) {
+	resourceRoots = ["../../src/${adapterBand}/resources-26.2plus", "../../src/${adapterBand}/resources"]
+}
+sourceSets.main.resources.setSrcDirs(resourceRoots)
+// Client resources are already packaged by the main source set. Reusing the
+// directory here causes Loom's jar task to see every resource twice.
+sourceSets.client.resources.setSrcDirs([])
+
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
+
+dependencies {
+	// To change the versions see the gradle.properties file
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	
+}
+
+processResources {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+	def version = project.version
+	inputs.properties(
+		"version": version,
+		"minecraft_version": project.minecraft_version,
+		"loader_version": project.loader_version,
+		"java_version": project.java_version
+	)
+
+	filesMatching("fabric.mod.json") {
+		expand(
+			"version": version,
+			"minecraft_version": project.minecraft_version,
+			"loader_version": project.loader_version,
+			"java_version": project.java_version
+		)
+	}
+}
+
+tasks.withType(AbstractCopyTask).configureEach {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = project.java_version.toInteger()
+}
+
+tasks.register("validateCompatibility") {
+	group = "verification"
+	description = "Validate the version adapter's fish, advancement, biome, and JSON resource invariants."
+	doLast {
+		def resourceRoot = file("../../src/${adapterBand}/resources")
+		def commonRoot = file("../../src/${adapterBand}/java")
+		def jsonFiles = fileTree(resourceRoot).matching { include "data/anglers_odyssey/**/*.json" }.files
+		def advancements = fileTree(resourceRoot).matching { include adapterBand in ["modern", "modern2", "modern3", "modern4", "modern5", "modern6", "official26"] ? "data/anglers_odyssey/advancement/*.json" : "data/anglers_odyssey/advancements/*.json" }.files
+		def fishingLoot = fileTree(resourceRoot).matching { include adapterBand in ["modern", "modern2", "modern3", "modern4", "modern5", "modern6", "official26"] ? "data/anglers_odyssey/loot_table/gameplay/fishing/*.json" : "data/anglers_odyssey/loot_tables/gameplay/fishing/*.json" }.files
+		def biomeRegions = fileTree(resourceRoot).matching { include "data/anglers_odyssey/tags/worldgen/biome/regions/*.json" }.files
+		def fishData = file("${commonRoot}/grubbs/anglersodyssey/fish/FishDatabase.java")
+		assert fishData.exists(): "Fish database is missing for ${adapterBand} adapter"
+		def fishEntries = fishData.text.findAll(/new FishData\("([^"]+)",\s*"[^"]+",\s*FishRarity\.[A-Z]+,\s*"([^"]+)"\)/)
+		assert fishEntries.size() == 151: "Expected 151 fish definitions, found ${fishEntries.size()}"
+		def fishHabitats = fishEntries.collect { match -> match.replaceFirst(/^.*FishRarity\.[A-Z]+,\s*"([^"]+)"\).*$/, '$1') }.findAll { it }
+		assert fishHabitats.size() == 151: "Every fish must have a non-empty habitat"
+		def expectedHabitats = fishHabitats.collect { it.toLowerCase(Locale.ROOT).replace(' ', '_') }.toSet()
+		def habitatTags = biomeRegions.collect { it.name - '.json' } as Set
+		assert expectedHabitats.every { habitatTags.contains(it) }: "Fish habitat has no matching biome region tag: ${expectedHabitats - habitatTags}"
+		assert advancements.size() == 69: "Expected 69 advancement files, found ${advancements.size()}"
+		assert fishingLoot.size() == 5: "Expected five rarity fishing loot tables, found ${fishingLoot.size()}"
+		assert biomeRegions.size() == 16: "Expected 16 biome region tags, found ${biomeRegions.size()}"
+		jsonFiles.each {
+			def jsonText = it.getText("UTF-8").replaceFirst(/^\uFEFF/, "")
+			new groovy.json.JsonSlurper().parseText(jsonText)
+		}
+		println "Compatibility invariants passed for ${project.minecraft_version} (${adapterBand} adapter): 151 fish, 69 advancements, 16 biome regions, five fishing tables, ${jsonFiles.size()} valid JSON files."
+	}
+}
+
+tasks.register("validateBiomeCoverageMatrix") {
+	group = "verification"
+	description = "Validate the committed 26.x vanilla biome registry audit."
+	 dependsOn tasks.named("validateCompatibility")
+	doLast {
+		def matrix = file("../../docs/compatibility/biome-coverage-26.x.csv")
+		assert matrix.exists(): "The 26.x biome coverage audit is missing"
+		def rows = matrix.readLines("UTF-8").drop(1).findAll { it.trim() }.collect { it.replace('"', '') }
+		def expectedVersions = ["26.1", "26.1.1", "26.1.2", "26.2", "26.3"]
+		def expectedCounts = ["26.1": 65, "26.1.1": 65, "26.1.2": 65, "26.2": 65, "26.3": 66]
+		def validClassifications = ["fishable", "intentionally_excluded", "otherwise_handled"] as Set
+		def grouped = rows.groupBy { it.split(",", 5)[0] }
+		expectedVersions.each { version ->
+			assert grouped[version]?.size() == expectedCounts[version]: "Expected ${expectedCounts[version]} vanilla biomes for ${version}, found ${grouped[version]?.size() ?: 0}"
+			grouped[version].each { row ->
+				def columns = row.split(",", 5)
+				assert columns.size() == 5: "Malformed biome coverage row: ${row}"
+				assert validClassifications.contains(columns[2]): "Unknown biome classification in ${row}"
+			}
+		}
+		assert rows.every { expectedVersions.contains(it.split(",", 5)[0]) }: "Biome audit contains an unsupported version"
+		println "Biome coverage matrix passed: ${rows.size()} vanilla biome entries across ${expectedVersions.size()} Minecraft releases."
+	}
+}
+
+check.dependsOn(tasks.named("validateBiomeCoverageMatrix"))
+
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this line, sources will not be generated.
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.toVersion(project.java_version)
+	targetCompatibility = JavaVersion.toVersion(project.java_version)
+}
+
+jar {
+	def projectName = project.name
+	inputs.property "projectName", projectName
+
+	from("LICENSE") {
+		rename { "${it}_$projectName"}
+	}
+}
+
+// configure the maven publication
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			from components.java
+		}
+	}
+
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	repositories {
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
+	}
+}
+

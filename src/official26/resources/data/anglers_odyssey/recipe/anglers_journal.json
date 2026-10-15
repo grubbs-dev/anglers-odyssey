@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:book",
+    "#anglers_odyssey:fish"
+  ],
+  "result": {
+    "id": "anglers_odyssey:anglers_journal",
+    "count": 1
+  }
+}
