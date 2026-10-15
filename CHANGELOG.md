@@ -9,6 +9,14 @@
 - Build, registry, dedicated-server, and client-bootstrap gates pass for all five targets; manual fishing/journal validation remains required before publication.
 - Added a runtime validation report documenting dedicated-server and client bootstrap evidence for every 26.x target.
 
+## 1.2.13 through 1.2.13.4 — Minecraft 26.x resource and journal fixes
+
+- Added the required 26.x `assets/anglers_odyssey/items` definitions for every custom fish, journal, cooked fish, and rod item.
+- Added 26.x fishing-rod cast conditions so custom rods select their cast-state models correctly.
+- Fixed the extraction render layering used by the Angler's Journal so its panel, headings, statistics, and fish pages render above the inherited screen layer.
+- Preserved the official-Mojang-mappings adapter, 151-fish catalog, loot tables, persistence, advancements, and progression.
+- Automated build and resource validation pass; manual item-texture and journal interaction testing remains required.
+
 ## 1.0.2 — Minecraft 1.20.1 maintenance build
 
 - Restored a dedicated 1.20.1 adapter for the pre-`AdvancementEntry` and pre-`PersistentState.Type` APIs without changing the shared 1.20.2–1.20.4 adapter.
@@ -23,6 +31,19 @@
 - Added release-specific adapters for item registry keys, component-era persistence, recipe ingredient formats, fishing-bobber APIs, rod cast models, and late-1.21 client input/render APIs.
 - Added explicit dedicated-server smoke validation for each 1.21.x release: 151 fish, four rods, journal registration, recipe loading, advancement loading, and clean world startup.
 - Updated CI to build each 1.21.x artifact independently so a failure cannot silently produce a misleading release asset.
+
+## 1.2.6.1 through 1.2.8.1 — Minecraft 1.21.6 through 1.21.8 startup fixes
+
+- Removed the obsolete fishing-bobber renderer redirect from the shared 1.21.6–1.21.8 client adapter.
+- Fixed the resource-reload mixin failure that left the client on a black screen while menu audio continued in the background.
+- Preserved the shared late-1.21 fishing, cast-model, journal, advancement, and progression behavior.
+
+## 1.2.2.1 through 1.2.5.1 — Minecraft 1.21.2 through 1.21.5 maintenance fixes
+
+- Added custom rods to the 1.21.2–1.21.5 fishing and durability enchantment tags, restoring vanilla Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing support.
+- Removed the obsolete 1.21.4/1.21.5 fishing-bobber renderer redirect that caused a critical mixin failure during client resource reload.
+- Preserved the component-based cast item-model behavior and all existing fish, loot, journal, advancement, and progression data.
+- Client bootstrap validation now reaches resource reload completion for 1.21.4 and 1.21.5; manual in-game enchantment and fishing checks remain required.
 
 ## 1.0.9 / 1.0.10 — Minecraft 1.20.5 and 1.20.6 rod enchantment parity
 
