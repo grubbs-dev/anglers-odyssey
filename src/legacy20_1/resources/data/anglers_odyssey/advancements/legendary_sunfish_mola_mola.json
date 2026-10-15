@@ -1,0 +1,29 @@
+{
+    "criteria":  {
+                     "caught":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:sunfish_mola_mola" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:the_one_that_didnt_get_away",
+    "display":  {
+      "y": 6,
+      "x": 1,
+                    "description":  {
+                                        "text":  "Catch a Sunfish (Mola Mola)."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:sunfish_mola_mola"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Solar Drift"
+                              },
+                    "frame":  "challenge"
+                }
+}
+
+
+

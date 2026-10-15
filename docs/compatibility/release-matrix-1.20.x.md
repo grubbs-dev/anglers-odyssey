@@ -1,10 +1,10 @@
 # Minecraft 1.20.x compatibility matrix
 
-Each row is a separate distributable. The 1.20.1 release baseline remains unchanged in its own branch.
+Each row is a separate distributable. The original 1.20.1 release remains recoverable in Git; this row is the repaired 1.20.1 build.
 
 | Minecraft | Mod version | Adapter band | Build | Data/resource audit | Runtime smoke | Release status |
 |---|---:|---|---|---|---|---|
-| 1.20.1 | 1.0.1 | released baseline | passed | passed | previously tested | supported |
+| 1.20.1 | 1.0.2 | isolated pre-`AdvancementEntry`/pre-`PersistentState.Type` adapter; cast-state and advancement-scroll fixes | passed | passed | client bootstrap passed; manual fishing/UI test pending | candidate |
 | 1.20.2 | 1.0.2 | registry, advancement, persistence, client-screen | passed | passed | client and dedicated server passed | supported |
 | 1.20.3 | 1.0.3 | shared pre-component adapter | passed | passed | client and dedicated server passed | supported |
 | 1.20.4 | 1.0.4 | shared pre-component adapter | passed | passed | client and dedicated server passed | supported |

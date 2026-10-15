@@ -9,6 +9,13 @@
 - Build, registry, dedicated-server, and client-bootstrap gates pass for all five targets; manual fishing/journal validation remains required before publication.
 - Added a runtime validation report documenting dedicated-server and client bootstrap evidence for every 26.x target.
 
+## 1.0.2 — Minecraft 1.20.1 maintenance build
+
+- Restored a dedicated 1.20.1 adapter for the pre-`AdvancementEntry` and pre-`PersistentState.Type` APIs without changing the shared 1.20.2–1.20.4 adapter.
+- Fixed custom rod cast-state predicates so first-person and hotbar models can switch to their cast textures while a line is out.
+- Restored mouse-wheel scrolling in the 1.20.1 advancement screen.
+- Rebuilt and client-bootstrapped the 1.20.1 artifact with Fabric Loader 0.16.10 and Fabric API 0.92.9+1.20.1; manual gameplay verification remains required before release.
+
 ## 1.2.x — Minecraft 1.21.0 through 1.21.11
 
 - Added separately named Fabric JARs for every stable 1.21.x release currently available in the project matrix.

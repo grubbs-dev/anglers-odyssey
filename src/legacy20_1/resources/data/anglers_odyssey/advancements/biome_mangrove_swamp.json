@@ -1,0 +1,69 @@
+{
+    "criteria":  {
+                     "snakehead":  {
+                                       "trigger":  "minecraft:inventory_changed",
+                                       "conditions": { "items": [ { "items": [ "anglers_odyssey:snakehead" ] } ] }
+                                   },
+                     "snook":  {
+                                   "trigger":  "minecraft:inventory_changed",
+                                   "conditions": { "items": [ { "items": [ "anglers_odyssey:snook" ] } ] }
+                               },
+                     "mangrove_snapper":  {
+                                              "trigger":  "minecraft:inventory_changed",
+                                              "conditions": { "items": [ { "items": [ "anglers_odyssey:mangrove_snapper" ] } ] }
+                                          },
+                     "giant_snakehead":  {
+                                             "trigger":  "minecraft:inventory_changed",
+                                             "conditions": { "items": [ { "items": [ "anglers_odyssey:giant_snakehead" ] } ] }
+                                         },
+                     "sawfish":  {
+                                     "trigger":  "minecraft:inventory_changed",
+                                     "conditions": { "items": [ { "items": [ "anglers_odyssey:sawfish" ] } ] }
+                                 },
+                     "tarpon":  {
+                                    "trigger":  "minecraft:inventory_changed",
+                                    "conditions": { "items": [ { "items": [ "anglers_odyssey:tarpon" ] } ] }
+                                }
+                 },
+    "parent":  "anglers_odyssey:every_cast_begins_an_adventure",
+    "display":  {
+      "y": 2,
+      "x": 2,
+                    "description":  {
+                                        "text":  "Catch every Angler\u0027s Odyssey fish found in Mangrove Swamp."
+                                    },
+                    "show_toast":  true,
+                    "icon":  {
+                                 "item":  "anglers_odyssey:tarpon"
+                             },
+                    "hidden":  false,
+                    "announce_to_chat":  true,
+                    "title":  {
+                                  "text":  "Mangrove Swamp Specialist"
+                              },
+                    "frame":  "challenge"
+                },
+    "requirements":  [
+                         [
+                             "mangrove_snapper"
+                         ],
+                         [
+                             "snakehead"
+                         ],
+                         [
+                             "tarpon"
+                         ],
+                         [
+                             "snook"
+                         ],
+                         [
+                             "giant_snakehead"
+                         ],
+                         [
+                             "sawfish"
+                         ]
+                     ]
+}
+
+
+
