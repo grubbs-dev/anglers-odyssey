@@ -24,6 +24,20 @@
 - Added explicit dedicated-server smoke validation for each 1.21.x release: 151 fish, four rods, journal registration, recipe loading, advancement loading, and clean world startup.
 - Updated CI to build each 1.21.x artifact independently so a failure cannot silently produce a misleading release asset.
 
+## 1.0.9 / 1.0.10 — Minecraft 1.20.5 and 1.20.6 rod enchantment parity
+
+- Prevented the Angler's Odyssey root and first-catch advancement from unlocking from a tick or inventory-change event; they are now granted only after a regional Angler's Odyssey fish is actually selected by the fishing result.
+- Added all four Angler's Odyssey rods to Minecraft's fishing and durability enchantment tags so vanilla Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing can be applied.
+- Applied vanilla Lure and Luck of the Sea levels to custom rods in addition to each rod's built-in progression bonuses.
+- Preserved the component-era item data, 151-fish catalog, biome restrictions, journal records, and rod progression.
+
+## 1.2.2 / 1.2.3 — Minecraft 1.21 and 1.21.1 rod enchantment parity
+
+- Added all four Angler's Odyssey rods to Minecraft's 1.21 fishing and durability enchantment tags, matching the vanilla rod's supported Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing behavior.
+- Applied vanilla Lure and Luck of the Sea levels to custom rods in addition to their built-in progression bonuses.
+- Fixed 1.21.1 cast-model state so first-person and hotbar rod textures switch immediately when a custom rod is cast.
+- Preserved the modern adapter's 151-fish catalog, biome restrictions, journal data, and progression.
+
 ## 1.0.6 — Minecraft 1.20.6
 
 - Added the component-era 1.20.5+ item, tooltip, persistence, networking, rendering, and fishing-data adapter.

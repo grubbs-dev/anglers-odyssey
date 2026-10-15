@@ -3,6 +3,10 @@ package grubbs.anglersodyssey.fish;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item.TooltipContext;
@@ -16,6 +20,9 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.event.GameEvent;
 import net.minecraft.world.World;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.Registry;
 
 import java.util.List;
 
@@ -55,7 +62,15 @@ public class AnglersRodItem extends FishingRodItem {
                     SoundCategory.NEUTRAL, 0.5F, 0.8F + world.getRandom().nextFloat() * 0.4F);
 
             if (!world.isClient()) {
-                FishingBobberEntity bobber = new FishingBobberEntity(user, world, luckLevel, lureLevel);
+                ItemEnchantmentsComponent enchantments = stack.get(DataComponentTypes.ENCHANTMENTS);
+                Registry<Enchantment> enchantmentRegistry = world.getRegistryManager().get(RegistryKeys.ENCHANTMENT);
+                RegistryEntry<Enchantment> luckEntry = enchantmentRegistry.getEntry(Enchantments.LUCK_OF_THE_SEA).orElseThrow();
+                RegistryEntry<Enchantment> lureEntry = enchantmentRegistry.getEntry(Enchantments.LURE).orElseThrow();
+                int effectiveLuck = luckLevel + (enchantments == null ? 0
+                        : enchantments.getLevel(luckEntry));
+                int effectiveLure = lureLevel + (enchantments == null ? 0
+                        : enchantments.getLevel(lureEntry));
+                FishingBobberEntity bobber = new FishingBobberEntity(user, world, effectiveLuck, effectiveLure);
                 ((AnglersFishingBobberAccess) bobber).anglers_odyssey$setCastRod(this);
                 world.spawnEntity(bobber);
             }
