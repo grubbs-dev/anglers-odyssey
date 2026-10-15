@@ -24,7 +24,7 @@
 - Added explicit dedicated-server smoke validation for each 1.21.x release: 151 fish, four rods, journal registration, recipe loading, advancement loading, and clean world startup.
 - Updated CI to build each 1.21.x artifact independently so a failure cannot silently produce a misleading release asset.
 
-## 1.0.5 / 1.0.6 — Minecraft 1.20.5 and 1.20.6 maintenance fixes
+## 1.0.7 / 1.0.8 — Minecraft 1.20.5 and 1.20.6 maintenance fixes
 
 - Prevented the Angler's Odyssey root and first-catch advancement from unlocking from a tick or inventory-change event; they are now granted only after a regional Angler's Odyssey fish is actually selected by the fishing result.
 - Added all four Angler's Odyssey rods to Minecraft's `enchantable/fishing` item tag so vanilla fishing enchantments can be applied.
