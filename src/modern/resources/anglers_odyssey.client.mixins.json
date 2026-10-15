@@ -3,6 +3,7 @@
   "package": "grubbs.anglersodyssey.mixin.client",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "AnglersRodItemClientMixin",
     "FishingBobberEntityRendererMixin",
     "AdvancementsScreenMouseMixin"
   ],

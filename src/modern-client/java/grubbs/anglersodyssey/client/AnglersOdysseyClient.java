@@ -30,7 +30,8 @@ public class AnglersOdysseyClient implements ClientModInitializer {
                         // The bobber's custom cast-rod field is server-side state and is not
                         // synchronized to the client. The active hook plus the held rod is
                         // the reliable client-side equivalent for the cast model predicate.
-                        && player.fishHook != null
+                        && (player.fishHook != null
+                        || CastRodClientState.isCast(player, stack.getItem()))
                         && (player.getMainHandStack().getItem() == stack.getItem()
                         || player.getOffHandStack().getItem() == stack.getItem())
                         ? 1.0F : 0.0F);

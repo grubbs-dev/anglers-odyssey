@@ -31,6 +31,13 @@
 - Applied vanilla Lure and Luck of the Sea levels to custom rods in addition to each rod's built-in progression bonuses.
 - Preserved the component-era item data, 151-fish catalog, biome restrictions, journal records, and rod progression.
 
+## 1.2.0 / 1.2.1 — Minecraft 1.21 and 1.21.1 maintenance fixes
+
+- Added all four Angler's Odyssey rods to Minecraft's 1.21 fishing-enchantment compatibility tag.
+- Applied vanilla Lure and Luck of the Sea levels to custom rods in addition to their built-in progression bonuses.
+- Fixed 1.21.1 cast-model state so first-person and hotbar rod textures switch immediately when a custom rod is cast.
+- Preserved the modern adapter's 151-fish catalog, biome restrictions, journal data, and progression.
+
 ## 1.0.6 — Minecraft 1.20.6
 
 - Added the component-era 1.20.5+ item, tooltip, persistence, networking, rendering, and fishing-data adapter.
