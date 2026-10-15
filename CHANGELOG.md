@@ -9,6 +9,14 @@
 - Build, registry, dedicated-server, and client-bootstrap gates pass for all five targets; manual fishing/journal validation remains required before publication.
 - Added a runtime validation report documenting dedicated-server and client bootstrap evidence for every 26.x target.
 
+## 1.2.13 through 1.2.13.4 — Minecraft 26.x resource and journal fixes
+
+- Added the required 26.x `assets/anglers_odyssey/items` definitions for every custom fish, journal, cooked fish, and rod item.
+- Added 26.x fishing-rod cast conditions so custom rods select their cast-state models correctly.
+- Fixed the extraction render layering used by the Angler's Journal so its panel, headings, statistics, and fish pages render above the inherited screen layer.
+- Preserved the official-Mojang-mappings adapter, 151-fish catalog, loot tables, persistence, advancements, and progression.
+- Automated build and resource validation pass; manual item-texture and journal interaction testing remains required.
+
 ## 1.0.2 — Minecraft 1.20.1 maintenance build
 
 - Restored a dedicated 1.20.1 adapter for the pre-`AdvancementEntry` and pre-`PersistentState.Type` APIs without changing the shared 1.20.2–1.20.4 adapter.

@@ -1,0 +1,8 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:fishing_rod/cast",
+    "on_false": { "type": "minecraft:model", "model": "anglers_odyssey:item/oak_rod" },
+    "on_true": { "type": "minecraft:model", "model": "anglers_odyssey:item/oak_rod_cast" }
+  }
+}
