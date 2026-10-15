@@ -1,34 +1,75 @@
-# CurseForge listing copy
+# Angler's Odyssey
 
-## Short summary
+> **Every cast begins an adventure.**
 
-A cozy Fabric fishing-collection mod with 151 fish, biome-based catches, shiny variants, trophy records, custom rods, and an Angler's Journal.
+Angler's Odyssey turns Minecraft fishing into a relaxing collection adventure. Explore the world, learn where each species lives, build your collection, and become the angler your waters deserve.
 
-## Full description
+## Cast. Discover. Progress.
 
-Angler's Odyssey turns fishing into a full collection adventure for Minecraft 1.20.1.
+There is always another fish waiting beyond the next shoreline.
 
-Explore rivers, lakes, oceans, and other habitats to discover 151 custom fish with rarity tiers, biome preferences, shiny variants, trophy catches, weights, lengths, and personal records. Keep track of your discoveries in the Angler's Journal, follow the advancement path, and unlock four custom rods as your collection grows.
+Travel through rivers, oceans, swamps, jungles, frozen waters, and other habitats to discover **151 custom fish species**. Every catch has its own place in the world, rarity, records, and collection value.
 
-Every rod keeps the familiar vanilla fishing experience and enchantment support while adding its own Angler's Odyssey bonus. Start with the Reed Rod, improve your tackle as you discover species, and work toward the Angler's Rod and the complete journal.
+Your journey is recorded in the **Angler's Journal**, where discoveries become long-term progress. Fill its pages, chase rare variants, improve your equipment, and work toward completing the collection.
 
-### Features
+## What's in the water?
 
-- 151 collectible fish species
-- Biome-aware fishing and habitat-based catches
-- Rarity tiers, shiny variants, trophy catches, weights, and lengths
-- Personal records and persistent journal progress
-- Four unlockable rods with custom fishing abilities
-- Vanilla fishing-rod enchantment compatibility
-- Angler's Journal with fish records, statistics, and rod progression
-- Advancements and progression rewards for dedicated anglers
+* **151 collectible fish species** with distinct names, artwork, habitats, and rarity tiers
+* **Biome-aware fishing** that rewards exploring different waters
+* **Common, Uncommon, Rare, Epic, and Legendary catches**
+* **Shiny variants** for collectors who want an extra challenge
+* **Trophy catches** with individual weights and lengths
+* **Personal records** that persist with your world
+* **Five fishing loot pools** tuned around the Angler's Odyssey rarity system
 
-### Requirements
+## Grow your tackle box
 
-- Minecraft Java Edition 1.20.1
-- Fabric Loader
-- Fabric API
+Start with familiar vanilla fishing and gradually unlock four custom rods as your collection grows:
 
-## Suggested tags
+1. **Reed Rod** — begin your journey
+2. **Oak Rod** — a dependable upgrade
+3. **Ironwood Rod** — built for serious waters
+4. **Angler's Rod** — the reward for dedicated collectors
 
-`minecraft`, `fabric`, `fishing`, `collection`, `adventure`, `pixel-art`, `vanilla-plus`, `1.20.1`
+Each rod adds its own Angler's Odyssey bonus while retaining the familiar vanilla fishing experience. Custom rods support vanilla fishing enchantments, including **Lure, Luck of the Sea, Unbreaking, Mending, and Curse of Vanishing**.
+
+## Your Angler's Journal
+
+The Angler's Journal keeps your adventure personal. Track:
+
+* Species discovered
+* Catch totals
+* Shiny discoveries
+* Trophy catches
+* Weight and length records
+* Rod progression
+* Completion across each rarity tier
+
+Whether you are filling every page or simply looking for one perfect catch, the journal gives every fishing trip a reason to continue.
+
+## Built for exploration
+
+Angler's Odyssey is designed as a **vanilla-plus** experience: it adds depth without replacing Minecraft's familiar rhythm. Find a quiet shoreline, cast a line, and let the world guide your next destination.
+
+## Requirements
+
+* Minecraft Java Edition
+* Fabric Loader
+* Fabric API
+* Java version required by your selected Minecraft release
+
+Install the file matching your exact Minecraft version. Keep the Angler's Odyssey JAR and Fabric API in your `mods` folder, then launch with Fabric.
+
+## Compatibility
+
+Separate Fabric builds are provided for supported Minecraft releases. Always use the JAR whose filename matches your Minecraft version, for example:
+
+`anglers-odyssey-<mod-version>-mc-<minecraft-version>.jar`
+
+Your existing fish collection, journal records, advancements, and progression are intended to remain part of the Angler's Odyssey experience across supported versions.
+
+## Keep exploring
+
+The best catches are rarely found by standing still.
+
+**Grab your rod, find new water, and see what the next cast brings.**
