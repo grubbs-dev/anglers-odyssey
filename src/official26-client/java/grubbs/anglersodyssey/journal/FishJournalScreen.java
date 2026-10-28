@@ -36,6 +36,9 @@ public class FishJournalScreen extends Screen {
 
     @Override public void extractRenderState(GuiGraphicsExtractor g, int mouseX, int mouseY, float delta) {
         super.extractRenderState(g, mouseX, mouseY, delta);
+        // Screen extraction renders the inherited background/widgets in an earlier
+        // stratum. Keep the journal panel and text above that layer on 26.x.
+        g.nextStratum();
         int x = this.width / 2 - 160, y = 12, h = Math.min(210, this.height - 58);
         g.fill(x, y, x + 320, y + h, 0xDD111111); g.outline(x, y, 320, h, 0xFF3EF9C3);
         g.centeredText(font, pageTitle(), this.width / 2, 30, pageColorCode());

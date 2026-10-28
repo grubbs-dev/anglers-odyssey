@@ -2,10 +2,10 @@
 
 | Release | Build | Automated invariants | Dedicated server | Client | Manual gameplay | Publish |
 |---|---|---|---|---|---|---|
-| 26.1 | buildable | passed | passed | passed | no |
-| 26.1.1 | buildable | passed | passed | passed | no |
-| 26.1.2 | buildable | passed | passed | passed | no |
-| 26.2 | buildable | passed | passed | passed | no |
-| 26.3 | buildable | passed | passed | passed | no |
+| 26.1 | 1.2.13 | passed | passed | bootstrap passed | no |
+| 26.1.1 | 1.2.13.1 | passed | pending rerun | pending rerun | no |
+| 26.1.2 | 1.2.13.2 | passed | pending rerun | pending rerun | no |
+| 26.2 | 1.2.13.3 | passed | pending rerun | pending rerun | no |
+| 26.3 | 1.2.13.4 | passed | pending rerun | pending rerun | no |
 
-Build, registry, dedicated-server, and client bootstrap gates are green for all five stable 26.x rows. Publication remains fail-closed until each row has manual fishing/journal smoke tests. Existing validated 1.20.x and 1.21.x artifacts keep their current support status.
+The 26.1 row has been rebuilt with the item-definition and journal-layer fixes and its client bootstrap reaches the integrated world. The remaining rows use the same isolated official26 adapter but require their final rebuild/runtime rerun before publication. Manual fishing, item-texture, and journal smoke tests remain required for every row.
